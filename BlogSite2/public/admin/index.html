@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html lang="tr">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Admin Panel</title>
+		<!-- MAIN CSS -->
+		<link rel="stylesheet" href="/assets/scss/main.css" />
+		<!-- HOMEPAGE CSS -->
+		<link
+			rel="stylesheet"
+			href="/assets/scss/components/adminHeader/header.css"
+		/>
+		<link rel="stylesheet" href="/assets/scss/admin/homepage/section.css" />
+		<link rel="stylesheet" href="/assets/scss/admin/homepage/footer.css" />
+		<!-- TAILWIND CSS -->
+		<link rel="stylesheet" href="/assets/plugin/tailwind/tailwind.min.css" />
+	</head>
+	<body>
+		<!-- MAIN CONTAINER -->
+		<main id="MainContainer">
+			<nav class="pages">
+				<h1 class="title">Murat Altınışık</h1>
+
+				<ul class="page-list" id="page-list">
+					<li class="page active">
+						<a href="/public/admin/index.html">
+							<span class="icon">
+								<i class="fa-solid fa-house"></i>
+							</span>
+							Anasayfa
+						</a>
+					</li>
+
+					<li class="page">
+						<a href="javascript:void(0)">
+							<span class="icon">
+								<i class="fa-solid fa-users"></i>
+							</span>
+							Kullanıcılar
+
+							<span class="sub-list-icon">
+								<i class="fa-solid fa-chevron-down"></i>
+							</span>
+						</a>
+
+						<ul class="sub-menu">
+							<li>
+								<a href="/public/admin/users/list.html">Kullanıcı Listesi</a>
+							</li>
+							<li><a href="/public/admin/users/add.html">Kullanıcı ekle</a></li>
+						</ul>
+					</li>
+
+					<li class="page">
+						<a href="javascript:void(0)">
+							<span class="icon">
+								<i class="fa-solid fa-book"></i>
+							</span>
+							Dersler
+
+							<span class="sub-list-icon">
+								<i class="fa-solid fa-chevron-down"></i>
+							</span>
+						</a>
+
+						<ul class="sub-menu">
+							<li>
+								<a href="/public/admin/lessons/add-lesson.html">Ders Ekle</a>
+							</li>
+							<li><a href="/public/admin/lessons/html.html">Html</a></li>
+							<li><a href="/public/admin/lessons/css.html">Css</a></li>
+							<li><a href="/public/admin/lessons/scss.html">Scss</a></li>
+							<li><a href="/public/admin/lessons/js.html">Js</a></li>
+							<li><a href="/public/admin/lessons/react.html">React</a></li>
+							<li><a href="/public/admin/lessons/php.html">Php</a></li>
+							<li><a href="/public/admin/lessons/laravel.html">Laravel</a></li>
+							<li><a href="/public/admin/lessons/python.html">Python</a></li>
+							<li><a href="/public/admin/lessons/sql.html">Sql</a></li>
+						</ul>
+					</li>
+
+					<li class="page">
+						<a href="javascript:void(0)">
+							<span class="icon">
+								<i class="fa-solid fa-newspaper"></i>
+							</span>
+							Makaleler
+
+							<span class="sub-list-icon">
+								<i class="fa-solid fa-chevron-down"></i>
+							</span>
+						</a>
+
+						<ul class="sub-menu">
+							<li>
+								<a href="/public/admin/articles/list.html">Makale Listesi</a>
+							</li>
+							<li><a href="/public/admin/articles/add.html">Makale ekle</a></li>
+						</ul>
+					</li>
+
+					<li class="page">
+						<a href="/public/admin/questions/questions-answer.html">
+							<span class="icon">
+								<i class="fa-solid fa-question"></i>
+							</span>
+							Soru & Cevap
+						</a>
+					</li>
+
+					<li class="page">
+						<a href="/public/admin/messages/messages.html">
+							<span class="icon">
+								<i class="fa-solid fa-message"></i>
+							</span>
+							Mesajlar
+
+							<span class="numberOf">18</span>
+						</a>
+					</li>
+
+					<li class="page">
+						<a href="/public/admin/inbox/inbox.html">
+							<span class="icon">
+								<i class="fa-solid fa-inbox"></i>
+							</span>
+							E-Postalarım
+						</a>
+					</li>
+
+					<li class="page">
+						<a href="/public/admin/errors/errors.html">
+							<span class="icon">
+								<i class="fa-solid fa-warning"></i>
+							</span>
+							Hatalar
+						</a>
+					</li>
+
+					<li class="page">
+						<a href="/public/admin/settings/settings.html">
+							<span class="icon">
+								<i class="fa-solid fa-cogs"></i>
+							</span>
+							Ayarlar
+						</a>
+					</li>
+				</ul>
+			</nav>
+
+			<div class="content">
+				<nav class="top">
+					<div class="left">
+						<div class="mr-3" id="open-page-menu">
+							<i class="fa-solid fa-bars"></i>
+
+							<ul class="page-list" id="page-list">
+								<span class="close-btn">
+									<i class="fa-solid fa-close"></i>
+								</span>
+
+								<li class="page active">
+									<a href="/public/admin/index.html">
+										<span class="icon">
+											<i class="fa-solid fa-house"></i>
+										</span>
+										Anasayfa
+									</a>
+								</li>
+
+								<li class="page">
+									<a href="javascript:void(0)">
+										<span class="icon">
+											<i class="fa-solid fa-users"></i>
+										</span>
+										Kullanıcılar
+
+										<span class="sub-list-icon">
+											<i class="fa-solid fa-chevron-down"></i>
+										</span>
+									</a>
+
+									<ul class="sub-menu">
+										<li>
+											<a href="/public/admin/users/list.html"
+												>Kullanıcı Listesi</a
+											>
+										</li>
+										<li>
+											<a href="/public/admin/users/add.html">Kullanıcı ekle</a>
+										</li>
+									</ul>
+								</li>
+
+								<li class="page">
+									<a href="javascript:void(0)">
+										<span class="icon">
+											<i class="fa-solid fa-book"></i>
+										</span>
+										Dersler
+
+										<span class="sub-list-icon">
+											<i class="fa-solid fa-chevron-down"></i>
+										</span>
+									</a>
+
+									<ul class="sub-menu">
+										<li>
+											<a href="/public/admin/lessons/add-lesson.html"
+												>Ders Ekle</a
+											>
+										</li>
+										<li>
+											<a href="/public/admin/lessons/html.html">Html</a>
+										</li>
+										<li><a href="/public/admin/lessons/css.html">Css</a></li>
+										<li>
+											<a href="/public/admin/lessons/scss.html">Scss</a>
+										</li>
+										<li><a href="/public/admin/lessons/js.html">Js</a></li>
+										<li>
+											<a href="/public/admin/lessons/react.html">React</a>
+										</li>
+										<li><a href="/public/admin/lessons/php.html">Php</a></li>
+										<li>
+											<a href="/public/admin/lessons/laravel.html">Laravel</a>
+										</li>
+										<li>
+											<a href="/public/admin/lessons/python.html">Python</a>
+										</li>
+										<li><a href="/public/admin/lessons/sql.html">Sql</a></li>
+									</ul>
+								</li>
+
+								<li class="page">
+									<a href="javascript:void(0)">
+										<span class="icon">
+											<i class="fa-solid fa-newspaper"></i>
+										</span>
+										Makaleler
+
+										<span class="sub-list-icon">
+											<i class="fa-solid fa-chevron-down"></i>
+										</span>
+									</a>
+
+									<ul class="sub-menu">
+										<li>
+											<a href="/public/admin/articles/list.html"
+												>Makale Listesi</a
+											>
+										</li>
+										<li>
+											<a href="/public/admin/articles/add.html">Makale ekle</a>
+										</li>
+									</ul>
+								</li>
+
+								<li class="page">
+									<a href="/public/admin/questions/questions-answer.html">
+										<span class="icon">
+											<i class="fa-solid fa-question"></i>
+										</span>
+										Soru & Cevap
+									</a>
+								</li>
+
+								<li class="page">
+									<a href="/public/admin/messages/messages.html">
+										<span class="icon">
+											<i class="fa-solid fa-message"></i>
+										</span>
+										Mesajlar
+									</a>
+								</li>
+
+								<li class="page">
+									<a href="/public/admin/inbox/inbox.html">
+										<span class="icon">
+											<i class="fa-solid fa-inbox"></i>
+										</span>
+										E-Postalarım
+									</a>
+								</li>
+
+								<li class="page">
+									<a href="/public/admin/errors/errors.html">
+										<span class="icon">
+											<i class="fa-solid fa-warning"></i>
+										</span>
+										Hatalar
+									</a>
+								</li>
+
+								<li class="page">
+									<a href="/public/admin/settings/settings.html">
+										<span class="icon">
+											<i class="fa-solid fa-cogs"></i>
+										</span>
+										Ayarlar
+									</a>
+								</li>
+							</ul>
+						</div>
+
+						<span class="icon red">
+							<i class="fa-solid fa-house"></i>
+						</span>
+						<ul class="page-link">
+							<li>Pages /</li>
+							<li>Anasayfa</li>
+						</ul>
+					</div>
+
+					<div class="center">
+						<div class="form-group">
+							<span class="icon"><i class="fa-solid fa-search"></i></span>
+							<input
+								type="search"
+								class="form-input search"
+								placeholder="Arayınız..."
+							/>
+						</div>
+					</div>
+
+					<ul class="right">
+						<li>
+							<i class="fa-regular fa-bell"></i>
+							<span class="numberOf">12</span>
+
+							<ul class="sub-menu">
+								<span class="menu-show-icon">
+									<i class="fa-solid fa-caret-up"></i>
+								</span>
+								<li>
+									<a href="#">
+										<img src="/assets/images/user/user-not-found.png" alt="" />
+										<span>
+											Meral Altınışık adlı yeni bir kullanıcı eklendi.
+										</span>
+									</a>
+								</li>
+
+								<li>
+									<a href="#">
+										<img src="/assets/images/user/user-not-found.png" alt="" />
+										<span
+											>Meral Altınışık adlı yeni bir kullanıcı eklendi.</span
+										>
+									</a>
+								</li>
+							</ul>
+						</li>
+
+						<li>
+							<i class="fa-regular fa-message"></i>
+							<span class="numberOf">8</span>
+
+							<ul class="sub-menu">
+								<span class="menu-show-icon">
+									<i class="fa-solid fa-caret-up"></i>
+								</span>
+								<li>
+									<a href="#">
+										<img src="/assets/images/user/user-not-found.png" alt="" />
+										<span> Meral Altınışık kullanıcıdan yeni bir mesaj. </span>
+									</a>
+								</li>
+
+								<li>
+									<a href="#">
+										<img src="/assets/images/user/user-not-found.png" alt="" />
+										<span>Meral Altınışık kullanıcıdan yeni bir mesaj.</span>
+									</a>
+								</li>
+							</ul>
+						</li>
+
+						<li class="user-menu">
+							<img src="/assets/images/user/user-not-found.png" alt="" />
+							<span class="name">Murat Altınışık</span>
+							<span class="icon">
+								<i class="fa-solid fa-chevron-down"></i>
+							</span>
+
+							<ul class="sub-menu account">
+								<span class="menu-show-icon">
+									<i class="fa-solid fa-caret-up"></i>
+								</span>
+
+								<li>
+									<a href="#" class="exit">
+										<i class="fa-solid fa-door-open"></i>
+										<span>Çıkış Yap</span>
+									</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+
+				<div class="container">
+					<div class="flex-content">
+						<div class="grid grid-p">
+							<div class="card">
+								<div class="detail">
+									<div class="title">Kullanıcı Sayısı</div>
+									<div class="count">128</div>
+								</div>
+								<span class="icon">
+									<i class="fa-solid fa-users"></i>
+								</span>
+							</div>
+
+							<div class="card">
+								<div class="detail">
+									<div class="title">Dersler</div>
+									<div class="count">128</div>
+								</div>
+								<span class="icon">
+									<i class="fa-solid fa-share-square"></i>
+								</span>
+							</div>
+
+							<div class="card">
+								<div class="detail">
+									<div class="title">Makaleler</div>
+									<div class="count">128</div>
+								</div>
+								<span class="icon">
+									<i class="fa-solid fa-newspaper"></i>
+								</span>
+							</div>
+
+							<div class="card">
+								<div class="detail">
+									<div class="title">Soru & Cevap</div>
+									<div class="count">128</div>
+								</div>
+								<span class="icon">
+									<i class="fa-solid fa-question-circle"></i>
+								</span>
+							</div>
+
+							<div class="card">
+								<div class="detail">
+									<div class="title">Mesajlar</div>
+									<div class="count">Okunmamış: <span>3</span></div>
+								</div>
+								<span class="icon">
+									<i class="fa-solid fa-message"></i>
+								</span>
+							</div>
+
+							<div class="card">
+								<div class="detail">
+									<div class="title">Hatalar</div>
+									<div class="count">Çözülmemiş: <span>3</span></div>
+								</div>
+								<span class="icon">
+									<i class="fa-solid fa-warning"></i>
+								</span>
+							</div>
+
+							<div class="card">
+								<div class="detail">
+									<div class="title">İnstagram</div>
+									<div class="count">Takipçiler: <span>421</span></div>
+								</div>
+								<span class="icon socialMedia">
+									<i class="fa-brands fa-instagram"></i>
+								</span>
+							</div>
+
+							<div class="card">
+								<div class="detail">
+									<div class="title">Youtube</div>
+									<div class="count">Aboneler: <span>421</span></div>
+								</div>
+								<span class="icon socialMedia">
+									<i class="fa-brands fa-youtube"></i>
+								</span>
+							</div>
+						</div>
+
+						<div class="grid">
+							<div class="box">
+								<div class="title">Haftalık Yeni Kullanıcı Sayısı: 28</div>
+								<canvas id="lineChart"></canvas>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="container tables-container">
+					<div class="table">
+						<div
+							class="relative flex flex-col break-words bg-white shadow-lg rounded"
+						>
+							<div class="rounded-t mb-0 px-4 py-3 border-0">
+								<div class="flex flex-wrap items-center">
+									<div class="relative px-4 flex-grow flex-1">
+										<h3 class="font-semibold text-base text-blueGray-700">
+											Page Visits
+										</h3>
+									</div>
+									<div class="relative px-4 flex-grow flex-1 text-right">
+										<button
+											class="bg-indigo-500 text-white active:bg-indigo-600 text-xs font-bold uppercase px-3 py-1 rounded outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+											type="button"
+										>
+											See all
+										</button>
+									</div>
+								</div>
+							</div>
+
+							<div class="block overflow-x-auto">
+								<table class="items-center bg-transparent border-collapse">
+									<thead>
+										<tr>
+											<th
+												class="px-6 bg-blueGray-50 text-blueGray-500 align-middle border border-solid border-blueGray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left"
+											>
+												Page name
+											</th>
+											<th
+												class="px-6 bg-blueGray-50 text-blueGray-500 align-middle border border-solid border-blueGray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left"
+											>
+												Visitors
+											</th>
+											<th
+												class="px-6 bg-blueGray-50 text-blueGray-500 align-middle border border-solid border-blueGray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left"
+											>
+												Unique users
+											</th>
+											<th
+												class="px-6 bg-blueGray-50 text-blueGray-500 align-middle border border-solid border-blueGray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left"
+											>
+												Bounce rate
+											</th>
+										</tr>
+									</thead>
+
+									<tbody>
+										<tr>
+											<th
+												class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left text-blueGray-700"
+											>
+												/argon/
+											</th>
+											<td
+												class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+											>
+												4,569
+											</td>
+											<td
+												class="border-t-0 px-6 align-center border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+											>
+												340
+											</td>
+											<td
+												class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+											>
+												<i class="fas fa-arrow-up text-emerald-500 mr-4"></i>
+												46,53%
+											</td>
+										</tr>
+										<tr>
+											<th
+												class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left text-blueGray-700"
+											>
+												/argon/index.html
+											</th>
+											<td
+												class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+											>
+												3,985
+											</td>
+											<td
+												class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+											>
+												319
+											</td>
+											<td
+												class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+											>
+												<i class="fas fa-arrow-down text-orange-500 mr-4"></i>
+												46,53%
+											</td>
+										</tr>
+										<tr>
+											<th
+												class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left text-blueGray-700"
+											>
+												/argon/charts.html
+											</th>
+											<td
+												class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+											>
+												3,513
+											</td>
+											<td
+												class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+											>
+												294
+											</td>
+											<td
+												class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+											>
+												<i class="fas fa-arrow-down text-orange-500 mr-4"></i>
+												36,49%
+											</td>
+										</tr>
+										<tr>
+											<th
+												class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left text-blueGray-700"
+											>
+												/argon/tables.html
+											</th>
+											<td
+												class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+											>
+												2,050
+											</td>
+											<td
+												class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+											>
+												147
+											</td>
+											<td
+												class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+											>
+												<i class="fas fa-arrow-up text-emerald-500 mr-4"></i>
+												50,87%
+											</td>
+										</tr>
+										<tr>
+											<th
+												class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left text-blueGray-700"
+											>
+												/argon/profile.html
+											</th>
+											<td
+												class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+											>
+												1,795
+											</td>
+											<td
+												class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+											>
+												190
+											</td>
+											<td
+												class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+											>
+												<i class="fas fa-arrow-down text-red-500 mr-4"></i>
+												46,53%
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+
+					<div class="table">
+						<div
+							class="relative flex flex-col break-words bg-white shadow-lg rounded"
+						>
+							<div class="rounded-t mb-0 px-4 py-3 border-0">
+								<div class="flex flex-wrap items-center">
+									<div class="relative px-4 flex-grow flex-1">
+										<h3 class="font-semibold text-base text-blueGray-700">
+											Page Visits
+										</h3>
+									</div>
+									<div class="relative px-4 flex-grow flex-1 text-right">
+										<button
+											class="bg-indigo-500 text-white active:bg-indigo-600 text-xs font-bold uppercase px-3 py-1 rounded outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+											type="button"
+										>
+											See all
+										</button>
+									</div>
+								</div>
+							</div>
+
+							<div class="block overflow-x-auto">
+								<table class="items-center bg-transparent border-collapse">
+									<thead>
+										<tr>
+											<th
+												class="px-6 bg-blueGray-50 text-blueGray-500 align-middle border border-solid border-blueGray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left"
+											>
+												Page name
+											</th>
+											<th
+												class="px-6 bg-blueGray-50 text-blueGray-500 align-middle border border-solid border-blueGray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left"
+											>
+												Visitors
+											</th>
+											<th
+												class="px-6 bg-blueGray-50 text-blueGray-500 align-middle border border-solid border-blueGray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left"
+											>
+												Unique users
+											</th>
+											<th
+												class="px-6 bg-blueGray-50 text-blueGray-500 align-middle border border-solid border-blueGray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left"
+											>
+												Bounce rate
+											</th>
+										</tr>
+									</thead>
+
+									<tbody>
+										<tr>
+											<th
+												class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left text-blueGray-700"
+											>
+												/argon/
+											</th>
+											<td
+												class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+											>
+												4,569
+											</td>
+											<td
+												class="border-t-0 px-6 align-center border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+											>
+												340
+											</td>
+											<td
+												class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+											>
+												<i class="fas fa-arrow-up text-emerald-500 mr-4"></i>
+												46,53%
+											</td>
+										</tr>
+										<tr>
+											<th
+												class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left text-blueGray-700"
+											>
+												/argon/index.html
+											</th>
+											<td
+												class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+											>
+												3,985
+											</td>
+											<td
+												class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+											>
+												319
+											</td>
+											<td
+												class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+											>
+												<i class="fas fa-arrow-down text-orange-500 mr-4"></i>
+												46,53%
+											</td>
+										</tr>
+										<tr>
+											<th
+												class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left text-blueGray-700"
+											>
+												/argon/charts.html
+											</th>
+											<td
+												class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+											>
+												3,513
+											</td>
+											<td
+												class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+											>
+												294
+											</td>
+											<td
+												class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+											>
+												<i class="fas fa-arrow-down text-orange-500 mr-4"></i>
+												36,49%
+											</td>
+										</tr>
+										<tr>
+											<th
+												class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left text-blueGray-700"
+											>
+												/argon/tables.html
+											</th>
+											<td
+												class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+											>
+												2,050
+											</td>
+											<td
+												class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+											>
+												147
+											</td>
+											<td
+												class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+											>
+												<i class="fas fa-arrow-up text-emerald-500 mr-4"></i>
+												50,87%
+											</td>
+										</tr>
+										<tr>
+											<th
+												class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left text-blueGray-700"
+											>
+												/argon/profile.html
+											</th>
+											<td
+												class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+											>
+												1,795
+											</td>
+											<td
+												class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+											>
+												190
+											</td>
+											<td
+												class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+											>
+												<i class="fas fa-arrow-down text-red-500 mr-4"></i>
+												46,53%
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<footer class="footer-container">
+					<p class="version">V1.0</p>
+				</footer>
+			</div>
+		</main>
+
+		<!-- FONT AWESOME & JQUERY -->
+		<script src="/assets/plugin/icons/js/all.min.js"></script>
+		<script src="/assets/plugin/jquery.js"></script>
+
+		<!-- CHART JS -->
+		<script src="/assets/plugin/chart/chart.js"></script>
+
+		<script>
+			const ctx = document.getElementById('lineChart');
+
+			new Chart(ctx, {
+				type: 'line',
+				data: {
+					labels: [
+						'Pazartesi',
+						'Salu',
+						'Çarşamba',
+						'Perşembe',
+						'Cumar',
+						'Cumartesi',
+						'Pazar',
+					],
+					datasets: [
+						{
+							label: '# of Votes',
+							data: [12, 19, 3, 5, 2, 3, 24],
+							borderWidth: 1,
+						},
+					],
+				},
+				options: {
+					scales: {
+						y: {
+							beginAtZero: true,
+						},
+					},
+				},
+			});
+		</script>
+
+		<!-- HEADER SCRIPTS -->
+		<script src="/assets/scripts/admin/header/page-list.menu.js"></script>
+		<script src="/assets/scripts/admin/header/top-right-menu.js"></script>
+
+		<script>
+			$(document).ready(function () {
+				$('#open-page-menu').click(function (e) {
+					$('#open-page-menu .page-list').css({
+						padding: '1rem',
+						width: '100%',
+					});
+				});
+
+				$('.page-list .close-btn').click(function (e) {
+					e.stopPropagation();
+					$('#open-page-menu .page-list').css({
+						padding: '0',
+						width: '0',
+					});
+				});
+			});
+		</script>
+	</body>
+</html>

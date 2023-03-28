@@ -1,0 +1,61 @@
+.green-btn {
+  border: none;
+  color: #fff;
+  padding: 7px 16px;
+  border-radius: 5px;
+  font-weight: 600;
+  background-color: var(--greenOpacity);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-decoration: none;
+  font-size: 14px;
+  display: block;
+  width: -moz-max-content;
+  width: max-content;
+}
+.green-btn:hover {
+  box-shadow: 0 0 3px var(--green);
+  background-color: var(--green);
+}
+
+.white-btn {
+  color: #000;
+  text-decoration: none;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.red-btn {
+  display: inline-block;
+  padding: 8px 12px;
+  font-weight: 600;
+  font-size: 12px;
+  border-radius: 3px;
+  cursor: pointer;
+  color: #fff;
+  border: none;
+  transition: all 0.2s ease;
+  background-color: rgba(255, 0, 0, 0.526);
+}
+.red-btn:hover {
+  background-color: red;
+}
+
+.yellow-btn {
+  display: inline-block;
+  padding: 8px 12px;
+  font-weight: 600;
+  font-size: 12px;
+  border-radius: 3px;
+  cursor: pointer;
+  color: #fff;
+  border: none;
+  transition: all 0.2s ease;
+  background-color: rgba(255, 255, 0, 0.595);
+}
+.yellow-btn:hover {
+  background-color: gold;
+}/*# sourceMappingURL=button.css.map */

@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="tr">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<!-- MAIN CSS -->
+		<link rel="stylesheet" href="/assets/scss/main.css" />
+		<!-- HOMEPAGE CSS -->
+		<link
+			rel="stylesheet"
+			href="/assets/scss/components/adminHeader/header.css"
+		/>
+		<link rel="stylesheet" href="/assets/scss/admin/addpage/section.css" />
+		<link rel="stylesheet" href="/assets/scss/admin/homepage/footer.css" />
+		<!-- TAILWIND CSS -->
+		<link rel="stylesheet" href="/assets/plugin/tailwind/tailwind.min.css" />
+	</head>
+	<body>
+		<!-- MAIN CONTAINER -->
+		<main id="MainContainer">
+			<nav class="pages">
+				<h1 class="title">Murat Altınışık</h1>
+
+				<ul class="page-list" id="page-list">
+					<li class="page">
+						<a href="/public/admin/index.html">
+							<span class="icon">
+								<i class="fa-solid fa-house"></i>
+							</span>
+							Anasayfa
+						</a>
+					</li>
+
+					<li class="page active">
+						<a href="javascript:void(0)">
+							<span class="icon">
+								<i class="fa-solid fa-users"></i>
+							</span>
+							Kullanıcılar
+
+							<span class="sub-list-icon">
+								<i class="fa-solid fa-chevron-down"></i>
+							</span>
+						</a>
+
+						<ul class="sub-menu active">
+							<li>
+								<a href="/public/admin/users/list.html">Kullanıcı Listesi</a>
+							</li>
+							<li>
+								<a href="/public/admin/users/add.html" class="active"
+									>Kullanıcı ekle</a
+								>
+							</li>
+						</ul>
+					</li>
+
+					<li class="page">
+						<a href="javascript:void(0)">
+							<span class="icon">
+								<i class="fa-solid fa-book"></i>
+							</span>
+							Dersler
+
+							<span class="sub-list-icon">
+								<i class="fa-solid fa-chevron-down"></i>
+							</span>
+						</a>
+
+						<ul class="sub-menu">
+							<li>
+								<a href="/public/admin/lessons/add-lesson.html">Ders Ekle</a>
+							</li>
+							<li><a href="/public/admin/lessons/html.html">Html</a></li>
+							<li><a href="/public/admin/lessons/css.html">Css</a></li>
+							<li><a href="/public/admin/lessons/scss.html">Scss</a></li>
+							<li><a href="/public/admin/lessons/js.html">Js</a></li>
+							<li><a href="/public/admin/lessons/react.html">React</a></li>
+							<li><a href="/public/admin/lessons/php.html">Php</a></li>
+							<li><a href="/public/admin/lessons/laravel.html">Laravel</a></li>
+							<li><a href="/public/admin/lessons/python.html">Python</a></li>
+							<li><a href="/public/admin/lessons/sql.html">Sql</a></li>
+						</ul>
+					</li>
+
+					<li class="page">
+						<a href="javascript:void(0)">
+							<span class="icon">
+								<i class="fa-solid fa-newspaper"></i>
+							</span>
+							Makaleler
+
+							<span class="sub-list-icon">
+								<i class="fa-solid fa-chevron-down"></i>
+							</span>
+						</a>
+
+						<ul class="sub-menu">
+							<li>
+								<a href="/public/admin/articles/list.html">Makale Listesi</a>
+							</li>
+							<li><a href="/public/admin/articles/add.html">Makale ekle</a></li>
+						</ul>
+					</li>
+
+					<li class="page">
+						<a href="/public/admin/questions/questions-answer.html">
+							<span class="icon">
+								<i class="fa-solid fa-question"></i>
+							</span>
+							Soru & Cevap
+						</a>
+					</li>
+
+					<li class="page">
+						<a href="/public/admin/messages/messages.html">
+							<span class="icon">
+								<i class="fa-solid fa-message"></i>
+							</span>
+							Mesajlar
+
+							<span class="numberOf">18</span>
+						</a>
+					</li>
+
+					<li class="page">
+						<a href="/public/admin/inbox/inbox.html">
+							<span class="icon">
+								<i class="fa-solid fa-inbox"></i>
+							</span>
+							E-Postalarım
+						</a>
+					</li>
+
+					<li class="page">
+						<a href="/public/admin/errors/errors.html">
+							<span class="icon">
+								<i class="fa-solid fa-warning"></i>
+							</span>
+							Hatalar
+						</a>
+					</li>
+
+					<li class="page">
+						<a href="/public/admin/settings/settings.html">
+							<span class="icon">
+								<i class="fa-solid fa-cogs"></i>
+							</span>
+							Ayarlar
+						</a>
+					</li>
+				</ul>
+			</nav>
+
+			<div class="content" id="AddPageContainer">
+				<nav class="top">
+					<div class="left">
+						<span class="icon red">
+							<i class="fa-solid fa-house"></i>
+						</span>
+						<ul class="page-link">
+							<li>Pages /</li>
+							<li>Kullanıcılar</li>
+						</ul>
+					</div>
+
+					<div class="center">
+						<div class="form-group">
+							<span class="icon"><i class="fa-solid fa-search"></i></span>
+							<input
+								type="search"
+								class="form-input search"
+								placeholder="Arayınız..."
+							/>
+						</div>
+					</div>
+
+					<ul class="right">
+						<li>
+							<i class="fa-regular fa-bell"></i>
+							<span class="numberOf">12</span>
+
+							<ul class="sub-menu">
+								<span class="menu-show-icon">
+									<i class="fa-solid fa-caret-up"></i>
+								</span>
+								<li>
+									<a href="#">
+										<img src="/assets/images/user/user-not-found.png" alt="" />
+										<span>
+											Meral Altınışık adlı yeni bir kullanıcı eklendi.
+										</span>
+									</a>
+								</li>
+
+								<li>
+									<a href="#">
+										<img src="/assets/images/user/user-not-found.png" alt="" />
+										<span
+											>Meral Altınışık adlı yeni bir kullanıcı eklendi.</span
+										>
+									</a>
+								</li>
+							</ul>
+						</li>
+
+						<li>
+							<i class="fa-regular fa-message"></i>
+							<span class="numberOf">8</span>
+
+							<ul class="sub-menu">
+								<span class="menu-show-icon">
+									<i class="fa-solid fa-caret-up"></i>
+								</span>
+								<li>
+									<a href="#">
+										<img src="/assets/images/user/user-not-found.png" alt="" />
+										<span> Meral Altınışık kullanıcıdan yeni bir mesaj. </span>
+									</a>
+								</li>
+
+								<li>
+									<a href="#">
+										<img src="/assets/images/user/user-not-found.png" alt="" />
+										<span>Meral Altınışık kullanıcıdan yeni bir mesaj.</span>
+									</a>
+								</li>
+							</ul>
+						</li>
+
+						<li class="user-menu">
+							<img src="/assets/images/user/user-not-found.png" alt="" />
+							<span class="name">Murat Altınışık</span>
+							<span class="icon">
+								<i class="fa-solid fa-chevron-down"></i>
+							</span>
+
+							<ul class="sub-menu account">
+								<span class="menu-show-icon">
+									<i class="fa-solid fa-caret-up"></i>
+								</span>
+
+								<li>
+									<a href="#" class="exit">
+										<i class="fa-solid fa-door-open"></i>
+										<span>Çıkış Yap</span>
+									</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+
+				<div
+					class="p-8 space-y-4"
+					style="position: absolute; top: 5rem; right: 0"
+				>
+					<!-- <div class="flex w-96 shadow-lg rounded-lg">
+						<div class="bg-blue-500 py-4 px-6 rounded-l-lg flex items-center">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								class="fill-current text-white"
+								viewBox="0 0 16 16"
+								width="20"
+								height="20"
+							>
+								<path
+									fill-rule="evenodd"
+									d="M8 1.5a6.5 6.5 0 100 13 6.5 6.5 0 000-13zM0 8a8 8 0 1116 0A8 8 0 010 8zm6.5-.25A.75.75 0 017.25 7h1a.75.75 0 01.75.75v2.75h.25a.75.75 0 010 1.5h-2a.75.75 0 010-1.5h.25v-2h-.25a.75.75 0 01-.75-.75zM8 6a1 1 0 100-2 1 1 0 000 2z"
+								></path>
+							</svg>
+						</div>
+						<div
+							class="px-4 py-6 bg-white rounded-r-lg flex justify-between items-center w-full border border-l-transparent border-gray-200"
+						>
+							<div>Default / info alert</div>
+							<button>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									class="fill-current text-gray-700"
+									viewBox="0 0 16 16"
+									width="20"
+									height="20"
+								>
+									<path
+										fill-rule="evenodd"
+										d="M3.72 3.72a.75.75 0 011.06 0L8 6.94l3.22-3.22a.75.75 0 111.06 1.06L9.06 8l3.22 3.22a.75.75 0 11-1.06 1.06L8 9.06l-3.22 3.22a.75.75 0 01-1.06-1.06L6.94 8 3.72 4.78a.75.75 0 010-1.06z"
+									></path>
+								</svg>
+							</button>
+						</div>
+					</div> -->
+
+					<div class="flex w-96 shadow-lg rounded-lg alert-dialog">
+						<div class="bg-green-600 py-4 px-6 rounded-l-lg flex items-center">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								class="text-white fill-current"
+								viewBox="0 0 16 16"
+								width="20"
+								height="20"
+							>
+								<path
+									fill-rule="evenodd"
+									d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z"
+								></path>
+							</svg>
+						</div>
+
+						<div
+							class="px-4 py-6 bg-white rounded-r-lg flex justify-between items-center w-full border border-l-transparent border-gray-200"
+						>
+							<div>Success alert</div>
+
+							<button id="alert-dialog-close">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									class="fill-current text-gray-700"
+									viewBox="0 0 16 16"
+									width="20"
+									height="20"
+								>
+									<path
+										fill-rule="evenodd"
+										d="M3.72 3.72a.75.75 0 011.06 0L8 6.94l3.22-3.22a.75.75 0 111.06 1.06L9.06 8l3.22 3.22a.75.75 0 11-1.06 1.06L8 9.06l-3.22 3.22a.75.75 0 01-1.06-1.06L6.94 8 3.72 4.78a.75.75 0 010-1.06z"
+									></path>
+								</svg>
+							</button>
+						</div>
+					</div>
+
+					<!-- <div class="flex w-96 shadow-lg rounded-lg">
+						<div class="bg-yellow-600 py-4 px-6 rounded-l-lg flex items-center">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								viewBox="0 0 16 16"
+								class="fill-current text-white"
+								width="20"
+								height="20"
+							>
+								<path
+									fill-rule="evenodd"
+									d="M8.22 1.754a.25.25 0 00-.44 0L1.698 13.132a.25.25 0 00.22.368h12.164a.25.25 0 00.22-.368L8.22 1.754zm-1.763-.707c.659-1.234 2.427-1.234 3.086 0l6.082 11.378A1.75 1.75 0 0114.082 15H1.918a1.75 1.75 0 01-1.543-2.575L6.457 1.047zM9 11a1 1 0 11-2 0 1 1 0 012 0zm-.25-5.25a.75.75 0 00-1.5 0v2.5a.75.75 0 001.5 0v-2.5z"
+								></path>
+							</svg>
+						</div>
+						<div
+							class="px-4 py-6 bg-white rounded-r-lg flex justify-between items-center w-full border border-l-transparent border-gray-200"
+						>
+							<div>Warning alert</div>
+							<button>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									class="fill-current text-gray-700"
+									viewBox="0 0 16 16"
+									width="20"
+									height="20"
+								>
+									<path
+										fill-rule="evenodd"
+										d="M3.72 3.72a.75.75 0 011.06 0L8 6.94l3.22-3.22a.75.75 0 111.06 1.06L9.06 8l3.22 3.22a.75.75 0 11-1.06 1.06L8 9.06l-3.22 3.22a.75.75 0 01-1.06-1.06L6.94 8 3.72 4.78a.75.75 0 010-1.06z"
+									></path>
+								</svg>
+							</button>
+						</div>
+					</div> -->
+
+					<!-- <div class="flex w-96 shadow-lg rounded-lg">
+						<div class="bg-red-600 py-4 px-6 rounded-l-lg flex items-center">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								viewBox="0 0 16 16"
+								class="fill-current text-white"
+								width="20"
+								height="20"
+							>
+								<path
+									fill-rule="evenodd"
+									d="M4.47.22A.75.75 0 015 0h6a.75.75 0 01.53.22l4.25 4.25c.141.14.22.331.22.53v6a.75.75 0 01-.22.53l-4.25 4.25A.75.75 0 0111 16H5a.75.75 0 01-.53-.22L.22 11.53A.75.75 0 010 11V5a.75.75 0 01.22-.53L4.47.22zm.84 1.28L1.5 5.31v5.38l3.81 3.81h5.38l3.81-3.81V5.31L10.69 1.5H5.31zM8 4a.75.75 0 01.75.75v3.5a.75.75 0 01-1.5 0v-3.5A.75.75 0 018 4zm0 8a1 1 0 100-2 1 1 0 000 2z"
+								></path>
+							</svg>
+						</div>
+						<div
+							class="px-4 py-6 bg-white rounded-r-lg flex justify-between items-center w-full border border-l-transparent border-gray-200"
+						>
+							<div>Danger alert</div>
+							<button>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									class="fill-current text-gray-700"
+									viewBox="0 0 16 16"
+									width="20"
+									height="20"
+								>
+									<path
+										fill-rule="evenodd"
+										d="M3.72 3.72a.75.75 0 011.06 0L8 6.94l3.22-3.22a.75.75 0 111.06 1.06L9.06 8l3.22 3.22a.75.75 0 11-1.06 1.06L8 9.06l-3.22 3.22a.75.75 0 01-1.06-1.06L6.94 8 3.72 4.78a.75.75 0 010-1.06z"
+									></path>
+								</svg>
+							</button>
+						</div>
+					</div> -->
+				</div>
+
+				<div class="container form">
+					<div class="title">
+						Kullanıcı Ekle
+						<hr />
+					</div>
+
+					<form>
+						<div class="flex flex-wrap -mx-3 mb-6">
+							<div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+								<label
+									class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+								>
+									Adı
+								</label>
+								<input
+									type="text"
+									placeholder="Adı"
+									class="appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+								/>
+								<!-- <p class="text-red-500 text-xs italic">
+									Please fill out this field.
+								</p> -->
+							</div>
+
+							<div class="w-full md:w-1/2 px-3">
+								<label
+									class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+									for="grid-last-name"
+								>
+									Soyadı
+								</label>
+								<input
+									class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+									id="grid-last-name"
+									type="text"
+									placeholder="Soyadı"
+								/>
+							</div>
+						</div>
+
+						<div class="flex flex-wrap -mx-3 mb-6">
+							<div class="w-full px-3">
+								<label
+									class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+								>
+									Email
+								</label>
+								<input
+									type="E-Posta"
+									placeholder="******************"
+									class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+								/>
+							</div>
+						</div>
+
+						<div class="flex flex-wrap -mx-3 mb-6">
+							<div class="w-full px-3">
+								<label
+									class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+								>
+									Şifre
+								</label>
+								<input
+									type="password"
+									placeholder="******************"
+									class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+								/>
+							</div>
+						</div>
+
+						<div class="flex flex-wrap -mx-3 mb-6">
+							<div class="w-full px-3">
+								<label
+									class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+								>
+									Şifre Tekrar
+								</label>
+								<input
+									type="password"
+									placeholder="******************"
+									class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+								/>
+							</div>
+						</div>
+
+						<button
+							class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+							type="submit"
+						>
+							Kayıt Ol
+						</button>
+					</form>
+				</div>
+			</div>
+		</main>
+
+		<!-- FONT AWESOME & JQUERY -->
+		<script src="/assets/plugin/icons/js/all.min.js"></script>
+		<script src="/assets/plugin/jquery.js"></script>
+
+		<!-- HEADER SCRIPTS -->
+		<script src="/assets/scripts/admin/header/page-list.menu.js"></script>
+		<script src="/assets/scripts/admin/header/top-right-menu.js"></script>
+
+		<script>
+			$(document).ready(function () {
+				$('#alert-dialog-close').click(function () {
+					$('.alert-dialog').hide();
+				});
+			});
+		</script>
+	</body>
+</html>

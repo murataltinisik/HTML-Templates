@@ -1,0 +1,48 @@
+// PAGINATION
+.pagination {
+	display: flex;
+	justify-content: center;
+	margin-top: 10px;
+
+	ul {
+		display: flex;
+
+		li {
+			a {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				width: 2.5rem;
+				height: 2.5rem;
+				font-size: 12px;
+				border-radius: 5px;
+				margin-left: 5px;
+				background-color: #fff;
+				border: 1px solid #eee;
+				text-decoration: none;
+				transition: all 0.2s ease;
+				color: #000;
+
+				&:hover {
+					box-shadow: 0 0 6px #0000001f;
+				}
+			}
+
+			&.active {
+				a {
+					color: #fff;
+					font-weight: 900;
+					box-shadow: 0 0 6px #0000001f;
+					border-color: var(--green);
+					background-color: var(--green);
+				}
+			}
+
+			&:first-child {
+				a {
+					margin-left: 0;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,184 @@
+@import url("./responsive-2.css");
+@import url("../../components/CodeContainer/code-container.css");
+#SingleArticleSectionContainer {
+  width: 65%;
+  padding: 2rem;
+  margin: 4rem auto;
+  border-radius: 3px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.1411764706);
+}
+#SingleArticleSectionContainer .top .head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#SingleArticleSectionContainer .top .head .title {
+  font-size: 26px;
+  font-weight: 600;
+}
+#SingleArticleSectionContainer .top .head .playDemo {
+  color: #fff;
+  font-size: 14px;
+  padding: 8px 12px;
+  border-radius: 5px;
+  background-color: var(--green);
+  box-shadow: 0 9px 12px var(--green);
+  text-decoration: none;
+  transition: all 0.1s ease;
+}
+#SingleArticleSectionContainer .top .head .playDemo span {
+  font-weight: 600;
+}
+#SingleArticleSectionContainer .top .head .playDemo:hover {
+  box-shadow: 0 3px 6px var(--green);
+}
+#SingleArticleSectionContainer .top .article-menu {
+  padding: 12px;
+  margin-top: 1rem;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.1411764706);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#SingleArticleSectionContainer .top .article-menu .user {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+#SingleArticleSectionContainer .top .article-menu .user img {
+  width: 32px;
+  height: 32px;
+}
+#SingleArticleSectionContainer .top .article-menu .user span {
+  font-weight: 600;
+  font-size: 14px;
+  margin-left: 5px;
+}
+#SingleArticleSectionContainer .top .article-menu .nav {
+  display: flex;
+}
+#SingleArticleSectionContainer .top .article-menu .nav li {
+  padding: 8px 14px;
+  border-bottom: 3px solid #ccc;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+#SingleArticleSectionContainer .top .article-menu .nav li:hover {
+  text-decoration: underline;
+}
+#SingleArticleSectionContainer .top .article-menu .nav li.active {
+  font-weight: 600;
+}
+#SingleArticleSectionContainer .top .article-menu .nav li.html-active {
+  color: var(--red);
+  border-color: var(--red);
+  text-shadow: 0 0 3px var(--red);
+}
+#SingleArticleSectionContainer .top .article-menu .nav li.css-active {
+  color: var(--blue);
+  border-color: var(--blue);
+  text-shadow: 0 0 3px var(--blue);
+}
+#SingleArticleSectionContainer .top .article-menu .nav li.scss-active {
+  color: var(--orange);
+  border-color: var(--orange);
+  text-shadow: 0 0 3px var(--orange);
+}
+#SingleArticleSectionContainer .top .article-menu .nav li.js-active {
+  color: var(--yellow);
+  border-color: var(--yellow);
+  text-shadow: 0 0 3px var(--yellow);
+}
+#SingleArticleSectionContainer .top .article-menu .nav li.php-active {
+  color: var(--purple);
+  border-color: var(--purple);
+  text-shadow: 0 0 3px var(--purple);
+}
+#SingleArticleSectionContainer .top .article-menu .nav li.python-active {
+  color: var(--yellow);
+  border-color: var(--yellow);
+  text-shadow: 0 0 3px var(--yellow);
+}
+#SingleArticleSectionContainer .top .article-menu .nav li.mysql-active {
+  color: var(--darkgray);
+  border-color: var(--darkgray);
+  text-shadow: 0 0 3px var(--darkgray);
+}
+#SingleArticleSectionContainer .top .article-menu .nav li.laravel-active {
+  color: var(--red);
+  border-color: var(--red);
+  text-shadow: 0 0 3px var(--red);
+}
+#SingleArticleSectionContainer .top .article-menu .code-links {
+  display: flex;
+}
+#SingleArticleSectionContainer .top .article-menu .code-links a {
+  width: 2rem;
+  height: 2rem;
+  display: block;
+  text-decoration: none;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#SingleArticleSectionContainer .top .article-menu .code-links a:first-child {
+  margin-right: 10px;
+}
+#SingleArticleSectionContainer .top .article-menu .code-links a.instagram {
+  background-color: var(--red);
+  box-shadow: 0 0 3px var(--red);
+}
+#SingleArticleSectionContainer .top .article-menu .code-links a.github {
+  background-color: var(--black);
+  box-shadow: 0 0 3px var(--black);
+}
+#SingleArticleSectionContainer .content {
+  margin-top: 5px;
+}
+#SingleArticleSectionContainer .content .title {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+#SingleArticleSectionContainer .content .title.html {
+  color: var(--red);
+  text-shadow: 0 0 6px var(--red);
+}
+#SingleArticleSectionContainer .content .title.css {
+  color: var(--blue);
+  text-shadow: 0 0 6px var(--blue);
+}
+#SingleArticleSectionContainer .content .title.scss {
+  color: var(--orange);
+  text-shadow: 0 0 6px var(--orange);
+}
+#SingleArticleSectionContainer .content .title.js {
+  color: var(--yellow);
+  text-shadow: 0 0 6px var(--yellow);
+}
+#SingleArticleSectionContainer .content .title.php {
+  color: var(--purple);
+  text-shadow: 0 0 6px var(--purple);
+}
+#SingleArticleSectionContainer .content .title.laravel {
+  color: var(--red);
+  text-shadow: 0 0 6px var(--red);
+}
+#SingleArticleSectionContainer .content .title.mysql {
+  color: var(--darkgray);
+  text-shadow: 0 0 6px var(--darkgray);
+}
+#SingleArticleSectionContainer .content .title.python {
+  color: var(--yellow);
+  text-shadow: 0 0 6px var(--yellow);
+}
+#SingleArticleSectionContainer .content .text {
+  color: gray;
+  font-weight: 500;
+  font-size: 14px;
+  text-align: justify;
+}/*# sourceMappingURL=section2.css.map */

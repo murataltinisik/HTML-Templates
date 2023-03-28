@@ -1,0 +1,81 @@
+@mixin content($fontSizeH5: 10px, $fontSizeP: 8px) {
+	.icon {
+		font-size: 3rem !important;
+		margin-right: 1rem;
+	}
+
+	.content {
+		h5 {
+			font-size: $fontSizeH5 !important;
+		}
+		p {
+			font-size: $fontSizeP !important;
+		}
+	}
+
+	.white-btn {
+		font-size: 10px;
+		padding: 8px 10px;
+	}
+}
+
+// LAPTOP
+@media only screen and (min-width: 768px) and (max-width: 979px) {
+	#SectionContainer {
+		.socialMediaContainer {
+			.box {
+				width: 49% !important;
+				height: 120px !important;
+				padding: 0 1rem !important;
+			}
+
+			@include content;
+		}
+	}
+}
+
+// TABLET
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	#SectionContainer {
+		.socialMediaContainer {
+			flex-wrap: nowrap !important;
+			flex-direction: column;
+
+			.box {
+				width: 100% !important;
+				margin-top: 1rem;
+				height: 120px !important;
+				padding: 0 3rem !important;
+
+				@include content(12px, 10px);
+
+				&:nth-child(1) {
+					margin-top: 0;
+				}
+			}
+		}
+	}
+}
+
+// PHONE
+@media only screen and (max-width: 479px) {
+	#SectionContainer {
+		.socialMediaContainer {
+			flex-wrap: nowrap !important;
+			flex-direction: column;
+
+			.box {
+				width: 100% !important;
+				margin-top: 1rem;
+				height: 120px !important;
+				padding: 0 1rem !important;
+
+				@include content;
+
+				&:nth-child(1) {
+					margin-top: 0;
+				}
+			}
+		}
+	}
+}

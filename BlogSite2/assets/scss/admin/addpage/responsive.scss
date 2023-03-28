@@ -1,0 +1,17 @@
+// TABLE
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	#AddPageContainer {
+		.form {
+			width: 90% !important;
+		}
+	}
+}
+
+// PHONE
+@media only screen and (max-width: 479px) {
+	#AddPageContainer {
+		.form {
+			width: 90% !important;
+		}
+	}
+}

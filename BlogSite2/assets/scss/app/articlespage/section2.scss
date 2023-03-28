@@ -1,0 +1,219 @@
+// RESPONSIVE
+@import url('./responsive-2.css');
+
+// CODE CONTAINER
+@import url('../../components/CodeContainer/code-container.css');
+
+@mixin navActiveLink($color) {
+	color: var($color);
+	border-color: var($color);
+	text-shadow: 0 0 3px var($color);
+}
+
+@mixin activeTab($color) {
+	color: var($color);
+	text-shadow: 0 0 6px var($color);
+}
+
+// SINGLE ARTICLE SECTION
+#SingleArticleSectionContainer {
+	width: 65%;
+	padding: 2rem;
+	margin: 4rem auto;
+	border-radius: 3px;
+	box-shadow: 0 0 6px #00000024;
+
+	// TOP
+	.top {
+		// HEAD
+		.head {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+
+			.title {
+				font-size: 26px;
+				font-weight: 600;
+			}
+
+			.playDemo {
+				color: #fff;
+				font-size: 14px;
+				padding: 8px 12px;
+				border-radius: 5px;
+				background-color: var(--green);
+				box-shadow: 0 9px 12px var(--green);
+				text-decoration: none;
+				transition: all 0.1s ease;
+
+				span {
+					font-weight: 600;
+				}
+
+				&:hover {
+					box-shadow: 0 3px 6px var(--green);
+				}
+			}
+		}
+
+		// ARTICLE MENU
+		.article-menu {
+			padding: 12px;
+			margin-top: 1rem;
+			border-radius: 5px;
+			background-color: #fff;
+			box-shadow: 0 0 6px #00000024;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+
+			.user {
+				display: flex;
+				justify-content: flex-start;
+				align-items: center;
+
+				img {
+					width: 32px;
+					height: 32px;
+				}
+
+				span {
+					font-weight: 600;
+					font-size: 14px;
+					margin-left: 5px;
+				}
+			}
+
+			.nav {
+				display: flex;
+
+				li {
+					padding: 8px 14px;
+					border-bottom: 3px solid #ccc;
+					cursor: pointer;
+					transition: all 0.2s ease;
+
+					&:hover {
+						text-decoration: underline;
+					}
+
+					&.active {
+						font-weight: 600;
+					}
+
+					&.html-active {
+						@include navActiveLink(--red);
+					}
+
+					&.css-active {
+						@include navActiveLink(--blue);
+					}
+
+					&.scss-active {
+						@include navActiveLink(--orange);
+					}
+
+					&.js-active {
+						@include navActiveLink(--yellow);
+					}
+
+					&.php-active {
+						@include navActiveLink(--purple);
+					}
+
+					&.python-active {
+						@include navActiveLink(--yellow);
+					}
+
+					&.mysql-active {
+						@include navActiveLink(--darkgray);
+					}
+
+					&.laravel-active {
+						@include navActiveLink(--red);
+					}
+				}
+			}
+
+			.code-links {
+				display: flex;
+
+				a {
+					width: 2rem;
+					height: 2rem;
+					display: block;
+					text-decoration: none;
+					border-radius: 3px;
+					color: #fff;
+					font-size: 20px;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+
+					&:first-child {
+						margin-right: 10px;
+					}
+
+					&.instagram {
+						background-color: var(--red);
+						box-shadow: 0 0 3px var(--red);
+					}
+
+					&.github {
+						background-color: var(--black);
+						box-shadow: 0 0 3px var(--black);
+					}
+				}
+			}
+		}
+	}
+
+	// CONTENT
+	.content {
+		margin-top: 5px;
+
+		.title {
+			font-size: 2.5rem;
+			font-weight: 600;
+
+			&.html {
+				@include activeTab(--red);
+			}
+
+			&.css {
+				@include activeTab(--blue);
+			}
+
+			&.scss {
+				@include activeTab(--orange);
+			}
+
+			&.js {
+				@include activeTab(--yellow);
+			}
+
+			&.php {
+				@include activeTab(--purple);
+			}
+
+			&.laravel {
+				@include activeTab(--red);
+			}
+
+			&.mysql {
+				@include activeTab(--darkgray);
+			}
+
+			&.python {
+				@include activeTab(--yellow);
+			}
+		}
+
+		.text {
+			color: gray;
+			font-weight: 500;
+			font-size: 14px;
+			text-align: justify;
+		}
+	}
+}

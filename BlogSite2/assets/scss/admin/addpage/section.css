@@ -1,0 +1,32 @@
+@import url("./responsive.css");
+#AddPageContainer .form {
+  margin-top: 3rem !important;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #eee;
+  margin: 0 auto;
+  padding: 2rem;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.1411764706);
+}
+#AddPageContainer .form .title {
+  padding: 8px 0;
+  padding-top: 0;
+  font-weight: 600;
+  font-size: 24px;
+  width: 100%;
+  text-align: left;
+}
+#AddPageContainer .form .title hr {
+  margin-top: 8px;
+}
+#AddPageContainer .form form {
+  width: 100%;
+}
+#AddPageContainer .ck-editor__editable[role=textbox] {
+  min-height: 200px;
+}/*# sourceMappingURL=section.css.map */

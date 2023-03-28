@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="tr">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Murat Altınışık - Anasayfa</title>
+		<!-- MAIN CSS -->
+		<link rel="stylesheet" href="/assets/scss/main.css" />
+		<!-- HEADER CSS -->
+		<link rel="stylesheet" href="/assets/scss/components/header/header.css" />
+		<!-- SECTION CSS -->
+		<link rel="stylesheet" href="/assets/scss/app/messagepage/section.css" />
+		<!-- FOOTER CSS -->
+		<link rel="stylesheet" href="/assets/scss/components/footer/footer.css" />
+		<!-- SWIPPER CSS -->
+		<link
+			rel="stylesheet"
+			href="/assets/plugin/swipper/css/swiper-bundle.min.css"
+		/>
+	</head>
+	<body>
+		<!-- HEADER CONTAINER -->
+		<header id="HeaderContainer">
+			<div class="container">
+				<!-- RESPONSIVE MENU -->
+				<div class="responsive-menu" id="responsive-menu">
+					<div class="open-icon icon"><i class="fa-solid fa-bars"></i></div>
+
+					<div class="menu">
+						<div class="close-icon icon">
+							<i class="fa-solid fa-xmark"></i>
+						</div>
+
+						<ul>
+							<li class="active"><a href="index.html">Anasayfa</a></li>
+							<li><a href="javascript:void(0)">Makaleler</a></li>
+							<li>
+								<a href="javascript:void(0)" id="sub-frontend-menu">Frontend</a>
+							</li>
+							<li>
+								<a href="javascript:void(0)" id="sub-backend-menu">Backend</a>
+							</li>
+							<li>
+								<a href="javascript:void(0)" id="sub-mobile-menu">Mobile</a>
+							</li>
+							<li>
+								<a href="javascript:void(0)" id="sub-database-menu">Database</a>
+							</li>
+							<li><a href="javascript:void(0)">Soru & Cevap</a></li>
+						</ul>
+
+						<div class="button">
+							<a href="./pages/auth/login.html" class="green-btn">
+								Giriş Yap
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<!-- LEFT -->
+				<div class="left">
+					<h1 class="title"><a href="index.html">Murat Altınışık</a></h1>
+
+					<div class="menu">
+						<ul>
+							<li class="active"><a href="index.html">Anasayfa</a></li>
+							<li><a href="./pages/articles/articles.html">Makaleler</a></li>
+							<li>
+								<a href="javascript:void(0)" id="sub-frontend-menu">Frontend</a>
+							</li>
+							<li>
+								<a href="javascript:void(0)" id="sub-backend-menu">Backend</a>
+							</li>
+							<li>
+								<a href="javascript:void(0)" id="sub-mobile-menu">Mobile</a>
+							</li>
+							<li>
+								<a href="javascript:void(0)" id="sub-database-menu">Database</a>
+							</li>
+							<li><a href="javascript:void(0)">Soru & Cevap</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<!-- RIGHT -->
+				<div class="right">
+					<div class="search">
+						<span><i class="fa-solid fa-magnifying-glass"></i></span>
+						<input type="text" placeholder="Ara" />
+					</div>
+					<div class="button">
+						<a href="./pages/auth/login.html" class="green-btn">Giriş Yap</a>
+					</div>
+					<div class="user-menu" id="open-user-menu">
+						<i class="fa-solid fa-circle-user"></i>
+
+						<ul class="list">
+							<span class="icon">
+								<i class="fa-solid fa-sort-up"></i>
+							</span>
+							<li>
+								<a href="javasctipt:void(0)">
+									<span><i class="fa-solid fa-address-card"></i></span>
+									Profilim
+								</a>
+							</li>
+							<li>
+								<a href="javasctipt:void(0)">
+									<span><i class="fa-solid fa-bookmark"></i></span>
+									Favorilerim
+								</a>
+							</li>
+							<li>
+								<a href="javasctipt:void(0)">
+									<span><i class="fa-solid fa-circle-question"></i></span>
+									Sorularım
+								</a>
+							</li>
+							<li>
+								<a href="javasctipt:void(0)" class="logout">
+									<span><i class="fa-solid fa-person-to-door"></i></span>
+									Çıkış
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<!-- SECTION CONTAINER -->
+		<section id="MessageContainer">
+			<div class="title">Soru Sor</div>
+
+			<form action="">
+				<div class="form-group">
+					<span class="icon"><i class="fa-solid fa-info-circle"></i></span>
+					<input type="text" placeholder="Konu" class="form-input" />
+				</div>
+
+				<div class="form-group">
+					<textarea placeholder="İçerik..." class="form-input"></textarea>
+				</div>
+
+				<button class="green-btn">Gönder</button>
+			</form>
+		</section>
+
+		<!-- FOOTER CONTAINER -->
+		<footer id="FooterContainer">
+			<div class="title">Murat Altınışık</div>
+			<div class="copyright">
+				copright <i class="fa-regular fa-copyright"></i> Murat Altınışık tüm
+				hakları gizlidir
+			</div>
+		</footer>
+
+		<!-- FONT AWESOME & JQUERY -->
+		<script src="/assets/plugin/icons/js/all.min.js"></script>
+		<script src="/assets/plugin/jquery.js"></script>
+
+		<!-- MENU -->
+		<script src="/assets/scripts/header/menu.js"></script>
+		<script src="/assets/scripts/header/user-menu.js"></script>
+	</body>
+</html>

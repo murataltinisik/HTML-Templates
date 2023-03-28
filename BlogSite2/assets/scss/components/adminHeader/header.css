@@ -1,0 +1,352 @@
+@import url("./responsive.css");
+#MainContainer {
+  height: 100vh;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+#MainContainer .pages,
+#MainContainer .content {
+  display: flex;
+  margin: 1rem;
+}
+#MainContainer .pages {
+  flex-direction: column;
+  padding: 1rem;
+  border-radius: 12px;
+  width: 18rem;
+}
+#MainContainer .pages .title {
+  text-align: center;
+  padding: 8px;
+  font-weight: 500;
+  border-bottom: 1px solid #e4e2e2;
+}
+#MainContainer .pages .page-list {
+  margin-top: 1rem;
+}
+#MainContainer .pages .page-list > li {
+  margin-bottom: 8px;
+}
+#MainContainer .pages .page-list > li > a {
+  width: 100%;
+  display: block;
+  padding: 10px;
+  font-size: 12px;
+  border-radius: 5px;
+  font-weight: 500;
+  text-decoration: none;
+  color: gray;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  transition: all 0.2s ease;
+}
+#MainContainer .pages .page-list > li > a .icon {
+  width: 30px;
+  height: 30px;
+  display: grid;
+  place-items: center;
+  background-color: #f6f6f6;
+  border-radius: 5px;
+  margin-right: 12px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.2666666667);
+  color: #000;
+  transition: all 0.2s ease;
+}
+#MainContainer .pages .page-list > li > a .sub-list-icon,
+#MainContainer .pages .page-list > li > a .numberOf {
+  position: absolute;
+  right: 1rem;
+}
+#MainContainer .pages .page-list > li > a .numberOf {
+  width: 30px;
+  height: 24px;
+  border-radius: 5px;
+  color: #fff;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  box-shadow: 0 0 2px red;
+}
+#MainContainer .pages .page-list > li.active a {
+  color: #000;
+  font-weight: 600;
+  background-color: #fff;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1411764706);
+}
+#MainContainer .pages .page-list > li.active a .icon {
+  color: #fff;
+  background: linear-gradient(to top left, var(--yellow), var(--red));
+}
+#MainContainer .pages .page-list > li.active .sub-menu {
+  display: none;
+}
+#MainContainer .pages .page-list > li:not(.active):hover a {
+  color: #000;
+}
+#MainContainer .pages .page-list > li:not(.active):hover .icon {
+  margin-right: 16px;
+}
+#MainContainer .pages .page-list > li .sub-menu {
+  width: 80%;
+  margin: 10px auto;
+  border-left: 1px solid #ccc;
+  display: none;
+}
+#MainContainer .pages .page-list > li .sub-menu.active {
+  display: block;
+}
+#MainContainer .pages .page-list > li .sub-menu li a {
+  padding: 8px 12px;
+  display: block;
+  font-size: 12px;
+  color: gray;
+  text-decoration: none;
+  box-shadow: none;
+  transition: all 0.1s ease;
+  background-color: transparent !important;
+}
+#MainContainer .pages .page-list > li .sub-menu li a.active {
+  color: #000;
+}
+#MainContainer .pages .page-list > li .sub-menu li a:hover {
+  color: #000;
+}
+#MainContainer .content {
+  flex-direction: column;
+  width: 100%;
+}
+#MainContainer .content .top {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#MainContainer .content .top img {
+  width: 2rem;
+  height: 2rem;
+}
+#MainContainer .content .top .left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#MainContainer .content .top .left * {
+  font-size: 12px;
+  font-weight: 500;
+}
+#MainContainer .content .top .left #open-page-menu {
+  width: 32px;
+  height: 32px;
+  border-radius: 5px;
+  background-color: #eee;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+#MainContainer .content .top .left #open-page-menu:active {
+  background-color: #ccc;
+}
+#MainContainer .content .top .left #open-page-menu .page-list {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  overflow: hidden;
+  z-index: 999;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  flex-direction: column;
+  background-color: #fff;
+  transition: all 0.1s ease-in-out;
+}
+#MainContainer .content .top .left #open-page-menu .page-list .close-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 32px;
+  z-index: 999;
+  height: 32px;
+  cursor: pointer;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+}
+#MainContainer .content .top .left #open-page-menu .page-list .close-btn:active {
+  background-color: #eee;
+}
+#MainContainer .content .top .left #open-page-menu .page-list .page {
+  width: 85%;
+  position: relative;
+}
+#MainContainer .content .top .left #open-page-menu .page-list .page a {
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  font-size: 12px;
+}
+#MainContainer .content .top .left #open-page-menu .page-list .page .sub-list-icon {
+  position: absolute;
+  right: 1rem;
+  font-size: 10px;
+}
+#MainContainer .content .top .left #open-page-menu .page-list .page .sub-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  margin: 0 1.4rem;
+  padding: 0 10px;
+  border-left: 1px solid #ccc;
+}
+#MainContainer .content .top .left #open-page-menu .page-list .page .sub-menu li {
+  width: 100% !important;
+}
+#MainContainer .content .top .left #open-page-menu .page-list .page .sub-menu li a {
+  width: 100% !important;
+}
+#MainContainer .content .top .left #open-page-menu * {
+  font-size: 16px;
+}
+#MainContainer .content .top .left .icon {
+  width: 30px;
+  height: 30px;
+  display: grid;
+  place-items: center;
+  background-color: #f6f6f6;
+  border-radius: 5px;
+  margin-right: 12px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.2666666667);
+  color: #000;
+  transition: all 0.2s ease;
+  color: #fff;
+  background: linear-gradient(to top left, var(--yellow), var(--red));
+}
+#MainContainer .content .top .left ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#MainContainer .content .top .left ul li {
+  color: gray;
+}
+#MainContainer .content .top .center {
+  width: 25%;
+}
+#MainContainer .content .top .right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#MainContainer .content .top .right li {
+  position: relative;
+  cursor: pointer;
+  color: gray;
+}
+#MainContainer .content .top .right li:not(.user-menu) {
+  width: 2rem;
+  height: 2rem;
+  display: grid;
+  place-items: center;
+  transition: all 0.2s ease;
+}
+#MainContainer .content .top .right li:not(.user-menu) .numberOf {
+  position: absolute;
+  top: -5px;
+  right: 0;
+  font-size: 10px;
+  background-color: red;
+  color: #fff;
+  width: 18px;
+  height: 18px;
+  display: grid;
+  place-items: center;
+  font-weight: 600;
+  border-radius: 50%;
+}
+#MainContainer .content .top .right li:not(.user-menu):hover {
+  color: #000;
+}
+#MainContainer .content .top .right li .sub-menu {
+  width: 18rem;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 3rem;
+  right: 0;
+  padding: 8px;
+  background-color: #fff;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.1411764706);
+  display: none;
+}
+#MainContainer .content .top .right li .sub-menu .menu-show-icon {
+  position: absolute;
+  top: -1.2rem;
+  right: 10px;
+  font-size: 24px;
+  color: #fff;
+  filter: drop-shadow(0 -3px 3px rgba(0, 0, 0, 0.1411764706));
+}
+#MainContainer .content .top .right li .sub-menu li {
+  width: 100%;
+  height: 100%;
+}
+#MainContainer .content .top .right li .sub-menu li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 12px;
+  color: gray;
+  padding: 8px;
+  border-radius: 10px;
+  transition: all 0.2s ease;
+}
+#MainContainer .content .top .right li .sub-menu li a span {
+  margin-left: 5px;
+  font-weight: 600;
+}
+#MainContainer .content .top .right li .sub-menu li a:hover {
+  background-color: #f6f6f6;
+}
+#MainContainer .content .top .right li .sub-menu.account {
+  width: 15rem;
+  top: 4rem;
+}
+#MainContainer .content .top .right li .sub-menu.account a {
+  width: 100%;
+  font-weight: 600;
+}
+#MainContainer .content .top .right li .sub-menu.account a.exit {
+  color: red;
+}
+#MainContainer .content .top .right .user-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px;
+  border-radius: 5px;
+  margin: 0 8px;
+  transition: all 0.2s ease-in-out;
+}
+#MainContainer .content .top .right .user-menu .name {
+  margin: 0 5px;
+  font-weight: 600;
+}
+#MainContainer .content .top .right .user-menu .icon,
+#MainContainer .content .top .right .user-menu .name {
+  font-size: 12px;
+}
+#MainContainer .content .top .right .user-menu:hover {
+  color: #000;
+  background-color: #fff;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.1411764706);
+}/*# sourceMappingURL=header.css.map */

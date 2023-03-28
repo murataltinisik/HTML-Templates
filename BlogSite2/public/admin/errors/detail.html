@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<!-- MAIN CSS -->
+		<link rel="stylesheet" href="/assets/scss/main.css" />
+		<!-- HOMEPAGE CSS -->
+		<link
+			rel="stylesheet"
+			href="/assets/scss/components/adminHeader/header.css"
+		/>
+		<link rel="stylesheet" href="/assets/scss/admin/homepage/footer.css" />
+		<!-- TAILWIND CSS -->
+		<link rel="stylesheet" href="/assets/plugin/tailwind/tailwind.min.css" />
+	</head>
+	<body>
+		<!-- MAIN CONTAINER -->
+		<main id="MainContainer">
+			<nav class="pages">
+				<h1 class="title">Murat Altınışık</h1>
+
+				<ul class="page-list" id="page-list">
+					<li class="page">
+						<a href="/public/admin/index.html">
+							<span class="icon">
+								<i class="fa-solid fa-house"></i>
+							</span>
+							Anasayfa
+						</a>
+					</li>
+
+					<li class="page">
+						<a href="javascript:void(0)">
+							<span class="icon">
+								<i class="fa-solid fa-users"></i>
+							</span>
+							Kullanıcılar
+
+							<span class="sub-list-icon">
+								<i class="fa-solid fa-chevron-down"></i>
+							</span>
+						</a>
+
+						<ul class="sub-menu">
+							<li>
+								<a href="/public/admin/users/list.html">Kullanıcı Listesi</a>
+							</li>
+							<li>
+								<a href="/public/admin/users/add.html">Kullanıcı ekle</a>
+							</li>
+						</ul>
+					</li>
+
+					<li class="page">
+						<a href="javascript:void(0)">
+							<span class="icon">
+								<i class="fa-solid fa-book"></i>
+							</span>
+							Dersler
+
+							<span class="sub-list-icon">
+								<i class="fa-solid fa-chevron-down"></i>
+							</span>
+						</a>
+
+						<ul class="sub-menu">
+							<li>
+								<a href="/public/admin/lessons/add-lesson.html">Ders Ekle</a>
+							</li>
+							<li><a href="/public/admin/lessons/html.html">Html</a></li>
+							<li><a href="/public/admin/lessons/css.html">Css</a></li>
+							<li><a href="/public/admin/lessons/scss.html">Scss</a></li>
+							<li><a href="/public/admin/lessons/js.html">Js</a></li>
+							<li><a href="/public/admin/lessons/react.html">React</a></li>
+							<li><a href="/public/admin/lessons/php.html">Php</a></li>
+							<li><a href="/public/admin/lessons/laravel.html">Laravel</a></li>
+							<li><a href="/public/admin/lessons/python.html">Python</a></li>
+							<li><a href="/public/admin/lessons/sql.html">Sql</a></li>
+						</ul>
+					</li>
+
+					<li class="page">
+						<a href="javascript:void(0)">
+							<span class="icon">
+								<i class="fa-solid fa-newspaper"></i>
+							</span>
+							Makaleler
+
+							<span class="sub-list-icon">
+								<i class="fa-solid fa-chevron-down"></i>
+							</span>
+						</a>
+
+						<ul class="sub-menu">
+							<li>
+								<a href="/public/admin/articles/list.html">Makale Listesi</a>
+							</li>
+							<li><a href="/public/admin/articles/add.html">Makale ekle</a></li>
+						</ul>
+					</li>
+
+					<li class="page">
+						<a href="/public/admin/questions/questions-answer.html">
+							<span class="icon">
+								<i class="fa-solid fa-question"></i>
+							</span>
+							Soru & Cevap
+						</a>
+					</li>
+
+					<li class="page">
+						<a href="/public/admin/messages/messages.html">
+							<span class="icon">
+								<i class="fa-solid fa-message"></i>
+							</span>
+							Mesajlar
+
+							<span class="numberOf">18</span>
+						</a>
+					</li>
+
+					<li class="page">
+						<a href="/public/admin/inbox/inbox.html">
+							<span class="icon">
+								<i class="fa-solid fa-inbox"></i>
+							</span>
+							E-Postalarım
+						</a>
+					</li>
+
+					<li class="page active">
+						<a href="/public/admin/errors/errors.html">
+							<span class="icon">
+								<i class="fa-solid fa-warning"></i>
+							</span>
+							Hatalar
+						</a>
+					</li>
+
+					<li class="page">
+						<a href="/public/admin/settings/settings.html">
+							<span class="icon">
+								<i class="fa-solid fa-cogs"></i>
+							</span>
+							Ayarlar
+						</a>
+					</li>
+				</ul>
+			</nav>
+
+			<div class="content">
+				<nav class="top">
+					<div class="left">
+						<span class="icon red">
+							<i class="fa-solid fa-house"></i>
+						</span>
+						<ul class="page-link">
+							<li>Pages /</li>
+							<li>Hatalar</li>
+						</ul>
+					</div>
+
+					<div class="center">
+						<div class="form-group">
+							<span class="icon"><i class="fa-solid fa-search"></i></span>
+							<input
+								type="search"
+								class="form-input search"
+								placeholder="Arayınız..."
+							/>
+						</div>
+					</div>
+
+					<ul class="right">
+						<li>
+							<i class="fa-regular fa-bell"></i>
+							<span class="numberOf">12</span>
+
+							<ul class="sub-menu">
+								<span class="menu-show-icon">
+									<i class="fa-solid fa-caret-up"></i>
+								</span>
+								<li>
+									<a href="#">
+										<img src="/assets/images/user/user-not-found.png" alt="" />
+										<span>
+											Meral Altınışık adlı yeni bir kullanıcı eklendi.
+										</span>
+									</a>
+								</li>
+
+								<li>
+									<a href="#">
+										<img src="/assets/images/user/user-not-found.png" alt="" />
+										<span
+											>Meral Altınışık adlı yeni bir kullanıcı eklendi.</span
+										>
+									</a>
+								</li>
+							</ul>
+						</li>
+
+						<li>
+							<i class="fa-regular fa-message"></i>
+							<span class="numberOf">8</span>
+
+							<ul class="sub-menu">
+								<span class="menu-show-icon">
+									<i class="fa-solid fa-caret-up"></i>
+								</span>
+								<li>
+									<a href="#">
+										<img src="/assets/images/user/user-not-found.png" alt="" />
+										<span> Meral Altınışık kullanıcıdan yeni bir mesaj. </span>
+									</a>
+								</li>
+
+								<li>
+									<a href="#">
+										<img src="/assets/images/user/user-not-found.png" alt="" />
+										<span>Meral Altınışık kullanıcıdan yeni bir mesaj.</span>
+									</a>
+								</li>
+							</ul>
+						</li>
+
+						<li class="user-menu">
+							<img src="/assets/images/user/user-not-found.png" alt="" />
+							<span class="name">Murat Altınışık</span>
+							<span class="icon">
+								<i class="fa-solid fa-chevron-down"></i>
+							</span>
+
+							<ul class="sub-menu account">
+								<span class="menu-show-icon">
+									<i class="fa-solid fa-caret-up"></i>
+								</span>
+
+								<li>
+									<a href="#" class="exit">
+										<i class="fa-solid fa-door-open"></i>
+										<span>Çıkış Yap</span>
+									</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+
+				<div class="container mt-40">
+					<div>
+						<div
+							class="bg-white p-5 relative shadow rounded-lg w-5/6 md:w-5/6 lg:w-4/6 xl:w-3/6 mx-auto"
+						>
+							<div>
+								<h1 class="font-bold text-center text-3xl text-gray-900">
+									IndexOutOfBoundException
+								</h1>
+								<p class="text-center text-sm text-red-400 font-medium">
+									FATAL ERROR
+								</p>
+
+								<div class="w-full">
+									<div
+										class="mt-5 w-full flex flex-col items-center overflow-hidden text-sm"
+									>
+										<a
+											href="#"
+											class="w-full border-t border-gray-100 text-gray-600 py-4 pl-6 pr-3 w-full block hover:bg-gray-100 transition duration-150"
+										>
+											<img
+												src="https://avatars0.githubusercontent.com/u/35900628?v=4"
+												alt=""
+												class="rounded-full h-6 shadow-md inline-block mr-2"
+											/>
+											Updated his status
+											<span class="text-gray-500 text-xs">24 min ago</span>
+										</a>
+
+										<a
+											href="#"
+											class="w-full border-t border-gray-100 text-gray-600 py-4 pl-6 pr-3 w-full block hover:bg-gray-100 transition duration-150"
+										>
+											<img
+												src="https://avatars0.githubusercontent.com/u/35900628?v=4"
+												alt=""
+												class="rounded-full h-6 shadow-md inline-block mr-2"
+											/>
+											Added new profile picture
+											<span class="text-gray-500 text-xs">42 min ago</span>
+										</a>
+
+										<a
+											href="#"
+											class="w-full border-t border-gray-100 text-gray-600 py-4 pl-6 pr-3 w-full block hover:bg-gray-100 transition duration-150"
+										>
+											<img
+												src="https://avatars0.githubusercontent.com/u/35900628?v=4"
+												alt=""
+												class="rounded-full h-6 shadow-md inline-block mr-2"
+											/>
+											Posted new article in
+											<span class="font-bold">#Web Dev</span>
+											<span class="text-gray-500 text-xs">49 min ago</span>
+										</a>
+
+										<a
+											href="#"
+											class="w-full border-t border-gray-100 text-gray-600 py-4 pl-6 pr-3 w-full block hover:bg-gray-100 transition duration-150"
+										>
+											<img
+												src="https://avatars0.githubusercontent.com/u/35900628?v=4"
+												alt=""
+												class="rounded-full h-6 shadow-md inline-block mr-2"
+											/>
+											Edited website settings
+											<span class="text-gray-500 text-xs">1 day ago</span>
+										</a>
+
+										<a
+											href="#"
+											class="w-full border-t border-gray-100 text-gray-600 py-4 pl-6 pr-3 w-full block hover:bg-gray-100 transition duration-150 overflow-hidden"
+										>
+											<img
+												src="https://avatars0.githubusercontent.com/u/35900628?v=4"
+												alt=""
+												class="rounded-full h-6 shadow-md inline-block mr-2"
+											/>
+											Added new rank
+											<span class="text-gray-500 text-xs">5 days ago</span>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<!-- FONT AWESOME & JQUERY -->
+		<script src="/assets/plugin/icons/js/all.min.js"></script>
+		<script src="/assets/plugin/jquery.js"></script>
+
+		<!-- HEADER SCRIPTS -->
+		<script src="/assets/scripts/admin/header/page-list.menu.js"></script>
+		<script src="/assets/scripts/admin/header/top-right-menu.js"></script>
+	</body>
+</html>

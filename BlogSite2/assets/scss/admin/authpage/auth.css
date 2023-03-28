@@ -1,0 +1,21 @@
+@import url("../general.css");
+#AuthContainer {
+  width: 28rem;
+  padding: 2rem;
+  margin: 8rem auto;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1411764706);
+}
+#AuthContainer .title {
+  text-align: center;
+  padding-bottom: 12px;
+  font-weight: 600;
+}
+#AuthContainer .form-group {
+  margin-bottom: 2rem;
+}
+#AuthContainer .btn {
+  display: flex;
+  justify-content: flex-end;
+}/*# sourceMappingURL=auth.css.map */

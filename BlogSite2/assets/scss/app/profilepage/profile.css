@@ -1,0 +1,79 @@
+@import url("./responsive.css");
+#ProfileContainer {
+  width: 60%;
+  padding: 1rem;
+  margin: 2rem auto;
+}
+#ProfileContainer .head {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+#ProfileContainer .head .title {
+  font-size: 32px;
+  font-weight: 600;
+}
+#ProfileContainer .head .description {
+  font-size: 14px;
+  color: gray;
+  font-weight: 600;
+}
+#ProfileContainer .body .forms {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+#ProfileContainer .body .forms .user-image {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  box-shadow: 0 0 6px #939393;
+}
+#ProfileContainer .body .forms .user-image img {
+  width: 100%;
+  height: 100%;
+}
+#ProfileContainer .body .forms .settings {
+  width: 20rem;
+  margin-left: 3rem;
+}
+#ProfileContainer .body .forms .settings > div {
+  margin-bottom: 2rem;
+}
+#ProfileContainer .body .forms .settings > div:last-child {
+  margin-bottom: 0;
+}
+#ProfileContainer .body .forms .settings > div .form-name {
+  display: inline-block;
+  font-weight: 600;
+  font-size: 12px;
+  padding: 8px 12px;
+  border-bottom: 2px solid #fff;
+}
+#ProfileContainer .body .forms .settings > div .description {
+  font-size: 14px;
+  margin-top: 5px;
+  font-weight: 600;
+}
+#ProfileContainer .body .forms .settings > div .form-group {
+  width: 100%;
+  margin-top: 1rem;
+}
+#ProfileContainer .body .forms .settings > div .green-btn,
+#ProfileContainer .body .forms .settings > div .yellow-btn,
+#ProfileContainer .body .forms .settings > div .red-btn {
+  margin-top: 7px;
+  width: 50%;
+}
+#ProfileContainer .body .forms .settings > div button:not(.red-btn) {
+  margin-top: 1rem;
+}
+#ProfileContainer .body .forms .settings > div.account-information .form-name {
+  border-color: var(--green);
+}
+#ProfileContainer .body .forms .settings > div.reset-password .form-name {
+  border-color: var(--yellow);
+}
+#ProfileContainer .body .forms .settings > div.other-settings .form-name {
+  border-color: var(--red);
+}/*# sourceMappingURL=profile.css.map */

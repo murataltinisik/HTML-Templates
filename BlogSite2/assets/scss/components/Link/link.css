@@ -1,0 +1,15 @@
+.link-group {
+  font-size: 12px;
+}
+.link-group span {
+  color: gray;
+  font-weight: 600;
+}
+.link-group a {
+  font-weight: 600;
+}
+
+a.green-link {
+  font-weight: 600;
+  color: var(--green);
+}/*# sourceMappingURL=link.css.map */

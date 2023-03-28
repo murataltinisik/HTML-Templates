@@ -1,0 +1,87 @@
+#SectionContainer {
+	height: 82vh;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+
+	// * FORM CONTAINER
+	.form-container {
+		width: 430px;
+		padding: 1.5rem;
+		border-radius: 5px;
+		background-color: #f6f6f6;
+		box-shadow: 0 0 6px #00000023;
+
+		.title {
+			font-size: 2rem;
+			font-weight: 500;
+			color: var(--green);
+		}
+
+		.description {
+			color: gray;
+			font-size: 12px;
+			font-weight: 500;
+			text-align: justify;
+		}
+
+		.form-group {
+			margin-top: 1rem;
+		}
+
+		.green-btn {
+			margin-top: 15px;
+			width: 100%;
+		}
+
+		.link-group {
+			margin-top: 15px;
+		}
+	}
+
+	// * SOCIAL MEDIA CONTANER
+	.socialMediaContainer {
+		width: 430px;
+		margin-top: 1rem;
+
+		.message {
+			font-weight: 600;
+			font-size: 12px;
+			color: gray;
+		}
+
+		.box-container {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			margin-top: 5px;
+
+			.box {
+				width: 100px;
+				height: 100px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				border-radius: 5px;
+				font-size: 2.5rem;
+				color: #fff;
+				box-shadow: 0 0 6px #15151527;
+				cursor: pointer;
+
+				&.instagram,
+				&.youtube {
+					background-color: var(--red);
+				}
+
+				&.github {
+					background-color: var(--black);
+				}
+
+				&.linkedin {
+					background-color: var(--blue);
+				}
+			}
+		}
+	}
+}

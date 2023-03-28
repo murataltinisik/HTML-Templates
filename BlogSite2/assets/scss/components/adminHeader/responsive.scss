@@ -1,0 +1,75 @@
+// TABLET
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	#MainContainer {
+		width: 100% !important;
+		margin: 1rem auto;
+
+		.pages {
+			display: none !important;
+		}
+
+		.content {
+			margin: 0 !important;
+			width: 100%;
+
+			.top {
+				padding: 0 1rem;
+
+				.left {
+					#open-page-menu {
+						display: flex !important;
+					}
+				}
+
+				.center {
+					display: none !important;
+				}
+
+				.right {
+					> li:first-child,
+					> li:nth-child(2) {
+						display: none !important;
+					}
+				}
+			}
+		}
+	}
+}
+
+// PHONE
+@media only screen and (max-width: 479px) {
+	#MainContainer {
+		width: 100% !important;
+		margin: 1rem auto;
+
+		.pages {
+			display: none !important;
+		}
+
+		.content {
+			margin: 0 !important;
+			width: 100%;
+
+			.top {
+				padding: 0 1rem;
+
+				.left {
+					#open-page-menu {
+						display: flex !important;
+					}
+				}
+
+				.center {
+					display: none !important;
+				}
+
+				.right {
+					li:first-child,
+					li:nth-child(2) {
+						display: none !important;
+					}
+				}
+			}
+		}
+	}
+}

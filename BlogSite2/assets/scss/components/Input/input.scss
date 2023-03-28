@@ -1,0 +1,148 @@
+@mixin icon {
+	position: absolute;
+	top: 8px;
+	color: #ccc;
+}
+
+// FORM GROUP
+.form-group {
+	position: relative;
+
+	// * INPUT
+	.form-input {
+		width: 100%;
+		border: none;
+		outline: none;
+		font-weight: 500;
+		padding: 10px 2rem;
+		border-radius: 3px;
+		background-color: #fff;
+		box-shadow: 0 3px 9px #0000001f;
+		border-bottom: 2px solid var(--green);
+
+		&:focus {
+			box-shadow: 0 3px 9px #00000035;
+		}
+
+		&::placeholder {
+			color: #ccc;
+		}
+
+		&.yellow {
+			border-color: var(--yellow);
+		}
+
+		&.text-area {
+			height: 12rem;
+			padding: 1rem;
+		}
+
+		&.search {
+			border: none;
+			border-radius: 12px;
+			background-color: transparent;
+		}
+	}
+
+	.icon {
+		left: 8px;
+		@include icon();
+	}
+
+	.extra-icon {
+		right: 8px;
+		@include icon();
+
+		.explanation {
+			color: #fff;
+			width: 7rem;
+			padding: 10px;
+			font-size: 10px;
+			border-radius: 3px;
+			background-color: #151515;
+			position: absolute;
+			top: -1rem;
+			left: 2rem;
+			display: none;
+
+			span {
+				color: #151515;
+				position: absolute;
+				left: -5px;
+				top: 20px;
+				font-size: 1rem;
+			}
+		}
+
+		&:hover {
+			.explanation {
+				display: block;
+			}
+		}
+	}
+
+	// * CHECKBOX
+	.form-checkbox {
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+
+		.mark {
+			width: 22px;
+			height: 22px;
+			cursor: pointer;
+			font-size: 14px;
+			color: var(--green);
+			border-radius: 2px;
+			background-color: #fff;
+			border: 2px solid #fff;
+			box-shadow: 0 0 6px #0000001f;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			.check-icon {
+				display: none;
+			}
+		}
+
+		input {
+			display: none;
+		}
+
+		.checkbox-info {
+			margin-left: 8px;
+			font-size: 12px;
+			font-weight: 500;
+			color: gray;
+
+			a {
+				text-decoration: none;
+				color: #000;
+				font-weight: 700;
+
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+		}
+
+		input:checked ~ .mark {
+			border-color: var(--green);
+			.check-icon {
+				display: block;
+			}
+		}
+	}
+
+	// FROM GROUP FLEX
+	&.form-group-flex {
+		position: relative;
+
+		.link-group {
+			top: -14px;
+			right: 0;
+			position: absolute;
+		}
+	}
+}

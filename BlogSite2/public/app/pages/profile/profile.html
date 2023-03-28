@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="tr">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Murat Altınışık - Profil</title>
+		<!-- MAIN CSS -->
+		<link rel="stylesheet" href="/assets/scss/main.css" />
+		<!-- HEADER CSS -->
+		<link rel="stylesheet" href="/assets/scss/components/header/header.css" />
+		<!-- PROFILE CSS -->
+		<link rel="stylesheet" href="/assets/scss/profilepage/profile.css" />
+		<!-- FOOTER CSS -->
+		<link rel="stylesheet" href="/assets/scss/components/footer/footer.css" />
+	</head>
+	<body>
+		<!-- HEADER CONTAINER -->
+		<header id="HeaderContainer">
+			<div class="container">
+				<!-- RESPONSIVE MENU -->
+				<div class="responsive-menu" id="responsive-menu">
+					<div class="open-icon icon"><i class="fa-solid fa-bars"></i></div>
+
+					<div class="menu">
+						<div class="close-icon icon">
+							<i class="fa-solid fa-xmark"></i>
+						</div>
+
+						<ul>
+							<li class="active"><a href="index.html">Anasayfa</a></li>
+							<li><a href="javascript:void(0)">Makaleler</a></li>
+							<li>
+								<a href="javascript:void(0)" id="sub-frontend-menu">Frontend</a>
+							</li>
+							<li>
+								<a href="javascript:void(0)" id="sub-backend-menu">Backend</a>
+							</li>
+							<li>
+								<a href="javascript:void(0)" id="sub-mobile-menu">Mobile</a>
+							</li>
+							<li>
+								<a href="javascript:void(0)" id="sub-database-menu">Database</a>
+							</li>
+							<li><a href="javascript:void(0)">Soru & Cevap</a></li>
+						</ul>
+
+						<div class="button">
+							<a href="./pages/auth/login.html" class="green-btn">
+								Giriş Yap
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<!-- LEFT -->
+				<div class="left">
+					<h1 class="title"><a href="index.html">Murat Altınışık</a></h1>
+
+					<div class="menu">
+						<ul>
+							<li class="active"><a href="index.html">Anasayfa</a></li>
+							<li><a href="./pages/articles/articles.html">Makaleler</a></li>
+							<li>
+								<a href="javascript:void(0)" id="sub-frontend-menu">Frontend</a>
+							</li>
+							<li>
+								<a href="javascript:void(0)" id="sub-backend-menu">Backend</a>
+							</li>
+							<li>
+								<a href="javascript:void(0)" id="sub-mobile-menu">Mobile</a>
+							</li>
+							<li>
+								<a href="javascript:void(0)" id="sub-database-menu">Database</a>
+							</li>
+							<li><a href="javascript:void(0)">Soru & Cevap</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<!-- RIGHT -->
+				<div class="right">
+					<div class="search">
+						<span><i class="fa-solid fa-magnifying-glass"></i></span>
+						<input type="text" placeholder="Ara" />
+					</div>
+					<div class="button">
+						<a href="./pages/auth/login.html" class="green-btn">Giriş Yap</a>
+					</div>
+					<div class="user-menu" id="open-user-menu">
+						<i class="fa-solid fa-circle-user"></i>
+
+						<ul class="list">
+							<span class="icon">
+								<i class="fa-solid fa-sort-up"></i>
+							</span>
+							<li>
+								<a href="javasctipt:void(0)">
+									<span><i class="fa-solid fa-address-card"></i></span>
+									Profilim
+								</a>
+							</li>
+							<li>
+								<a href="javasctipt:void(0)">
+									<span><i class="fa-solid fa-bookmark"></i></span>
+									Favorilerim
+								</a>
+							</li>
+							<li>
+								<a href="javasctipt:void(0)">
+									<span><i class="fa-solid fa-circle-question"></i></span>
+									Sorularım
+								</a>
+							</li>
+							<li>
+								<a href="javasctipt:void(0)" class="logout">
+									<span><i class="fa-solid fa-person-to-door"></i></span>
+									Çıkış
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<!-- PROFILE CONTAINER -->
+		<section id="ProfileContainer">
+			<div class="head">
+				<h2 class="title">Profil</h2>
+				<p class="description">
+					Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur
+					soluta officiis ullam!
+				</p>
+			</div>
+
+			<div class="body">
+				<div class="forms">
+					<div class="user-image">
+						<img src="/assets/images/user/user-not-found.png" alt="" />
+					</div>
+
+					<div class="settings">
+						<div class="account-information">
+							<div class="form-name">Hesap Bilgilerim</div>
+
+							<form action="">
+								<div class="form-group">
+									<span class="icon">
+										<i class="fa-solid fa-user"></i>
+									</span>
+									<input
+										type="text"
+										class="form-input"
+										placeholder="Kullanıcı Adınız..."
+									/>
+								</div>
+
+								<div class="form-group">
+									<span class="icon">
+										<i class="fa-solid fa-at"></i>
+									</span>
+									<input
+										type="text"
+										class="form-input"
+										placeholder="E-Posta Adresiniz..."
+									/>
+								</div>
+
+								<button class="green-btn">Giriş Yap</button>
+							</form>
+						</div>
+
+						<div class="reset-password">
+							<div class="form-name">Şifre Değiştir</div>
+
+							<form action="">
+								<div class="form-group">
+									<span class="icon">
+										<i class="fa-solid fa-lock"></i>
+									</span>
+									<input
+										type="password"
+										class="form-input yellow"
+										placeholder="Eski Şifreniz..."
+									/>
+								</div>
+
+								<div class="form-group">
+									<span class="icon">
+										<i class="fa-solid fa-lock"></i>
+									</span>
+									<input
+										type="password"
+										class="form-input yellow"
+										placeholder="Yeni Şifreniz..."
+									/>
+								</div>
+
+								<div class="form-group">
+									<span class="icon">
+										<i class="fa-solid fa-lock"></i>
+									</span>
+									<input
+										type="password"
+										class="form-input yellow"
+										placeholder="Yeni Şifreniz Tekrar..."
+									/>
+								</div>
+
+								<button class="yellow-btn">Giriş Yap</button>
+							</form>
+						</div>
+
+						<div class="other-settings">
+							<div class="form-name">Diğer</div>
+							<div class="description">Hesabınız kaldırmak istiyorsanız;</div>
+							<button class="red-btn">Hesabımı Kaldır</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- FOOTER CONTAINER -->
+		<footer id="FooterContainer">
+			<div class="title">Murat Altınışık</div>
+			<div class="copyright">
+				copright <i class="fa-regular fa-copyright"></i> Murat Altınışık tüm
+				hakları gizlidir
+			</div>
+		</footer>
+
+		<!-- FONT AWESOME & JQUERY -->
+		<script src="/assets/plugin/icons/js/all.min.js"></script>
+		<script src="/assets/plugin/jquery.js"></script>
+
+		<!-- MENU -->
+		<script src="/assets/scripts/header/menu.js"></script>
+		<script src="/assets/scripts/header/user-menu.js"></script>
+	</body>
+</html>

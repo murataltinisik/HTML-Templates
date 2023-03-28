@@ -1,0 +1,270 @@
+// RESPONSIVE
+@import url('./responsive.css');
+
+// MENU
+@mixin menu($marginL: 16px, $display: flex) {
+	.menu {
+		margin-left: $marginL;
+
+		ul {
+			display: $display;
+
+			li {
+				font-size: 12px;
+				padding: 20px 8px;
+				border-bottom: 3px solid #fff;
+				border-radius: 3px;
+
+				a {
+					text-decoration: none;
+					color: gray;
+					font-weight: 600;
+
+					&:hover {
+						color: #000;
+					}
+				}
+
+				&.active {
+					border-color: var(--green);
+					a {
+						color: #000;
+					}
+				}
+			}
+		}
+	}
+}
+
+// HEADER CONTAINER
+#HeaderContainer {
+	height: 60px;
+	box-shadow: 0 3px 9px #eee;
+
+	// * CONTAINER
+	.container {
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 0 16px;
+
+		// RESPONSIVE MENU
+		.responsive-menu {
+			display: none;
+
+			.icon {
+				font-size: 20px;
+				margin-right: 10px;
+				cursor: pointer;
+			}
+
+			.open-icon {
+				display: none;
+			}
+
+			.close-icon {
+				width: 100%;
+				padding: 0 20px;
+				text-align: right;
+				position: absolute;
+				top: 10px;
+				left: 0;
+				color: gray;
+				transition: all 0.2s ease;
+
+				&:hover {
+					color: #000;
+				}
+			}
+
+			.menu {
+				width: 0;
+				height: 100%;
+				overflow: hidden;
+				background-color: #fff;
+				position: absolute;
+				top: 0;
+				left: 0;
+				z-index: 100;
+				transition: all 0.1s ease-in-out;
+			}
+
+			.button {
+				text-align: center;
+
+				.green-btn {
+					display: block;
+				}
+			}
+
+			@include menu(0, block);
+		}
+
+		// LEFT
+		.left {
+			display: flex;
+			align-items: center;
+			flex: 3;
+
+			.title {
+				font-size: 18px;
+
+				a {
+					text-decoration: none;
+					color: gray;
+					font-weight: 600;
+				}
+			}
+
+			@include menu();
+		}
+
+		// RIGHT
+		.right {
+			display: flex;
+			align-items: center;
+			flex: 1;
+			justify-content: end;
+
+			.search {
+				position: relative;
+
+				input {
+					width: 17rem;
+					padding: 10px 2rem;
+					border-radius: 10px;
+					box-shadow: 0 6px 12px #eee;
+					border: 1px solid #eee;
+					outline: none;
+					font-weight: 500;
+				}
+
+				span {
+					position: absolute;
+					top: 8px;
+					left: 10px;
+					color: gray;
+				}
+			}
+
+			.button {
+				margin-left: 18px;
+			}
+
+			.user-menu {
+				margin-left: 10px;
+				width: 2rem;
+				height: 2rem;
+				border-radius: 50%;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				font-size: 20px;
+				color: gray;
+				cursor: pointer;
+
+				.icon {
+					position: absolute;
+					top: -13px;
+					right: 5px;
+					color: #ffff;
+				}
+
+				.list {
+					width: 13rem;
+					position: absolute;
+					top: 70px;
+					right: 1.5rem;
+					padding: 2px;
+					z-index: 100;
+					background-color: #fff;
+					box-shadow: 0 0 12px #00000012;
+					border-radius: 3px;
+					display: none;
+
+					li {
+						a {
+							padding: 12px 16px;
+							display: block;
+							font-size: 14px;
+							color: #000;
+							border-bottom: 2px solid #fff;
+							text-decoration: none;
+							transition: all 0.2s ease;
+							background-color: #fff;
+
+							&:not(.logout):hover {
+								border-color: var(--green);
+								color: var(--green);
+								padding-left: 20px;
+								box-shadow: 0 0 6px #00000012;
+							}
+
+							&.logout:hover {
+								border-color: var(--red);
+								color: var(--red);
+								padding-left: 20px;
+								box-shadow: 0 0 6px #00000012;
+							}
+
+							span {
+								color: gray;
+								margin-right: 8px;
+							}
+						}
+					}
+				}
+
+				&.active {
+					color: var(--green);
+					background-color: var(--greenOpacity2);
+				}
+
+				&:hover {
+					color: var(--green);
+					background-color: var(--greenOpacity2);
+				}
+			}
+		}
+	}
+
+	// * SUB MENU
+	.sub-menu {
+		padding: 18px;
+		padding-bottom: 0;
+		background-color: #f8f9fa;
+
+		.title {
+			font-weight: 700;
+			font-size: 24px;
+			color: gray;
+		}
+
+		ul {
+			display: flex;
+
+			li {
+				padding: 8px 10px;
+				padding-bottom: 16px;
+				border-bottom: 2px solid var(--gray);
+				a {
+					text-decoration: none;
+					color: gray;
+					font-weight: 500;
+
+					&:hover {
+						color: #000;
+					}
+				}
+
+				&.active {
+					border-color: var(--green);
+					a {
+						color: #000;
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,21 @@
+.campaign-container {
+	width: 75%;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin: 3rem auto;
+	position: relative;
+}
+
+.campaign-container .card {
+	width: 27rem;
+	margin: 1rem;
+	cursor: pointer;
+}
+
+.campaign-container .title {
+	font-weight: 600;
+	position: absolute;
+	top: -1.5rem;
+	left: 1rem;
+}

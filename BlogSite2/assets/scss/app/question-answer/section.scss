@@ -1,0 +1,31 @@
+@import url('../../components/Pagination/pagination.css');
+
+#QuestionAnswerContainer {
+	width: 75%;
+	min-height: 82.5vh;
+	padding: 1rem;
+	margin: 0 auto;
+
+	// HEAD
+	> .head {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		.title {
+			font-weight: 600;
+			text-shadow: 0 0 6px #00000041;
+		}
+
+		.green-btn {
+			font-size: 12px;
+			background-color: var(--green);
+			box-shadow: 0 3px 6px var(--green);
+			transition: all 0.2s ease;
+
+			&:hover {
+				box-shadow: 0 1px 3px var(--green);
+			}
+		}
+	}
+}

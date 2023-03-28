@@ -1,0 +1,165 @@
+.code-container {
+  background-color: #011627;
+  border-radius: 5px;
+  box-shadow: 0 3px 12px #011627;
+  color: #fff;
+  padding: 10px 12px;
+  margin-top: 10px;
+  position: relative;
+  overflow-x: auto;
+}
+.code-container::-webkit-scrollbar {
+  height: 5px;
+}
+.code-container::-webkit-scrollbar-thumb {
+  width: 5px;
+  background-color: rgb(206, 206, 206);
+}
+.code-container::-webkit-scrollbar-track {
+  width: 5px;
+  background-color: #011627;
+}
+.code-container code {
+  font-size: 1em;
+  color: rgba(255, 255, 255, 0.7843137255);
+}
+.code-container code * {
+  font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace !important;
+}
+.code-container code.html .html-doctype {
+  color: var(--blue);
+}
+.code-container code.html .html-tag {
+  color: rgb(237, 87, 87);
+}
+.code-container code.html .html-tag .attr {
+  color: greenyellow;
+}
+.code-container code.html .html-tag .equal {
+  color: #fff;
+}
+.code-container code.html .html-tag .value {
+  color: rgb(233, 203, 51);
+}
+.code-container code.css .css-selector {
+  color: var(--yellow);
+}
+.code-container code.css .style-property .type {
+  color: var(--blue);
+}
+.code-container code.css .style-property .property {
+  color: orange;
+}
+.code-container code.css .curly-braces {
+  color: var(--purple);
+}
+.code-container code.js .variable {
+  color: var(--chan);
+}
+.code-container code.js .variable .type {
+  color: var(--blue);
+}
+.code-container code.js .variable .name {
+  color: var(--chan);
+}
+.code-container code.js .variable .value {
+  color: orange;
+}
+.code-container code.js .variable .value .square-brackets {
+  color: var(--yellow);
+}
+.code-container code.js .variable .value .comma {
+  color: #fff;
+}
+.code-container code.js .with-function .function {
+  color: var(--blue);
+}
+.code-container code.js .with-function .curly-braces {
+  color: var(--blue);
+}
+.code-container code.js .with-function .brackets {
+  color: #fff;
+}
+.code-container code.js .with-function .comma {
+  color: #fff;
+}
+.code-container code.js .with-function .function-name {
+  color: var(--yellow);
+}
+.code-container code.php .delimiter {
+  color: orange;
+}
+.code-container code.php .string {
+  color: greenyellow;
+}
+.code-container code.php .function {
+  color: var(--yellow);
+}
+.code-container code.php .brackets {
+  color: #fff;
+}
+.code-container code.php .int,
+.code-container code.php .keyword {
+  color: var(--chan);
+}
+.code-container code.laravel .keyword {
+  color: #c792ea;
+}
+.code-container code.laravel .function {
+  color: var(--chan);
+}
+.code-container code.laravel .brackets {
+  color: #fff;
+}
+.code-container code.laravel .comma {
+  color: #fff;
+}
+.code-container code.laravel .string {
+  color: greenyellow;
+}
+.code-container code.laravel .class {
+  color: gold;
+}
+.code-container code.laravel .dots {
+  color: var(--chan);
+}
+.code-container code.laravel .semicolon {
+  color: #fff;
+}
+.code-container code.laravel .curly-braces {
+  color: #fff;
+}
+.code-container .toolbar {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+}
+.code-container .toolbar .tool {
+  color: gray;
+  cursor: pointer;
+  padding: 4px 8px;
+  position: relative;
+  border-radius: 2px;
+  transition: all 0.1s ease-in-out;
+  border: 2px solid #011627;
+}
+.code-container .toolbar .tool .info {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: -4rem;
+  font-size: 10px;
+  padding: 3px 5px;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #151515;
+}
+.code-container .toolbar .tool:hover {
+  color: #fff;
+}
+.code-container .toolbar .tool:hover .info {
+  display: block;
+}
+.code-container .toolbar .tool:active {
+  border-color: #fff;
+}/*# sourceMappingURL=code-container.css.map */

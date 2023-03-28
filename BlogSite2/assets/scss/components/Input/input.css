@@ -1,0 +1,122 @@
+.form-group {
+  position: relative;
+}
+.form-group .form-input {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-weight: 500;
+  padding: 10px 2rem;
+  border-radius: 3px;
+  background-color: #fff;
+  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.1215686275);
+  border-bottom: 2px solid var(--green);
+}
+.form-group .form-input:focus {
+  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.2078431373);
+}
+.form-group .form-input::-moz-placeholder {
+  color: #ccc;
+}
+.form-group .form-input::placeholder {
+  color: #ccc;
+}
+.form-group .form-input.yellow {
+  border-color: var(--yellow);
+}
+.form-group .form-input.text-area {
+  height: 12rem;
+  padding: 1rem;
+}
+.form-group .form-input.search {
+  border: none;
+  border-radius: 12px;
+  background-color: transparent;
+}
+.form-group .icon {
+  left: 8px;
+  position: absolute;
+  top: 8px;
+  color: #ccc;
+}
+.form-group .extra-icon {
+  right: 8px;
+  position: absolute;
+  top: 8px;
+  color: #ccc;
+}
+.form-group .extra-icon .explanation {
+  color: #fff;
+  width: 7rem;
+  padding: 10px;
+  font-size: 10px;
+  border-radius: 3px;
+  background-color: #151515;
+  position: absolute;
+  top: -1rem;
+  left: 2rem;
+  display: none;
+}
+.form-group .extra-icon .explanation span {
+  color: #151515;
+  position: absolute;
+  left: -5px;
+  top: 20px;
+  font-size: 1rem;
+}
+.form-group .extra-icon:hover .explanation {
+  display: block;
+}
+.form-group .form-checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.form-group .form-checkbox .mark {
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+  font-size: 14px;
+  color: var(--green);
+  border-radius: 2px;
+  background-color: #fff;
+  border: 2px solid #fff;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.1215686275);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form-group .form-checkbox .mark .check-icon {
+  display: none;
+}
+.form-group .form-checkbox input {
+  display: none;
+}
+.form-group .form-checkbox .checkbox-info {
+  margin-left: 8px;
+  font-size: 12px;
+  font-weight: 500;
+  color: gray;
+}
+.form-group .form-checkbox .checkbox-info a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 700;
+}
+.form-group .form-checkbox .checkbox-info a:hover {
+  text-decoration: underline;
+}
+.form-group .form-checkbox input:checked ~ .mark {
+  border-color: var(--green);
+}
+.form-group .form-checkbox input:checked ~ .mark .check-icon {
+  display: block;
+}
+.form-group.form-group-flex {
+  position: relative;
+}
+.form-group.form-group-flex .link-group {
+  top: -14px;
+  right: 0;
+  position: absolute;
+}/*# sourceMappingURL=input.css.map */

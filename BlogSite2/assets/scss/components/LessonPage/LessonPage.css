@@ -1,0 +1,334 @@
+@import url("./responsive.css");
+@import url("../CodeContainer/code-container.css");
+#LessonContainer .SubLinkContainer {
+  padding: 1rem;
+  padding-bottom: 0;
+  background-color: var(--gray);
+}
+#LessonContainer .SubLinkContainer .title {
+  font-weight: 500;
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.2117647059);
+}
+#LessonContainer .SubLinkContainer ul {
+  margin-top: 1.5rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+#LessonContainer .SubLinkContainer ul li a {
+  text-transform: uppercase;
+  display: block;
+  padding: 8px 16px;
+  text-decoration: none;
+  color: gray;
+  font-weight: 500;
+  border-bottom: 3px solid var(--gray);
+  border-radius: 3px;
+  font-size: 14px;
+}
+#LessonContainer .SubLinkContainer ul li.active a {
+  color: #000;
+  border-color: var(--green);
+}
+#LessonContainer .lesson {
+  width: 63%;
+  margin: 2rem auto;
+  margin-bottom: 3rem;
+}
+#LessonContainer .lesson .top {
+  padding: 1.2rem 1rem;
+  border-radius: 5px;
+}
+#LessonContainer .lesson .top .title {
+  font-size: 28px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.1450980392);
+}
+#LessonContainer .lesson .top .description {
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+}
+#LessonContainer .lesson .top.html {
+  background-color: var(--orange);
+  box-shadow: 0 0 6px var(--orange);
+}
+#LessonContainer .lesson .top.css {
+  background-color: var(--blue);
+  box-shadow: 0 0 6px var(--blue);
+}
+#LessonContainer .lesson .top.scss {
+  background-color: var(--pink);
+  box-shadow: 0 0 6px var(--pink);
+}
+#LessonContainer .lesson .top.js {
+  background-color: var(--yellow);
+  box-shadow: 0 0 6px var(--yellow);
+}
+#LessonContainer .lesson .top.php {
+  background-color: var(--purple);
+  box-shadow: 0 0 6px var(--purple);
+}
+#LessonContainer .lesson .top.laravel {
+  background-color: var(--red);
+  box-shadow: 0 0 6px var(--red);
+}
+#LessonContainer .lesson .top.python {
+  background: linear-gradient(to left top, var(--blue), var(--yellow));
+  box-shadow: 0 0 6px var(--blue);
+}
+#LessonContainer .lesson .top.mysql {
+  background-color: var(--gray);
+  box-shadow: 0 0 6px var(--gray);
+}
+#LessonContainer .lesson .top.mysql .description {
+  color: #000;
+}
+#LessonContainer .lesson > .content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-top: 1rem;
+  height: 100%;
+}
+#LessonContainer .lesson > .content .left {
+  flex: 1;
+  border-radius: 5px;
+  margin-right: 15px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1450980392);
+}
+#LessonContainer .lesson > .content .left .title {
+  padding: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  background-color: var(--gray);
+}
+#LessonContainer .lesson > .content .left .subjects li {
+  position: relative;
+}
+#LessonContainer .lesson > .content .left .subjects li a {
+  padding: 10px 12px;
+  color: gray;
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.2s ease;
+}
+#LessonContainer .lesson > .content .left .subjects li.active {
+  border-radius: 7px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.162);
+}
+#LessonContainer .lesson > .content .left .subjects li.active a {
+  font-weight: 600;
+}
+#LessonContainer .lesson > .content .left .subjects li.active.html a {
+  color: var(--orange);
+}
+#LessonContainer .lesson > .content .left .subjects li.active.css a {
+  color: var(--blue);
+}
+#LessonContainer .lesson > .content .left .subjects li.active.scss a {
+  color: var(--pink);
+}
+#LessonContainer .lesson > .content .left .subjects li.active.js a {
+  color: var(--yellow);
+}
+#LessonContainer .lesson > .content .left .subjects li.active.php a {
+  color: var(--purple);
+}
+#LessonContainer .lesson > .content .left .subjects li.active.laravel a {
+  color: var(--red);
+}
+#LessonContainer .lesson > .content .left .subjects li.active.python a {
+  color: var(--yellow);
+}
+#LessonContainer .lesson > .content .left .subjects li.active.mysql a {
+  color: var(--black);
+}
+#LessonContainer .lesson > .content .left .subjects li:not(.active):hover a {
+  color: #000;
+  padding: 10px 18px;
+}
+#LessonContainer .lesson > .content .left .subject {
+  position: absolute;
+  top: 0;
+  border: 1px solid red !important;
+}
+#LessonContainer .lesson > .content .right {
+  flex: 3.5;
+  width: 75%;
+}
+#LessonContainer .lesson > .content .right .navigation,
+#LessonContainer .lesson > .content .right .expression {
+  border-radius: 5px;
+  box-shadow: 0 0 9px rgba(0, 0, 0, 0.1450980392);
+  background-color: #fff;
+}
+#LessonContainer .lesson > .content .right .navigation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 1rem;
+}
+#LessonContainer .lesson > .content .right .navigation .buttons {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#LessonContainer .lesson > .content .right .navigation #subject-menu-responsive {
+  display: none;
+  font-size: 24px;
+  margin-right: 15px;
+}
+#LessonContainer .lesson > .content .right .navigation #subject-menu-responsive .subjects li {
+  position: relative;
+}
+#LessonContainer .lesson > .content .right .navigation #subject-menu-responsive .subjects li a {
+  padding: 10px 12px;
+  color: gray;
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.2s ease;
+}
+#LessonContainer .lesson > .content .right .navigation #subject-menu-responsive .subjects li.active {
+  border-radius: 7px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.162);
+}
+#LessonContainer .lesson > .content .right .navigation #subject-menu-responsive .subjects li.active a {
+  font-weight: 600;
+}
+#LessonContainer .lesson > .content .right .navigation #subject-menu-responsive .subjects li.active.html a {
+  color: var(--orange);
+}
+#LessonContainer .lesson > .content .right .navigation #subject-menu-responsive .subjects li.active.css a {
+  color: var(--blue);
+}
+#LessonContainer .lesson > .content .right .navigation #subject-menu-responsive .subjects li.active.scss a {
+  color: var(--pink);
+}
+#LessonContainer .lesson > .content .right .navigation #subject-menu-responsive .subjects li.active.js a {
+  color: var(--yellow);
+}
+#LessonContainer .lesson > .content .right .navigation #subject-menu-responsive .subjects li.active.php a {
+  color: var(--purple);
+}
+#LessonContainer .lesson > .content .right .navigation #subject-menu-responsive .subjects li.active.laravel a {
+  color: var(--red);
+}
+#LessonContainer .lesson > .content .right .navigation #subject-menu-responsive .subjects li.active.python a {
+  color: var(--yellow);
+}
+#LessonContainer .lesson > .content .right .navigation #subject-menu-responsive .subjects li.active.mysql a {
+  color: var(--black);
+}
+#LessonContainer .lesson > .content .right .navigation #subject-menu-responsive .subjects li:not(.active):hover a {
+  color: #000;
+  padding: 10px 18px;
+}
+#LessonContainer .lesson > .content .right .navigation #subject-menu-responsive .subjects {
+  padding: 8px;
+  position: absolute;
+  left: 5%;
+  width: 90% !important;
+  background-color: #fff;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.2941176471);
+  z-index: 999;
+  border-radius: 5px;
+  display: none;
+}
+#LessonContainer .lesson > .content .right .navigation .next-subject,
+#LessonContainer .lesson > .content .right .navigation .prev-subject {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #000;
+}
+#LessonContainer .lesson > .content .right .navigation .next-subject span,
+#LessonContainer .lesson > .content .right .navigation .prev-subject span {
+  font-size: 13px;
+  font-weight: 600;
+}
+#LessonContainer .lesson > .content .right .navigation .next-subject:hover,
+#LessonContainer .lesson > .content .right .navigation .prev-subject:hover {
+  text-shadow: 0 0 1px #000;
+}
+#LessonContainer .lesson > .content .right .expression {
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: var(--gray);
+}
+#LessonContainer .lesson > .content .right .expression .head {
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#LessonContainer .lesson > .content .right .expression .head .title {
+  font-size: 24px;
+  font-weight: 500;
+  text-shadow: 0 0 9px #afafaf;
+}
+#LessonContainer .lesson > .content .right .expression .head .toolbar {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+#LessonContainer .lesson > .content .right .expression .head .toolbar .tool {
+  font-size: 14px;
+  font-weight: 600;
+  position: relative;
+  padding: 8px;
+}
+#LessonContainer .lesson > .content .right .expression .head .toolbar .tool .share-apps {
+  position: absolute;
+  left: -1.3rem;
+  bottom: 2rem;
+  background-color: #fff;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1450980392);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+}
+#LessonContainer .lesson > .content .right .expression .head .toolbar .tool .share-apps a {
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  color: gray;
+  transition: all 0.2s ease;
+}
+#LessonContainer .lesson > .content .right .expression .head .toolbar .tool .share-apps a:hover {
+  color: #000;
+}
+#LessonContainer .lesson > .content .right .expression .head .toolbar .tool#shares-app-show {
+  cursor: pointer;
+}
+#LessonContainer .lesson > .content .right .expression .text {
+  margin: 1rem 0;
+  font-size: 13px;
+  color: #676767;
+  text-align: justify;
+}
+#LessonContainer .lesson > .content .right .expression .code {
+  width: 100%;
+}
+#LessonContainer .lesson > .content .right .expression .code .code-container {
+  border-radius: 5px;
+  margin-bottom: 10px;
+}/*# sourceMappingURL=LessonPage.css.map */

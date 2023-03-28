@@ -1,0 +1,23 @@
+// RESPONSIVE
+@import url('./responsive.css');
+
+// FOOTER CONTAINER
+#FooterContainer {
+	padding: 2rem 13rem;
+	background-color: var(--gray);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	.title {
+		font-size: 2rem;
+		font-weight: 600;
+		text-shadow: 0 0 6px #ccc;
+	}
+
+	.copyright {
+		font-size: 14px;
+		font-weight: 500;
+		color: gray;
+	}
+}

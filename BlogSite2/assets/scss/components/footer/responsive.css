@@ -1,0 +1,21 @@
+@media only screen and (min-width: 768px) and (max-width: 979px) {
+  #FooterContainer {
+    padding: 2rem 0 !important;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  #FooterContainer {
+    padding: 2rem 0 !important;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 479px) {
+  #FooterContainer {
+    padding: 2rem 0 !important;
+    flex-direction: column;
+    justify-content: center;
+  }
+}/*# sourceMappingURL=responsive.css.map */

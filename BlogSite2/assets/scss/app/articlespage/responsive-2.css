@@ -1,0 +1,68 @@
+@media only screen and (min-width: 480px) and (max-width: 659px) {
+  #SingleArticleSectionContainer {
+    width: 95% !important;
+  }
+  #SingleArticleSectionContainer .top .head .title {
+    font-size: 22px;
+  }
+  #SingleArticleSectionContainer .top .head .playDemo {
+    font-size: 10px !important;
+    padding: 8px !important;
+  }
+  #SingleArticleSectionContainer .top .article-menu .user img {
+    width: 32px;
+    height: 32px;
+  }
+  #SingleArticleSectionContainer .top .article-menu .user span {
+    font-size: 12px !important;
+  }
+  #SingleArticleSectionContainer .top .article-menu .nav li {
+    padding: 8px;
+    font-size: 12px !important;
+  }
+  #SingleArticleSectionContainer .top .article-menu .code-links a {
+    width: 1.5rem !important;
+    height: 1.5rem !important;
+    font-size: 15px !important;
+  }
+  #SingleArticleSectionContainer .content .title {
+    font-size: 2rem !important;
+  }
+  #SingleArticleSectionContainer .content .text {
+    font-size: 12px !important;
+  }
+}
+@media only screen and (max-width: 479px) {
+  #SingleArticleSectionContainer {
+    width: 95% !important;
+  }
+  #SingleArticleSectionContainer .top .head .title {
+    font-size: 22px;
+  }
+  #SingleArticleSectionContainer .top .head .playDemo {
+    font-size: 10px !important;
+    padding: 8px !important;
+  }
+  #SingleArticleSectionContainer .top .article-menu .user img {
+    width: 32px;
+    height: 32px;
+  }
+  #SingleArticleSectionContainer .top .article-menu .user span {
+    font-size: 12px !important;
+  }
+  #SingleArticleSectionContainer .top .article-menu .nav li {
+    padding: 8px;
+    font-size: 12px !important;
+  }
+  #SingleArticleSectionContainer .top .article-menu .code-links a {
+    width: 1.5rem !important;
+    height: 1.5rem !important;
+    font-size: 15px !important;
+  }
+  #SingleArticleSectionContainer .content .title {
+    font-size: 2rem !important;
+  }
+  #SingleArticleSectionContainer .content .text {
+    font-size: 12px !important;
+  }
+}/*# sourceMappingURL=responsive-2.css.map */

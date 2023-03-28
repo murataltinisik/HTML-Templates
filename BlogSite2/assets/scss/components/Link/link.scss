@@ -1,0 +1,18 @@
+// LINK GROUP
+.link-group {
+	font-size: 12px;
+
+	span {
+		color: gray;
+		font-weight: 600;
+	}
+
+	a {
+		font-weight: 600;
+	}
+}
+
+a.green-link {
+	font-weight: 600;
+	color: var(--green);
+}

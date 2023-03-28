@@ -1,0 +1,28 @@
+@media only screen and (min-width: 480px) and (max-width: 839px) {
+  #QuestionAnswerDetailContainer {
+    width: 90% !important;
+  }
+  #QuestionAnswerDetailContainer .body .text {
+    font-size: 12px !important;
+  }
+  #QuestionAnswerDetailContainer .foot .form .green-btn {
+    width: 100% !important;
+  }
+  #QuestionAnswerDetailContainer .foot .comment .detail {
+    font-size: 12px !important;
+  }
+}
+@media only screen and (max-width: 479px) {
+  #QuestionAnswerDetailContainer {
+    width: 90% !important;
+  }
+  #QuestionAnswerDetailContainer .body .text {
+    font-size: 12px !important;
+  }
+  #QuestionAnswerDetailContainer .foot .form .green-btn {
+    width: 100% !important;
+  }
+  #QuestionAnswerDetailContainer .foot .comment .detail {
+    font-size: 12px !important;
+  }
+}/*# sourceMappingURL=responsive2.css.map */

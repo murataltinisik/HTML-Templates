@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="tr">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Murat Altınışık - Anasayfa</title>
+		<!-- MAIN CSS -->
+		<link rel="stylesheet" href="/assets/scss/main.css" />
+		<!-- HEADER CSS -->
+		<link rel="stylesheet" href="/assets/scss/components/header/header.css" />
+		<!-- SECTION CSS -->
+		<link rel="stylesheet" href="/assets/scss/app/homepage/Section.css" />
+		<!-- FOOTER CSS -->
+		<link rel="stylesheet" href="/assets/scss/components/footer/footer.css" />
+		<!-- SWIPPER CSS -->
+		<link
+			rel="stylesheet"
+			href="/assets/plugin/swipper/css/swiper-bundle.min.css"
+		/>
+	</head>
+	<body>
+		<!-- HEADER CONTAINER -->
+		<header id="HeaderContainer">
+			<div class="container">
+				<!-- RESPONSIVE MENU -->
+				<div class="responsive-menu" id="responsive-menu">
+					<div class="open-icon icon"><i class="fa-solid fa-bars"></i></div>
+
+					<div class="menu">
+						<div class="close-icon icon">
+							<i class="fa-solid fa-xmark"></i>
+						</div>
+
+						<ul>
+							<li class="active"><a href="index.html">Anasayfa</a></li>
+							<li><a href="javascript:void(0)">Makaleler</a></li>
+							<li>
+								<a href="javascript:void(0)" id="sub-frontend-menu">Frontend</a>
+							</li>
+							<li>
+								<a href="javascript:void(0)" id="sub-backend-menu">Backend</a>
+							</li>
+							<li>
+								<a href="javascript:void(0)" id="sub-mobile-menu">Mobile</a>
+							</li>
+							<li>
+								<a href="javascript:void(0)" id="sub-database-menu">Database</a>
+							</li>
+							<li><a href="javascript:void(0)">Soru & Cevap</a></li>
+						</ul>
+
+						<div class="button">
+							<a href="./pages/auth/login.html" class="green-btn">
+								Giriş Yap
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<!-- LEFT -->
+				<div class="left">
+					<h1 class="title"><a href="index.html">Murat Altınışık</a></h1>
+
+					<div class="menu">
+						<ul>
+							<li class="active"><a href="index.html">Anasayfa</a></li>
+							<li><a href="./pages/articles/articles.html">Makaleler</a></li>
+							<li>
+								<a href="javascript:void(0)" id="sub-frontend-menu">Frontend</a>
+							</li>
+							<li>
+								<a href="javascript:void(0)" id="sub-backend-menu">Backend</a>
+							</li>
+							<li>
+								<a href="javascript:void(0)" id="sub-mobile-menu">Mobile</a>
+							</li>
+							<li>
+								<a href="javascript:void(0)" id="sub-database-menu">Database</a>
+							</li>
+							<li><a href="javascript:void(0)">Soru & Cevap</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<!-- RIGHT -->
+				<div class="right">
+					<div class="search">
+						<span><i class="fa-solid fa-magnifying-glass"></i></span>
+						<input type="text" placeholder="Ara" />
+					</div>
+					<div class="button">
+						<a href="./pages/auth/login.html" class="green-btn">Giriş Yap</a>
+					</div>
+					<div class="user-menu" id="open-user-menu">
+						<i class="fa-solid fa-circle-user"></i>
+
+						<ul class="list">
+							<span class="icon">
+								<i class="fa-solid fa-sort-up"></i>
+							</span>
+							<li>
+								<a href="javasctipt:void(0)">
+									<span><i class="fa-solid fa-address-card"></i></span>
+									Profilim
+								</a>
+							</li>
+							<li>
+								<a href="javasctipt:void(0)">
+									<span><i class="fa-solid fa-bookmark"></i></span>
+									Favorilerim
+								</a>
+							</li>
+							<li>
+								<a href="javasctipt:void(0)">
+									<span><i class="fa-solid fa-circle-question"></i></span>
+									Sorularım
+								</a>
+							</li>
+							<li>
+								<a href="javasctipt:void(0)" class="logout">
+									<span><i class="fa-solid fa-person-to-door"></i></span>
+									Çıkış
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<!-- SECTION CONTAINER -->
+		<section id="SectionContainer">
+			<!-- LESSONS CONTAINER -->
+			<div id="lessons-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<div class="head html">
+							<div class="icon"><i class="fa-brands fa-html5"></i></div>
+							<b>HTML</b>
+						</div>
+
+						<div class="foot">
+							<span>15 Gönderim</span>
+						</div>
+					</div>
+
+					<div class="swiper-slide">
+						<div class="head css">
+							<div class="icon"><i class="fa-brands fa-css3-alt"></i></div>
+							<b>CSS</b>
+						</div>
+
+						<div class="foot">
+							<span>15 Gönderim</span>
+						</div>
+					</div>
+
+					<div class="swiper-slide">
+						<div class="head js">
+							<div class="icon"><i class="fa-brands fa-js-square"></i></div>
+							<b>JS</b>
+						</div>
+
+						<div class="foot">
+							<span>15 Gönderim</span>
+						</div>
+					</div>
+
+					<div class="swiper-slide">
+						<div class="head react">
+							<div class="icon"><i class="fa-brands fa-react"></i></div>
+							<b>React</b>
+						</div>
+
+						<div class="foot">
+							<span>15 Gönderim</span>
+						</div>
+					</div>
+
+					<div class="swiper-slide">
+						<div class="head php">
+							<div class="icon"><i class="fa-brands fa-php"></i></div>
+							<b>Php</b>
+						</div>
+
+						<div class="foot">
+							<span>15 Gönderim</span>
+						</div>
+					</div>
+
+					<div class="swiper-slide">
+						<div class="head laravel">
+							<div class="icon"><i class="fa-brands fa-laravel"></i></div>
+							<b>Laravel</b>
+						</div>
+
+						<div class="foot">
+							<span>15 Gönderim</span>
+						</div>
+					</div>
+
+					<div class="swiper-slide">
+						<div class="head mysql">
+							<div class="icon"><i class="fa-solid fa-database"></i></div>
+							<b>Mysql</b>
+						</div>
+
+						<div class="foot">
+							<span>15 Gönderim</span>
+						</div>
+					</div>
+
+					<div class="swiper-slide">
+						<div class="head python">
+							<div class="icon"><i class="fa-brands fa-python"></i></div>
+							<b>Python</b>
+						</div>
+
+						<div class="foot">
+							<span>15 Gönderim</span>
+						</div>
+					</div>
+				</div>
+
+				<div
+					class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal"
+				></div>
+			</div>
+
+			<!-- SOCIAL MEDIA CONTAINER -->
+			<div class="socialMediaContainer">
+				<div class="box instagram">
+					<div class="icon"><i class="fa-brands fa-instagram"></i></div>
+					<div class="content">
+						<h5>Instagram'dan Bizi Takip Edebilirsiniz, @murataltinisik</h5>
+						<p>
+							Yazılım ve Teknolojiye dair herşey için bizi takip etmeyi
+							unutmayın.
+						</p>
+						<a href="javascript:void(0)" class="white-btn">Takip Et</a>
+					</div>
+				</div>
+
+				<div class="box youtube">
+					<div class="icon"><i class="fa-brands fa-youtube"></i></div>
+					<div class="content">
+						<h5>Youtube'dan Bizi Takip Edebilirsiniz, @murataltinisik</h5>
+						<p>
+							Yazılım ve Teknolojiye dair tüm videolarımız için bizi takip
+							etmeyi unutmayın.
+						</p>
+						<a href="javascript:void(0)" class="white-btn">Takip Et</a>
+					</div>
+				</div>
+
+				<div class="box github">
+					<div class="icon"><i class="fa-brands fa-github"></i></div>
+					<div class="content">
+						<h5>GitHub'dan Bizi Takip Edebilirsiniz, @murataltinisik</h5>
+						<p>
+							Yazılım ve Teknolojiye dair tüm kodlarımız için bizi takip etmeyi
+							unutmayın.
+						</p>
+						<a href="javascript:void(0)" class="white-btn">Takip Et</a>
+					</div>
+				</div>
+
+				<div class="box linkedin">
+					<div class="icon"><i class="fa-brands fa-linkedin"></i></div>
+					<div class="content">
+						<h5>Linkedin'den Bizi Takip Edebilirsiniz, @murataltinisik</h5>
+						<p>
+							Yazılım ve Teknolojiye dair tüm kodlarımız için bizi takip etmeyi
+							unutmayın.
+						</p>
+						<a href="javascript:void(0)" class="white-btn">Takip Et</a>
+					</div>
+				</div>
+			</div>
+
+			<!-- NEW ADD CONTAINER -->
+			<div id="newAddContainer">
+				<h5 class="title">Yeni Eklenenler</h5>
+				<p class="description">
+					Burada Yeni eklenen son 10 gönderiyi görebilirsin, ve Sosyal Medya
+					hesaplarımızdan videolu olarak izliyebilirsin...
+				</p>
+
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<div class="head">
+							<div class="icon">
+								<img src="/assets/images/icons/java.png" alt="" />
+							</div>
+
+							<div class="title">Java Polymorphism Nedir?</div>
+						</div>
+
+						<div class="body">
+							<div class="author">Yazar: Murat Altınışık</div>
+							<div class="explanation">
+								Lorem Ipsum is simply dummy text of the printing and typm is
+								simply dummy text of the printing and typesetting, when an...
+							</div>
+						</div>
+
+						<div class="foot">
+							<div class="left">10 Şubat, 2023</div>
+							<div class="right">
+								<div class="like">
+									<span><i class="fa-regular fa-thumbs-up"></i></span>
+									<b>15</b>
+								</div>
+								<div class="share">
+									<span><i class="fa-solid fa-share-from-square"></i></span>
+									<b>15</b>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="swiper-slide">
+						<div class="head">
+							<div class="icon">
+								<img src="/assets/images/icons/php.png" alt="" />
+							</div>
+
+							<div class="title">PHP Trait Nedir?</div>
+						</div>
+
+						<div class="body">
+							<div class="author">Yazar: Murat Altınışık</div>
+							<div class="explanation">
+								Lorem Ipsum is simply dummy text of the printing and typm is
+								simply dummy text of the printing and typesetting, when an...
+							</div>
+						</div>
+
+						<div class="foot">
+							<div class="left">10 Şubat, 2023</div>
+							<div class="right">
+								<div class="like">
+									<span><i class="fa-regular fa-thumbs-up"></i></span>
+									<b>15</b>
+								</div>
+								<div class="share">
+									<span><i class="fa-solid fa-share-from-square"></i></span>
+									<b>15</b>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="swiper-slide">
+						<div class="head">
+							<div class="icon">
+								<img src="/assets/images/icons/javascript.png" alt="" />
+							</div>
+
+							<div class="title">Javascript map Fonksiyonu?</div>
+						</div>
+
+						<div class="body">
+							<div class="author">Yazar: Murat Altınışık</div>
+							<div class="explanation">
+								Lorem Ipsum is simply dummy text of the printing and typm is
+								simply dummy text of the printing and typesetting, when an...
+							</div>
+						</div>
+
+						<div class="foot">
+							<div class="left">10 Şubat, 2023</div>
+							<div class="right">
+								<div class="like">
+									<span><i class="fa-regular fa-thumbs-up"></i></span>
+									<b>15</b>
+								</div>
+								<div class="share">
+									<span><i class="fa-solid fa-share-from-square"></i></span>
+									<b>15</b>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="swiper-slide">
+						<div class="head">
+							<div class="icon">
+								<img src="/assets/images/icons/sql.png" alt="" />
+							</div>
+
+							<div class="title">Trigger İşlemi Nasıl Yapılır?</div>
+						</div>
+
+						<div class="body">
+							<div class="author">Yazar: Murat Altınışık</div>
+							<div class="explanation">
+								Lorem Ipsum is simply dummy text of the printing and typm is
+								simply dummy text of the printing and typesetting, when an...
+							</div>
+						</div>
+
+						<div class="foot">
+							<div class="left">10 Şubat, 2023</div>
+							<div class="right">
+								<div class="like">
+									<span><i class="fa-regular fa-thumbs-up"></i></span>
+									<b>15</b>
+								</div>
+								<div class="share">
+									<span><i class="fa-solid fa-share-from-square"></i></span>
+									<b>15</b>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="swiper-slide">
+						<div class="head">
+							<div class="icon">
+								<img src="/assets/images/icons/scss.png" alt="" />
+							</div>
+
+							<div class="title">& (ile) Operatörü?</div>
+						</div>
+
+						<div class="body">
+							<div class="author">Yazar: Murat Altınışık</div>
+							<div class="explanation">
+								Lorem Ipsum is simply dummy text of the printing and typm is
+								simply dummy text of the printing and typesetting, when an...
+							</div>
+						</div>
+
+						<div class="foot">
+							<div class="left">10 Şubat, 2023</div>
+							<div class="right">
+								<div class="like">
+									<span><i class="fa-regular fa-thumbs-up"></i></span>
+									<b>15</b>
+								</div>
+								<div class="share">
+									<span><i class="fa-solid fa-share-from-square"></i></span>
+									<b>15</b>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div
+					class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal"
+				></div>
+			</div>
+
+			<!-- QUESTION & ANSWER CONTAINER -->
+			<div id="questionAnswerContainer">
+				<h5 class="title">Soru & Cevap</h5>
+				<p class="description">
+					Burada yeni sorulan son 10 soruyu görebilir ve cevaplayabilirsin...
+				</p>
+
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<div class="head">
+							<div class="user">
+								<img src="/assets/images/user/user-not-found.png" alt="" />
+								<p class="name">Murat Altınışık</p>
+							</div>
+							<div class="date">11 Şubat, 2023</div>
+						</div>
+
+						<div class="body">
+							<div class="question">Lorem Lorem ipsum dolor sit amet.</div>
+						</div>
+
+						<div class="foot">
+							<div class="numberOfAnswer">15 Cevap</div>
+						</div>
+					</div>
+
+					<div class="swiper-slide">
+						<div class="head">
+							<div class="user">
+								<img src="/assets/images/user/user-not-found.png" alt="" />
+								<p class="name">Murat Altınışık</p>
+							</div>
+							<div class="date">11 Şubat, 2023</div>
+						</div>
+
+						<div class="body">
+							<div class="question">Lorem Lorem ipsum dolor sit amet.</div>
+						</div>
+
+						<div class="foot">
+							<div class="numberOfAnswer">15 Cevap</div>
+						</div>
+					</div>
+
+					<div class="swiper-slide">
+						<div class="head">
+							<div class="user">
+								<img src="/assets/images/user/user-not-found.png" alt="" />
+								<p class="name">Murat Altınışık</p>
+							</div>
+							<div class="date">11 Şubat, 2023</div>
+						</div>
+
+						<div class="body">
+							<div class="question">Lorem Lorem ipsum dolor sit amet.</div>
+						</div>
+
+						<div class="foot">
+							<div class="numberOfAnswer">15 Cevap</div>
+						</div>
+					</div>
+
+					<div class="swiper-slide">
+						<div class="head">
+							<div class="user">
+								<img src="/assets/images/user/user-not-found.png" alt="" />
+								<p class="name">Murat Altınışık</p>
+							</div>
+							<div class="date">11 Şubat, 2023</div>
+						</div>
+
+						<div class="body">
+							<div class="question">Lorem Lorem ipsum dolor sit amet.</div>
+						</div>
+
+						<div class="foot">
+							<div class="numberOfAnswer">15 Cevap</div>
+						</div>
+					</div>
+
+					<div class="swiper-slide">
+						<div class="head">
+							<div class="user">
+								<img src="/assets/images/user/user-not-found.png" alt="" />
+								<p class="name">Murat Altınışık</p>
+							</div>
+							<div class="date">11 Şubat, 2023</div>
+						</div>
+
+						<div class="body">
+							<div class="question">Lorem Lorem ipsum dolor sit amet.</div>
+						</div>
+
+						<div class="foot">
+							<div class="numberOfAnswer">15 Cevap</div>
+						</div>
+					</div>
+
+					<div class="swiper-slide">
+						<div class="head">
+							<div class="user">
+								<img src="/assets/images/user/user-not-found.png" alt="" />
+								<p class="name">Murat Altınışık</p>
+							</div>
+							<div class="date">11 Şubat, 2023</div>
+						</div>
+
+						<div class="body">
+							<div class="question">Lorem Lorem ipsum dolor sit amet.</div>
+						</div>
+
+						<div class="foot">
+							<div class="numberOfAnswer">15 Cevap</div>
+						</div>
+					</div>
+				</div>
+
+				<div
+					class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal"
+				></div>
+			</div>
+		</section>
+
+		<br />
+		<br />
+
+		<!-- FOOTER CONTAINER -->
+		<footer id="FooterContainer">
+			<div class="title">Murat Altınışık</div>
+			<div class="copyright">
+				copright <i class="fa-regular fa-copyright"></i> Murat Altınışık tüm
+				hakları gizlidir
+			</div>
+		</footer>
+
+		<!-- FONT AWESOME & JQUERY -->
+		<script src="/assets/plugin/icons/js/all.min.js"></script>
+		<script src="/assets/plugin/jquery.js"></script>
+
+		<!-- MENU -->
+		<script src="/assets/scripts/header/menu.js"></script>
+		<script src="/assets/scripts/header/user-menu.js"></script>
+
+		<!-- SWIPPERS -->
+		<script src="/assets/plugin/swipper/js/swiper-bundle.min.js"></script>
+		<script src="/assets/scripts/swipper/SwipperLessons.js"></script>
+		<script src="/assets/scripts/swipper/SwipperNewAdd.js"></script>
+		<script src="/assets/scripts/swipper/SwipperAnswerQuestion.js"></script>
+	</body>
+</html>

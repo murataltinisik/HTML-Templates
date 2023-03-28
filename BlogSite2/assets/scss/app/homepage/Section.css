@@ -1,0 +1,380 @@
+@import url("./responsive.css");
+#SectionContainer {
+  width: 79%;
+  margin: 0 auto;
+  margin-top: 16px;
+  overflow: hidden;
+}
+#SectionContainer #lessons-container {
+  position: relative;
+  padding: 1rem;
+}
+#SectionContainer #lessons-container .swiper-pagination {
+  bottom: 0;
+}
+#SectionContainer #lessons-container .swiper-pagination .swiper-pagination-bullet-active {
+  width: 10px;
+  height: 10px;
+  background-color: #fff !important;
+  box-shadow: 0 0 3px #ccc;
+  border: 2px solid #ccc;
+}
+#SectionContainer #lessons-container .swiper-slide {
+  height: 200px;
+  width: 160px !important;
+  border-radius: 10px;
+  box-shadow: 0 0 6px var(--shadow);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+#SectionContainer #lessons-container .swiper-slide:hover {
+  transform: scale(1.07);
+  box-shadow: 3px 3px 12px var(--shadow);
+}
+#SectionContainer #lessons-container .swiper-slide .head {
+  text-align: center;
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#SectionContainer #lessons-container .swiper-slide .head .icon {
+  width: 5rem;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 3rem;
+}
+#SectionContainer #lessons-container .swiper-slide .head b {
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+#SectionContainer #lessons-container .swiper-slide .head.html .icon,
+#SectionContainer #lessons-container .swiper-slide .head.html b {
+  color: var(--orange);
+}
+#SectionContainer #lessons-container .swiper-slide .head.html .icon {
+  background-color: var(--orangeOpacity);
+}
+#SectionContainer #lessons-container .swiper-slide .head.html b {
+  text-shadow: 0 0 12px var(--orange);
+}
+#SectionContainer #lessons-container .swiper-slide .head.css .icon,
+#SectionContainer #lessons-container .swiper-slide .head.css b {
+  color: var(--blue);
+}
+#SectionContainer #lessons-container .swiper-slide .head.css .icon {
+  background-color: var(--blueOpacity);
+}
+#SectionContainer #lessons-container .swiper-slide .head.css b {
+  text-shadow: 0 0 12px var(--blue);
+}
+#SectionContainer #lessons-container .swiper-slide .head.js .icon,
+#SectionContainer #lessons-container .swiper-slide .head.js b {
+  color: var(--yellow);
+}
+#SectionContainer #lessons-container .swiper-slide .head.js .icon {
+  background-color: var(--yellowOpacity);
+}
+#SectionContainer #lessons-container .swiper-slide .head.js b {
+  text-shadow: 0 0 12px var(--yellow);
+}
+#SectionContainer #lessons-container .swiper-slide .head.react .icon,
+#SectionContainer #lessons-container .swiper-slide .head.react b {
+  color: var(--chan);
+}
+#SectionContainer #lessons-container .swiper-slide .head.react .icon {
+  background-color: var(--chanOpacity);
+}
+#SectionContainer #lessons-container .swiper-slide .head.react b {
+  text-shadow: 0 0 12px var(--chan);
+}
+#SectionContainer #lessons-container .swiper-slide .head.php .icon,
+#SectionContainer #lessons-container .swiper-slide .head.php b {
+  color: var(--purple);
+}
+#SectionContainer #lessons-container .swiper-slide .head.php .icon {
+  background-color: var(--purpleOpacity);
+}
+#SectionContainer #lessons-container .swiper-slide .head.php b {
+  text-shadow: 0 0 12px var(--purple);
+}
+#SectionContainer #lessons-container .swiper-slide .head.laravel .icon,
+#SectionContainer #lessons-container .swiper-slide .head.laravel b {
+  color: var(--red);
+}
+#SectionContainer #lessons-container .swiper-slide .head.laravel .icon {
+  background-color: var(--redOpacity);
+}
+#SectionContainer #lessons-container .swiper-slide .head.laravel b {
+  text-shadow: 0 0 12px var(--red);
+}
+#SectionContainer #lessons-container .swiper-slide .head.mysql .icon,
+#SectionContainer #lessons-container .swiper-slide .head.mysql b {
+  color: var(--darkgray);
+}
+#SectionContainer #lessons-container .swiper-slide .head.mysql .icon {
+  background-color: var(--darkgrayOpacity);
+}
+#SectionContainer #lessons-container .swiper-slide .head.mysql b {
+  text-shadow: 0 0 12px var(--darkgray);
+}
+#SectionContainer #lessons-container .swiper-slide .head.python .icon,
+#SectionContainer #lessons-container .swiper-slide .head.python b {
+  color: var(--yellow);
+}
+#SectionContainer #lessons-container .swiper-slide .head.python .icon {
+  background: linear-gradient(to right top, var(--yellowOpacity), var(--darkBlueOpacity));
+}
+#SectionContainer #lessons-container .swiper-slide .head.python b {
+  text-shadow: 0 0 12px var(--yellow);
+}
+#SectionContainer #lessons-container .swiper-slide .foot {
+  width: 70%;
+  text-align: center;
+  border-top: 1px solid #ccc;
+  padding-top: 16px;
+}
+#SectionContainer #lessons-container .swiper-slide .foot span {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--grayOpacity);
+}
+#SectionContainer .socialMediaContainer {
+  padding: 1rem;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+}
+#SectionContainer .socialMediaContainer .box {
+  color: #fff;
+  width: 49%;
+  height: 150px;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: inset 0 0 3px #505050;
+  transition: all 0.2s ease;
+  padding: 0 3.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+#SectionContainer .socialMediaContainer .box .icon {
+  font-size: 4rem;
+}
+#SectionContainer .socialMediaContainer .box .content h5 {
+  font-size: 16px;
+  font-weight: 600;
+}
+#SectionContainer .socialMediaContainer .box .content p {
+  opacity: 0.5;
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+#SectionContainer .socialMediaContainer .box:hover {
+  box-shadow: inset 0 0 24px #505050;
+}
+#SectionContainer .socialMediaContainer .box.instagram, #SectionContainer .socialMediaContainer .box.youtube {
+  background-color: var(--danger);
+}
+#SectionContainer .socialMediaContainer .box.github {
+  background-color: var(--black);
+}
+#SectionContainer .socialMediaContainer .box.linkedin {
+  background-color: var(--navyBlue);
+}
+#SectionContainer .socialMediaContainer .box:nth-child(3), #SectionContainer .socialMediaContainer .box:nth-child(4) {
+  margin-top: 1.2rem;
+}
+#SectionContainer #newAddContainer {
+  position: relative;
+  padding: 1rem;
+}
+#SectionContainer #newAddContainer .title {
+  font-size: 16px;
+  font-weight: 800;
+  color: #151515;
+}
+#SectionContainer #newAddContainer .description {
+  font-size: 12px;
+  font-weight: 500;
+  color: gray;
+  margin-bottom: 5px;
+}
+#SectionContainer #newAddContainer .swiper-pagination {
+  bottom: 0;
+}
+#SectionContainer #newAddContainer .swiper-pagination .swiper-pagination-bullet-active {
+  width: 10px;
+  height: 10px;
+  background-color: #fff !important;
+  box-shadow: 0 0 3px #ccc;
+  border: 2px solid #ccc;
+}
+#SectionContainer #newAddContainer .swiper-slide {
+  height: 160px;
+  width: 283px !important;
+  border-radius: 5px;
+  box-shadow: 0 0 6px var(--shadow);
+  overflow: hidden;
+  padding: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+#SectionContainer #newAddContainer .swiper-slide:hover {
+  transform: scale(1.02);
+}
+#SectionContainer #newAddContainer .swiper-slide .head {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#SectionContainer #newAddContainer .swiper-slide .head .icon {
+  width: 36px;
+  height: 36px;
+}
+#SectionContainer #newAddContainer .swiper-slide .head .icon img {
+  width: 100%;
+  height: 100%;
+}
+#SectionContainer #newAddContainer .swiper-slide .head .title {
+  font-size: 15px;
+  font-weight: 600;
+  color: #323232;
+  margin-left: 5px;
+}
+#SectionContainer #newAddContainer .swiper-slide .body {
+  text-align: center;
+}
+#SectionContainer #newAddContainer .swiper-slide .body .author {
+  font-weight: 600;
+  color: #616161;
+  font-size: 12px;
+}
+#SectionContainer #newAddContainer .swiper-slide .body .explanation {
+  margin-top: 5px;
+  padding: 0 5px;
+  text-align: justify;
+  font-size: 12px;
+  font-weight: 600;
+  color: #c4c4c4;
+}
+#SectionContainer #newAddContainer .swiper-slide .foot {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  padding: 0 10px;
+  font-size: 12px;
+}
+#SectionContainer #newAddContainer .swiper-slide .foot .left {
+  color: #505050;
+  font-weight: 600;
+}
+#SectionContainer #newAddContainer .swiper-slide .foot .right {
+  display: flex;
+  cursor: pointer;
+}
+#SectionContainer #newAddContainer .swiper-slide .foot .right b {
+  color: #505050;
+  font-weight: 600;
+}
+#SectionContainer #newAddContainer .swiper-slide .foot .right .share {
+  margin-left: 10px;
+}
+#SectionContainer #questionAnswerContainer {
+  margin-top: 10px;
+  padding: 1rem;
+  position: relative;
+}
+#SectionContainer #questionAnswerContainer .title {
+  font-size: 16px;
+  font-weight: 800;
+  color: #151515;
+}
+#SectionContainer #questionAnswerContainer .description {
+  font-size: 12px;
+  font-weight: 500;
+  color: gray;
+  margin-bottom: 5px;
+}
+#SectionContainer #questionAnswerContainer .swiper-pagination {
+  bottom: 0;
+}
+#SectionContainer #questionAnswerContainer .swiper-pagination .swiper-pagination-bullet-active {
+  width: 10px;
+  height: 10px;
+  background-color: #fff !important;
+  box-shadow: 0 0 3px #ccc;
+  border: 2px solid #ccc;
+}
+#SectionContainer #questionAnswerContainer .swiper-slide {
+  height: 120px;
+  width: 283px !important;
+  border-radius: 5px;
+  box-shadow: 0 0 6px var(--shadow);
+  overflow: hidden;
+  padding: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: space-between;
+}
+#SectionContainer #questionAnswerContainer .swiper-slide .head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#SectionContainer #questionAnswerContainer .swiper-slide .head .user {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#SectionContainer #questionAnswerContainer .swiper-slide .head .user img {
+  width: 2rem;
+  height: 2rem;
+}
+#SectionContainer #questionAnswerContainer .swiper-slide .head .user .name {
+  margin-left: 5px;
+  font-weight: 600;
+  color: #323232;
+  font-size: 13px;
+}
+#SectionContainer #questionAnswerContainer .swiper-slide .head .date {
+  font-size: 12px;
+}
+#SectionContainer #questionAnswerContainer .swiper-slide .body {
+  text-align: center;
+}
+#SectionContainer #questionAnswerContainer .swiper-slide .body .question {
+  color: #505050;
+  font-weight: 600;
+  font-size: 14px;
+}
+#SectionContainer #questionAnswerContainer .swiper-slide .foot {
+  width: 70%;
+  text-align: center;
+  border-top: 1px solid #eee;
+  padding-top: 5px;
+  margin: 0 auto;
+}
+#SectionContainer #questionAnswerContainer .swiper-slide .foot .numberOfAnswer {
+  font-size: 14px;
+  font-weight: 600;
+}/*# sourceMappingURL=Section.css.map */

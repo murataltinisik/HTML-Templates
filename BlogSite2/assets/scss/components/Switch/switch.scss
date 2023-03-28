@@ -1,0 +1,43 @@
+// SWITCH
+.switch-group {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+
+	.switch {
+		width: 50px;
+		height: 26px;
+		border-radius: 20px;
+		background-color: #f6f6f6;
+		box-shadow: inset 0 0 6px 0 #ccc;
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		transition: all 0.2s ease;
+		cursor: pointer;
+
+		.circle {
+			width: 18px;
+			height: 18px;
+			border-radius: 50%;
+			background-color: #fff;
+			margin-left: 5px;
+			box-shadow: 0 0 6px 0 #00000024;
+			transition: all 0.2s ease;
+		}
+	}
+
+	input {
+		display: none;
+	}
+
+	input:checked ~ .switch {
+		background-color: var(--green);
+		box-shadow: inset 0 0 6px 0 gray;
+
+		.circle {
+			margin-left: 28px;
+		}
+	}
+}

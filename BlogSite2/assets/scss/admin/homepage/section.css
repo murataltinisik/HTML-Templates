@@ -1,0 +1,91 @@
+@import url("../general.css");
+@import url("./responsive.css");
+.content .container {
+  margin-top: 1rem;
+}
+.content .container .flex-content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  background-color: #fff !important;
+  box-shadow: 0 0 9px rgba(0, 0, 0, 0.0666666667);
+  border-radius: 5px;
+}
+.content .container .flex-content .grid {
+  padding: 1rem;
+  display: grid;
+  width: 100%;
+  grid-template-columns: auto auto;
+}
+.content .container .flex-content .grid .card {
+  margin: 10px;
+  padding: 1rem;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  border: 1px solid #eee;
+  transition: all 0.2s ease;
+}
+.content .container .flex-content .grid .card .detail .title {
+  color: gray;
+  font-weight: 600;
+}
+.content .container .flex-content .grid .card .detail .count {
+  color: gray;
+  font-size: 13px;
+  font-weight: 500;
+}
+.content .container .flex-content .grid .card .detail .count span {
+  color: #000;
+  font-weight: 700;
+}
+.content .container .flex-content .grid .card .icon {
+  width: 30px;
+  height: 30px;
+  display: grid;
+  place-items: center;
+  background-color: #f6f6f6;
+  border-radius: 5px;
+  margin-right: 12px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.2666666667);
+  color: #000;
+  transition: all 0.2s ease;
+  width: 2.5rem;
+  height: 2.5rem;
+  background: linear-gradient(to top left, var(--yellow), var(--red));
+  color: #fff;
+}
+.content .container .flex-content .grid .card .icon.socialMedia {
+  background: linear-gradient(to top left, var(--blue), var(--darkBlue));
+}
+.content .container .flex-content .grid .card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 18px rgba(0, 0, 0, 0.0666666667);
+}
+.content .container .flex-content .grid.grid-p {
+  padding: 2rem 1rem;
+}
+.content .container .flex-content .grid .box {
+  padding: 16px;
+  border-radius: 5px;
+  border: 1px solid #eee;
+}
+.content .container .flex-content .grid .box .title {
+  font-weight: 600;
+  font-size: 14px;
+}
+.content .container .flex-content .grid .box #lineChart {
+  width: 100% !important;
+}
+.content .container.tables-container {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.content .container.tables-container .table {
+  width: 49%;
+}/*# sourceMappingURL=section.css.map */

@@ -1,0 +1,50 @@
+@import url("../plugin/icons/css/all.min.css");
+@import url("../plugin/icons/css/solid.min.css");
+@import url("../plugin/icons/css/brands.min.css");
+@import url("../plugin/icons/css/regular.min.css");
+@import url("../plugin/icons/css/fontawesome.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+@import url("components/Card/Card.css");
+@import url("components/Link/link.css");
+@import url("components/Input/input.css");
+@import url("components/Button/button.css");
+@import url("components/Switch/switch.css");
+:root {
+  --green: #00d807;
+  --greenOpacity: #00d80786;
+  --greenOpacity2: #00d80724;
+  --gray: #f8f9fa;
+  --grayOpacity: rgb(196, 196, 196);
+  --shadow: #00000018;
+  --orange: #f16524;
+  --orangeOpacity: #f1652423;
+  --blue: #3595cf;
+  --blueOpacity: #3594cf2a;
+  --yellow: #efd81d;
+  --yellowOpacity: #efd61d28;
+  --chan: #5ed3f3;
+  --chanOpacity: #5ed3f328;
+  --purple: #7377ad;
+  --purpleOpacity: #7377ad2c;
+  --red: #e8392c;
+  --redOpacity: #e8392c2c;
+  --darkgray: #dfd7da;
+  --darkgrayOpacity: #dfd7da2c;
+  --darkBlue: #40687e;
+  --darkBlueOpacity: #40687e33;
+  --danger: #f00b0b;
+  --black: #151515;
+  --navyBlue: #0a63bc;
+  --pink: #bc0a87;
+}
+
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  font-family: "Poppins";
+  box-sizing: border-box;
+  list-style-type: none;
+}/*# sourceMappingURL=main.css.map */

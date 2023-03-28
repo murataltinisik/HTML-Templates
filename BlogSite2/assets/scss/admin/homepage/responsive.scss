@@ -1,0 +1,86 @@
+// TABLET
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+	#MainContainer {
+		.content {
+			width: 100% !important;
+
+			.flex-content {
+				flex-direction: column;
+				width: 100% !important;
+				margin-left: 2.5rem;
+
+				.grid {
+					padding: 10px 6px;
+				}
+			}
+		}
+
+		.tables-container {
+			width: 100% !important;
+			margin: 0 auto;
+
+			.table {
+				margin-top: 1rem;
+			}
+		}
+	}
+}
+
+// TABLET 2
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	#MainContainer {
+		.content {
+			width: 100% !important;
+
+			.flex-content {
+				flex-direction: column;
+				width: 100% !important;
+				margin-left: 2.5rem;
+
+				.grid {
+					padding: 10px 6px;
+				}
+			}
+		}
+
+		.tables-container {
+			width: 100% !important;
+			margin: 0 auto;
+
+			.table {
+				margin-top: 1rem;
+			}
+		}
+	}
+}
+
+// PHONE
+@media only screen and (max-width: 479px) {
+	#MainContainer {
+		.content {
+			width: 100% !important;
+			.flex-content {
+				flex-direction: column;
+				width: 90% !important;
+				margin: 0 auto;
+
+				.grid {
+					padding: 10px 6px;
+				}
+			}
+		}
+
+		.tables-container {
+			width: 100% !important;
+			margin: 0 auto;
+			margin-left: 12px;
+
+			.table {
+				margin: 1rem;
+				.relative {
+					width: 26.5rem !important;
+				}
+			}
+		}
+	}
+}

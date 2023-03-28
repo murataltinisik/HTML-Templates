@@ -1,0 +1,63 @@
+@mixin commonStyle {
+	display: inline-block;
+	padding: 8px 12px;
+	font-weight: 600;
+	font-size: 12px;
+	border-radius: 3px;
+	cursor: pointer;
+	color: #fff;
+	border: none;
+	transition: all 0.2s ease;
+}
+
+// GREEN BTN
+.green-btn {
+	border: none;
+	color: #fff;
+	padding: 7px 16px;
+	border-radius: 5px;
+	font-weight: 600;
+	background-color: var(--greenOpacity);
+	cursor: pointer;
+	transition: all 0.2s ease;
+	text-decoration: none;
+	font-size: 14px;
+	display: block;
+	width: max-content;
+
+	&:hover {
+		box-shadow: 0 0 3px var(--green);
+		background-color: var(--green);
+	}
+}
+
+// WHITE BTN
+.white-btn {
+	color: #000;
+	text-decoration: none;
+	background-color: #fff;
+	border-radius: 5px;
+	padding: 8px 16px;
+	font-size: 14px;
+	font-weight: 700;
+}
+
+// RED BTN
+.red-btn {
+	@include commonStyle();
+	background-color: rgba(255, 0, 0, 0.526);
+
+	&:hover {
+		background-color: red;
+	}
+}
+
+// YELLOW BTN
+.yellow-btn {
+	@include commonStyle();
+	background-color: rgba(255, 255, 0, 0.595);
+
+	&:hover {
+		background-color: gold;
+	}
+}

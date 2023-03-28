@@ -1,0 +1,172 @@
+// RESPONSIVE
+@import url('./responsive2.css');
+
+// CODE CONTAINER
+@import url('../../components/CodeContainer/code-container.css');
+
+@mixin username {
+	font-weight: 500;
+	font-size: 14px;
+	margin-left: 8px;
+}
+
+// QUESTION ANSWER DETAIL CONTAINER
+#QuestionAnswerDetailContainer {
+	width: 60%;
+	padding: 2rem;
+	margin: 2rem auto;
+	border-radius: 5px;
+	box-shadow: 0 0 12px #00000024;
+
+	// HEAD
+	.head {
+		.title {
+			font-size: 28px;
+			font-weight: 500;
+			text-shadow: 0 0 3px #898989;
+		}
+
+		.detail {
+			margin: 8px 0;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			border-radius: 5px;
+			padding: 8px;
+			box-shadow: 0 0 6px #00000024;
+
+			.user {
+				display: flex;
+				align-items: center;
+				justify-content: flex-start;
+
+				.name {
+					@include username();
+				}
+
+				img {
+					width: 2rem;
+					height: 2rem;
+				}
+			}
+
+			ul {
+				display: flex;
+
+				li {
+					padding: 0 8px;
+				}
+			}
+		}
+	}
+
+	// BODY
+	.body {
+		.text {
+			font-size: 14px;
+			font-weight: 500;
+			text-align: justify;
+		}
+
+		.code-container {
+			margin-bottom: 1rem;
+		}
+	}
+
+	.hr {
+		width: 80%;
+		height: 2px;
+		margin: 1rem auto;
+		background-color: #eee;
+	}
+
+	// FOOT
+	.foot {
+		.form {
+			margin-bottom: 2rem;
+			p {
+				font-weight: 500;
+				font-size: 14px;
+				margin-bottom: 8px;
+			}
+
+			.green-btn {
+				margin-top: 8px;
+				width: 25%;
+			}
+		}
+
+		.comment {
+			margin-bottom: 1rem;
+			border-radius: 10px;
+			background-color: #f6f6f6;
+			box-shadow: 0 0 3px #00000024;
+			position: relative;
+
+			.head {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				padding: 8px 1rem;
+
+				.user {
+					display: flex;
+					align-items: center;
+					justify-content: flex-start;
+
+					img {
+						width: 2rem;
+						height: 2rem;
+					}
+
+					.name {
+						@include username();
+					}
+				}
+
+				.date {
+					font-size: 14px;
+					font-weight: 500;
+				}
+			}
+
+			.detail {
+				padding: 8px 1rem;
+				padding-left: 4rem;
+				border-top: 1px solid #fff;
+				font-size: 14px;
+				font-weight: 500;
+				text-align: justify;
+			}
+
+			.goUpGoDown {
+				position: absolute;
+				top: 40%;
+				left: 1rem;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				flex-direction: column;
+				font-size: 2rem;
+				color: gray;
+				transition: all 0.2s ease;
+
+				.icon {
+					width: 2rem;
+					height: 2rem;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					cursor: pointer;
+					&:hover {
+						color: #000;
+					}
+				}
+
+				.numberOf {
+					font-size: 12px;
+				}
+			}
+		}
+	}
+}

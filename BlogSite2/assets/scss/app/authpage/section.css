@@ -1,0 +1,71 @@
+#SectionContainer {
+  height: 82vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+#SectionContainer .form-container {
+  width: 430px;
+  padding: 1.5rem;
+  border-radius: 5px;
+  background-color: #f6f6f6;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.137254902);
+}
+#SectionContainer .form-container .title {
+  font-size: 2rem;
+  font-weight: 500;
+  color: var(--green);
+}
+#SectionContainer .form-container .description {
+  color: gray;
+  font-size: 12px;
+  font-weight: 500;
+  text-align: justify;
+}
+#SectionContainer .form-container .form-group {
+  margin-top: 1rem;
+}
+#SectionContainer .form-container .green-btn {
+  margin-top: 15px;
+  width: 100%;
+}
+#SectionContainer .form-container .link-group {
+  margin-top: 15px;
+}
+#SectionContainer .socialMediaContainer {
+  width: 430px;
+  margin-top: 1rem;
+}
+#SectionContainer .socialMediaContainer .message {
+  font-weight: 600;
+  font-size: 12px;
+  color: gray;
+}
+#SectionContainer .socialMediaContainer .box-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+#SectionContainer .socialMediaContainer .box-container .box {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  font-size: 2.5rem;
+  color: #fff;
+  box-shadow: 0 0 6px rgba(21, 21, 21, 0.1529411765);
+  cursor: pointer;
+}
+#SectionContainer .socialMediaContainer .box-container .box.instagram, #SectionContainer .socialMediaContainer .box-container .box.youtube {
+  background-color: var(--red);
+}
+#SectionContainer .socialMediaContainer .box-container .box.github {
+  background-color: var(--black);
+}
+#SectionContainer .socialMediaContainer .box-container .box.linkedin {
+  background-color: var(--blue);
+}/*# sourceMappingURL=section.css.map */

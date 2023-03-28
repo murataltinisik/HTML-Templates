@@ -1,0 +1,52 @@
+// TABLET
+// TABLET 2
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	#LessonContainer {
+		// LESSON
+		.lesson {
+			width: 95% !important;
+
+			> .content {
+				.left {
+					display: none;
+				}
+
+				.navigation {
+					#subject-menu-responsive {
+						display: block !important;
+					}
+
+					.buttons {
+						width: 90%;
+					}
+				}
+			}
+		}
+	}
+}
+
+// PHONE
+@media only screen and (max-width: 479px) {
+	#LessonContainer {
+		// LESSON
+		.lesson {
+			width: 95% !important;
+
+			> .content {
+				.left {
+					display: none;
+				}
+
+				.navigation {
+					#subject-menu-responsive {
+						display: block !important;
+					}
+
+					.buttons {
+						width: 90%;
+					}
+				}
+			}
+		}
+	}
+}

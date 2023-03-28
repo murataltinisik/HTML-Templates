@@ -1,0 +1,134 @@
+@import url("./responsive2.css");
+@import url("../../components/CodeContainer/code-container.css");
+#QuestionAnswerDetailContainer {
+  width: 60%;
+  padding: 2rem;
+  margin: 2rem auto;
+  border-radius: 5px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1411764706);
+}
+#QuestionAnswerDetailContainer .head .title {
+  font-size: 28px;
+  font-weight: 500;
+  text-shadow: 0 0 3px #898989;
+}
+#QuestionAnswerDetailContainer .head .detail {
+  margin: 8px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px;
+  padding: 8px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.1411764706);
+}
+#QuestionAnswerDetailContainer .head .detail .user {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+#QuestionAnswerDetailContainer .head .detail .user .name {
+  font-weight: 500;
+  font-size: 14px;
+  margin-left: 8px;
+}
+#QuestionAnswerDetailContainer .head .detail .user img {
+  width: 2rem;
+  height: 2rem;
+}
+#QuestionAnswerDetailContainer .head .detail ul {
+  display: flex;
+}
+#QuestionAnswerDetailContainer .head .detail ul li {
+  padding: 0 8px;
+}
+#QuestionAnswerDetailContainer .body .text {
+  font-size: 14px;
+  font-weight: 500;
+  text-align: justify;
+}
+#QuestionAnswerDetailContainer .body .code-container {
+  margin-bottom: 1rem;
+}
+#QuestionAnswerDetailContainer .hr {
+  width: 80%;
+  height: 2px;
+  margin: 1rem auto;
+  background-color: #eee;
+}
+#QuestionAnswerDetailContainer .foot .form {
+  margin-bottom: 2rem;
+}
+#QuestionAnswerDetailContainer .foot .form p {
+  font-weight: 500;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+#QuestionAnswerDetailContainer .foot .form .green-btn {
+  margin-top: 8px;
+  width: 25%;
+}
+#QuestionAnswerDetailContainer .foot .comment {
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  background-color: #f6f6f6;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1411764706);
+  position: relative;
+}
+#QuestionAnswerDetailContainer .foot .comment .head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 1rem;
+}
+#QuestionAnswerDetailContainer .foot .comment .head .user {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+#QuestionAnswerDetailContainer .foot .comment .head .user img {
+  width: 2rem;
+  height: 2rem;
+}
+#QuestionAnswerDetailContainer .foot .comment .head .user .name {
+  font-weight: 500;
+  font-size: 14px;
+  margin-left: 8px;
+}
+#QuestionAnswerDetailContainer .foot .comment .head .date {
+  font-size: 14px;
+  font-weight: 500;
+}
+#QuestionAnswerDetailContainer .foot .comment .detail {
+  padding: 8px 1rem;
+  padding-left: 4rem;
+  border-top: 1px solid #fff;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: justify;
+}
+#QuestionAnswerDetailContainer .foot .comment .goUpGoDown {
+  position: absolute;
+  top: 40%;
+  left: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 2rem;
+  color: gray;
+  transition: all 0.2s ease;
+}
+#QuestionAnswerDetailContainer .foot .comment .goUpGoDown .icon {
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+#QuestionAnswerDetailContainer .foot .comment .goUpGoDown .icon:hover {
+  color: #000;
+}
+#QuestionAnswerDetailContainer .foot .comment .goUpGoDown .numberOf {
+  font-size: 12px;
+}/*# sourceMappingURL=section2.css.map */

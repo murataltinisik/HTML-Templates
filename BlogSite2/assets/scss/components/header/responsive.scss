@@ -1,0 +1,54 @@
+@mixin HeaderContainer {
+	#HeaderContainer {
+		.container {
+			height: 100%;
+
+			.responsive-menu {
+				display: block !important;
+
+				.open-icon {
+					display: block !important;
+				}
+			}
+
+			.left {
+				justify-content: center;
+
+				.menu {
+					display: none;
+				}
+			}
+
+			.right {
+				flex: 0 !important;
+				.search {
+					display: none !important;
+				}
+				.button {
+					display: none !important;
+				}
+			}
+		}
+	}
+}
+
+// LAPTOP
+@media only screen and (min-width: 768px) and (max-width: 979px) {
+	#HeaderContainer {
+		.right {
+			.search {
+				display: none !important;
+			}
+		}
+	}
+}
+
+// TABLET
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	@include HeaderContainer();
+}
+
+// PHONE
+@media only screen and (max-width: 479px) {
+	@include HeaderContainer();
+}
