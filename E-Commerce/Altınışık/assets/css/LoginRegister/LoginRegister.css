@@ -1,0 +1,5 @@
+/* FONTS */
+@import '../fonts.css';
+
+/* INDEX SCSS */
+@import url(../../scss/LoginRegister/header.css);

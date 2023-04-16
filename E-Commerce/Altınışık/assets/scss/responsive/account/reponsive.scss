@@ -1,0 +1,148 @@
+// -> GENERAL SCSS
+@import '../../general/general.scss';
+@import '../header.scss';
+@import '../footer.scss';
+
+// THIS DESING APPLIES TO LAPTOP
+@media only screen and(min-width: 769px) and(max-width: 1040px){
+    /////// --- ACCOUNT CONTAINER -> ACCOUNT HTML --- \\\\\\\
+    #Account-Container{
+    // CONTENT
+        .content{
+            // BODY
+            .body{
+                form{
+                    width: 100%;
+                }
+            }
+        }
+    }
+    /////// ### ACCOUNT CONTAINER -> ACCOUNT HTML ### \\\\\\\
+
+    /////// --- ACCOUNT CONTAINER -> ORDERS HTML --- \\\\\\\
+
+    #Account-Container.OrderContainer{
+        // ORDER
+        .order{
+            width: 100% !important;
+        }
+    }
+
+    /////// ### ACCOUNT CONTAINER -> ORDERS HTML ### \\\\\\\
+
+}
+
+// THIS DESING APPLIES TO TABLET
+@media only screen and(min-width: 480px) and(max-width: 768px){
+    /////// --- ACCOUNT CONTAINER --- \\\\\\\
+
+    // ACCOUNT CONTAINER
+    #Account-Container{ 
+        > div{
+            @include DisplayFunction-2(auto, column, center, center);
+        
+            > div{
+                width: 100%;
+            }
+        }
+
+        // GROUP
+        .group{
+            width: 100%;
+            justify-content: center;
+        }
+    }
+
+    // CONTENT
+    .content{
+        width: 100% !important;
+        margin-left: 0 !important;
+    
+        // BODY
+        .body{
+            width: 100%;
+
+            form{
+                width: 100% !important;
+            }
+        }
+    
+    }
+
+    // MENU
+    .menu{
+        text-align: center;
+    }
+
+    /////// ### ACCOUNT CONTAINER ### \\\\\\\
+
+    
+    /////// --- ACCOUNT CONTAINER -> ORDERS HTML --- \\\\\\\
+
+    #Account-Container.OrderContainer{
+        // ORDER
+        .order{
+            width: 100% !important;
+        }
+    }
+
+    /////// ### ACCOUNT CONTAINER -> ORDERS HTML ### \\\\\\\
+
+}
+
+// THIS DESING APPLIES TO PHONE
+@media only screen and(max-width: 479px){
+    /////// --- ACCOUNT CONTAINER -> ACCOUNT HTML --- \\\\\\\
+
+    // ACCOUNT CONTAINER
+    #Account-Container{ 
+        > div{
+            @include DisplayFunction-2(auto, column, center, center);
+        
+            > div{
+                width: 100%;
+            }
+        }
+
+        // GROUP
+        .group{
+            width: 100%;
+            justify-content: center;
+        }
+    }
+
+    // CONTENT
+    .content{
+        width: 100% !important;
+        margin-left: 0 !important;
+    
+        // BODY
+        .body{
+            width: 100%;
+
+            form{
+                width: 100% !important;
+            }
+        }
+    
+    }
+
+    // MENU
+    .menu{
+        text-align: center;
+    }
+
+    /////// ### ACCOUNT CONTAINER -> ACCOUNT HTML ### \\\\\\\
+
+
+    /////// --- ACCOUNT CONTAINER -> ORDERS HTML --- \\\\\\\
+
+    #Account-Container.OrderContainer{
+        // ORDER
+        .order{
+            width: 100% !important;
+        }
+    }
+
+    /////// ### ACCOUNT CONTAINER -> ORDERS HTML ### \\\\\\\
+}

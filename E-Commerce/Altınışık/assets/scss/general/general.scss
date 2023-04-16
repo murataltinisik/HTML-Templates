@@ -1,0 +1,117 @@
+// VARIABLE SCSS -> IMPORT
+@import '../ready-style/import.scss';
+
+// SITE TITLE
+.title{
+    color: gold;
+
+    a{
+        color:gold;
+    }
+    
+    a:hover{
+        color: gold;
+    }
+
+}
+
+// SPECIAL BUTTON
+.SpecialButton,
+.SpecialButtonGreen,
+.SpecialButtonRed{
+    width: 100%;
+    padding: .8rem .6rem;
+    border-radius: .3rem;
+    color: #fff;
+    transition: all .2s ease;
+    @include FontFunction('Poppins', .85rem, 700);
+}
+
+.SpecialButton{
+    border: 2px solid gold;
+    background-color: gold;
+}
+
+.SpecialButton:hover{
+    border-color: #fff;
+    box-shadow: 0 0 6px gold;
+}
+
+// SPECIAL BUTTON GREEN
+.SpecialButtonGreen{
+    border: 2px solid green;
+    background-color: green;
+}
+
+.SpecialButtonGreen:hover{
+    border-color: #fff;
+    box-shadow: 0 0 6px green;
+}
+
+// SPECIAL BUTTON RED
+.SpecialButtonRed{
+    border: 2px solid red;
+    background-color: red;
+}
+
+.SpecialButtonRed:hover{
+    border-color: #fff;
+    box-shadow: 0 0 6px red;
+}
+
+///////////////// SECTION -> LINK NAVIGATE
+#Link-Navigate ul{
+    margin-top: 1rem;
+    @include DisplayFunction(nowrap, flex-start, center);
+    @include FontFunction('Poppins', .9rem, 600);
+}
+
+// LINK NAVIGATE -> UL LI
+#Link-Navigate ul li{
+    opacity: .5;
+}
+
+// LINK NAVIGATE -> UL SPAN
+#Link-Navigate ul span{
+    font-size: .6rem;
+    margin: 0 .5rem;
+    opacity: .5;
+}
+
+// LINK NAVIGATE -> UL LI A
+#Link-Navigate ul li a{
+    color: gold;
+    transition: all .2s ease;
+}
+
+#Link-Navigate ul li a:hover{
+    color: goldenrod;
+}
+
+// INPUT ALL -> NOT CHECKBOX
+.input:not([type="checkbox"]){
+    width: 100%;
+    padding: .6rem 2rem;
+    border: 2px solid #eee;
+    background-color: #eee;
+    border-radius: .2rem;
+    @include FontFunction('Poppins', .8rem, 700);
+    transition: all .2s ease;
+}
+
+.input:not([type="checkbox"]):focus{
+    outline: none;
+    background-color: #fff;
+    box-shadow: 0 0 6px #ccc;
+    border-color: #fff;
+}
+
+// GROUP
+.group{
+    @include DisplayFunction(auto, space-between, center);
+}
+
+// MIDDLE TITLE
+.middle-title{
+    @include FontFunction('Poppins', 1.1rem, 700);
+}

@@ -1,0 +1,101 @@
+// -> GENERAL SCSS
+@import '../../general/general.scss';
+
+///////////////// SECTION -> PAYMENT
+#Payment-Container{
+    margin: 1rem auto;
+
+    .body{
+        width: 100%;
+        padding: 0 1rem;
+        @include DisplayFunction(auto, space-between, flex-start);
+
+        > .group{
+            width: 45%;
+        }
+
+        // INPUT GROUP
+        .InputGroup{
+            margin: 1rem 0;
+
+            // LABEL
+            label{
+                @include FontFunction('Poppins', .85rem, 700);
+            }
+
+            // I
+            i{
+                @include PositionAbsolute-TOP-LEFT(.75rem, .5rem);
+            }
+
+            // SELECT BOX
+            .selectBox{
+                width: 48%;
+            }
+        }    
+        
+        // FORM CHECK 
+        .form-check {
+            // LABEL
+            .form-check-label{
+                @include FontFunction('Poppins', .75rem, 600);
+            }
+        }   
+
+        ///////// --------------- \\\\\\\\\
+
+        // ADDRESS
+        .address{
+            width: 100%;
+            box-shadow: 0 0 6px #eee;
+            padding: 1rem;
+            border-radius: .3rem; 
+            position: relative;
+            margin: 1rem 0;
+            cursor: pointer;
+            border: 2px solid #fff;
+
+            // TITLE
+            .address-title{
+                @include FontFunction('Poppins', .9rem, 700);
+                position: relative;
+                width: fit-content;
+                @include DisplayFunction-2(auto, column, flex-start, flex-start);
+            }
+
+            // DETAIL SHOW
+            .addressDetailShow{
+                @include PositionAbsolute-TOP-RIGHT(1.6rem, 0);
+                padding: 0 1rem;
+                @include DisplayFunction(auto, center, center);
+                font-size: 1.6rem;
+                color: gray;
+                cursor: pointer;
+                border-radius: 50%;
+            }
+
+            .addressDetailShow:hover{
+                color: gold;
+                text-shadow: 0 0 2px gold;
+            }
+
+        }
+
+        // ADDRESS HOVER
+        .address:not(.active):hover{
+            box-shadow: 0 0 3px #ccc;
+        }
+
+        // ADDRESS ACTIVE CLASS
+        .address.active{
+            border: 2px solid gold;
+            box-shadow: 0 0 3px gold;
+        
+            .activeAddress{
+                @include PositionAbsolute-TOP-RIGHT(1.65rem, -1.5rem);
+                color: gold;
+            }
+        }
+
+    }
+}

@@ -1,0 +1,181 @@
+// -> GENERAL SCSS
+@import '../general/general.scss';
+
+
+///////////////// SECTION -> SLIDER
+#Slider-Container{
+    width: 100%;
+    height: 23rem;
+    overflow: hidden !important;
+    border-bottom: 1px solid #eee;
+    box-shadow: 0 5px 12px #eee;
+    position: relative;
+}
+
+#Slider-Container .container{
+    height: 100%;
+    position: relative;
+}
+
+#Slider-Container .slider{
+    width: 100%;
+    height: 100%;
+    @include DisplayFunction(auto, center, center);
+}
+
+// SECTION -> SLIDER -> DIV
+#Slider-Container .slider div{
+    width: 40%;
+    height: 90%;
+    padding: 0 1.5rem;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+// SECTION -> SLIDER -> DIV.content
+#Slider-Container .slider div.content{
+    box-shadow: 0 0 6px #eee;
+    @include DisplayFunction-2(wrap, column, center, flex-start);
+}
+
+// SECTION -> SLIDER -> DIV.image
+#Slider-Container .slider div.image{
+    @include DisplayFunction-2(wrap, column, center, center);
+}
+
+#Slider-Container .slider div.image img{
+    width: 70%;
+    height: 100%;
+}
+
+// SECTION -> SLIDER -> P
+#Slider-Container .slider div.content p:nth-child(2){
+    @include FontFunction('Poppins', .9rem, 400);
+}
+
+// SECTION -> SLIDER -> BUTTON
+#Slider-Container .slider div.content button{
+    @include ButtonRefresh;
+    color: #fff;
+    border-radius: 3rem;
+    padding: .6rem 1rem;
+    transition: all .2s ease;
+    border: 2px solid rgb(9, 84, 223);
+    background-color: rgb(9, 84, 223);
+    box-shadow: 0 0 6px rgb(9, 84, 223);
+    @include FontFunction('Poppins', .8rem, 600);
+}
+
+#Slider-Container .slider div.content button:hover{
+    box-shadow: 0 0 12px rgb(9, 84, 223);
+    background-color: rgb(5, 73, 200);
+    border-color: #fff;
+}
+
+// SECTION -> SLIDER -> NAVIGATE
+#Slider-Container .navigate{
+    width: 100%;
+    position: relative;
+}
+
+// SECTION -> SLIDER -> NAVIGATE -> UL
+#Slider-Container .navigate ul{
+    padding: 0 1rem;
+    @include DisplayFunction(auto, flex-start, center);
+    @include PositionAbsolute-BOTTOM-LEFT(0, 0);
+}
+
+// SECTION -> SLIDER -> NAVIGATE -> UL LI
+#Slider-Container .navigate ul li{
+    width: 1rem;
+    height: .5rem;
+    cursor: pointer;
+    margin: 0 .3rem;
+    border-radius: .3rem;
+    border: 2px solid #fff;
+    background-color: #fff;
+    box-shadow: 0 0 6px #ccc;
+    transition: all .2s ease;
+}
+
+#Slider-Container .navigate ul li.active{
+    width: 2rem;
+    border-color: gold;
+    background-color: gold;
+    box-shadow: 0 0 6px gold;
+}
+
+// SECTION -> SLIDER -> NEXT : PREVIEW BTN
+#Slider-Container .slider-btn{
+    padding: 0 2rem;
+    width: 100%;
+    @include DisplayFunction(auto, space-between, center);
+    @include PositionAbsolute-TOP-LEFT(45%, 0);
+}
+
+#Slider-Container .slider-btn button{
+    @include ButtonRefresh;
+    color: #ccc;
+    font-size: 1.3rem;
+}
+
+#Slider-Container .slider-btn button:hover{
+    color: gray;
+}
+
+///////////////// SECTION -> CAMPAING
+#Campaign-Container{
+    padding: 0;
+    margin: 3rem auto;
+    @include DisplayFunction(wrap, space-between, center);
+}
+
+// CAMPAING -> ITEM
+#Campaign-Container .item{
+    width: 24%;
+    height: 10rem;
+    padding: .5rem;
+    cursor: pointer;
+    overflow: hidden;
+    text-align: center;
+    border-radius: .3rem;
+    transition: all .2s ease;
+    background-color: #fff;
+    box-shadow: 0 0 6px #eee, 0 0 3px #ccc;
+    position: relative;
+    @include DisplayFunction-2(auto, column, center, space-between);
+}
+
+#Campaign-Container .item:hover{
+    z-index: 999;
+    transform: scale(1.09);
+    box-shadow: 0 0 12px #eee, 0 0 6px #ccc;
+}
+
+// CAMPAING -> ITEM -> ITEM TITLE
+#Campaign-Container .item .item-title{
+    opacity: .8;
+    @include FontFunction('Poppins', 1.1rem, 600);
+}
+
+// CAMPAING -> ITEM -> ITEM LINK BUTTON
+#Campaign-Container .item .item-button button{
+    @include ButtonRefresh;
+    @include FontFunction('Poppins', .8rem, 700);
+    color: #fff;
+    border-radius: .2rem;
+    padding: .3rem .4rem;
+    background-color: gold;
+    border: 2px solid #fff;
+}
+
+#Campaign-Container .item .item-button button:focus{
+    box-shadow: 0 0 6px gold;
+    outline: 2px solid goldenrod;
+}
+
+// CAMPAING -> ITEM -> ITEM LINK BUTTON
+#Campaign-Container .item .item-time{
+    color: gray;
+    @include FontFunction('Poppins', .8rem, 600);
+}

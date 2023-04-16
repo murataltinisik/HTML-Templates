@@ -1,0 +1,9 @@
+@media only screen and (min-width: 769px) and (max-width: 1048px) {
+  #Footer-Container .footer-head .LetMeKnow input {
+    width: 16rem; } }
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+  #Footer-Container .footer-head .LetMeKnow input {
+    width: 100%; } }
+@media only screen and (max-width: 479px) {
+  #Footer-Container .footer-head .LetMeKnow input {
+    width: 100%; } }

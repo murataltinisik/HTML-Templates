@@ -1,0 +1,148 @@
+.title {
+  color: gold; }
+  .title a {
+    color: gold; }
+  .title a:hover {
+    color: gold; }
+
+.SpecialButton,
+.SpecialButtonGreen,
+.SpecialButtonRed {
+  width: 100%;
+  padding: .8rem .6rem;
+  border-radius: .3rem;
+  color: #fff;
+  transition: all .2s ease;
+  font-family: "Poppins";
+  font-size: 0.85rem;
+  font-weight: 700; }
+
+.SpecialButton {
+  border: 2px solid gold;
+  background-color: gold; }
+
+.SpecialButton:hover {
+  border-color: #fff;
+  box-shadow: 0 0 6px gold; }
+
+.SpecialButtonGreen {
+  border: 2px solid green;
+  background-color: green; }
+
+.SpecialButtonGreen:hover {
+  border-color: #fff;
+  box-shadow: 0 0 6px green; }
+
+.SpecialButtonRed {
+  border: 2px solid red;
+  background-color: red; }
+
+.SpecialButtonRed:hover {
+  border-color: #fff;
+  box-shadow: 0 0 6px red; }
+
+#Link-Navigate ul {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: flex-start;
+  font-family: "Poppins";
+  font-size: 0.9rem;
+  font-weight: 600; }
+
+#Link-Navigate ul li {
+  opacity: .5; }
+
+#Link-Navigate ul span {
+  font-size: .6rem;
+  margin: 0 .5rem;
+  opacity: .5; }
+
+#Link-Navigate ul li a {
+  color: gold;
+  transition: all .2s ease; }
+
+#Link-Navigate ul li a:hover {
+  color: goldenrod; }
+
+.input:not([type="checkbox"]) {
+  width: 100%;
+  padding: .6rem 2rem;
+  border: 2px solid #eee;
+  background-color: #eee;
+  border-radius: .2rem;
+  font-family: "Poppins";
+  font-size: 0.8rem;
+  font-weight: 700;
+  transition: all .2s ease; }
+
+.input:not([type="checkbox"]):focus {
+  outline: none;
+  background-color: #fff;
+  box-shadow: 0 0 6px #ccc;
+  border-color: #fff; }
+
+.group {
+  display: flex;
+  flex-wrap: auto;
+  align-items: center;
+  justify-content: space-between; }
+
+.middle-title {
+  font-family: "Poppins";
+  font-size: 1.1rem;
+  font-weight: 700; }
+
+#Favorite-Container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center; }
+  #Favorite-Container .favorite {
+    width: 25rem;
+    padding: 1rem;
+    margin: 0 1rem;
+    margin-bottom: 1rem;
+    overflow: hidden;
+    box-shadow: 0 6px 10px #eee, 0 0 2px #ccc;
+    display: flex;
+    flex-wrap: auto;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: relative; }
+    #Favorite-Container .favorite .image {
+      width: 6rem;
+      height: 6rem;
+      overflow: hidden; }
+      #Favorite-Container .favorite .image img {
+        width: 100%;
+        height: 100%; }
+    #Favorite-Container .favorite .detail p {
+      font-family: "Poppins";
+      font-size: 0.8rem;
+      font-weight: 700;
+      margin: 0; }
+    #Favorite-Container .favorite .detail span {
+      font-family: "Poppins";
+      font-size: 0.8rem;
+      font-weight: 500;
+      color: gold; }
+      #Favorite-Container .favorite .detail span b {
+        color: #000; }
+    #Favorite-Container .favorite .actions {
+      position: absolute;
+      bottom: 0.5rem;
+      right: 0.5rem; }
+      #Favorite-Container .favorite .actions button {
+        border: none;
+        background-color: transparent;
+        font-family: "Poppins";
+        font-size: 0.8rem;
+        font-weight: 700;
+        border: 1px solid #eee;
+        padding: .5rem 1rem;
+        box-shadow: 0 3px 6px #ccc;
+        transition: all .1s ease; }
+      #Favorite-Container .favorite .actions button:active {
+        box-shadow: 0 3px 3px #ccc; }

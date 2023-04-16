@@ -1,0 +1,214 @@
+// GENERAL SCSS -> IMPORT
+@import '../general/general.scss';
+
+// LOADING
+.searchGIF{
+    @include DisplayFunction(auto, flex-start, center);
+    @include FontFunction('Poppins', .8rem, 600);
+}
+
+.searchGIF .loading {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    border-top: 5px solid gold;
+    animation: spin .75s linear infinite;
+}
+  
+// SPIN ANIMATE
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+////////// HEADER CONTAINER \\\\\\\\\\
+#Header-Container{
+    border-bottom: 1px solid #eee;
+    background-color: #f9f9f9;
+}
+
+#Header-Container .container{
+    @include DisplayFunction(auto, space-between, center);
+}
+
+///////////////// HEADER -> SEARCH
+#Header-Container .container .search {
+    width: 40rem;
+    position: relative;
+}
+
+// HEADER -> SEARCH -> INPUT
+#Header-Container .container .search input{
+    width: 100%;
+    padding: .8rem;
+    border: none;
+    border-top-left-radius: .3rem;
+    border-top-right-radius: .3rem;
+    background-color: #eee;
+    border: 2px solid #eee;
+    transition: all .2s ease;
+    @include FontFunction('Poppins', .7rem, 600);
+}
+
+// HEADER -> SEARCH -> INPUT::placeholder
+#Header-Container .container .search input::placeholder{
+    color: gray;
+}
+
+// HEADER -> SEARCH -> INPUT::focus
+#Header-Container .container .search input:focus{
+    outline: none;
+    border-color: gold;
+    background-color: #fff;
+    box-shadow: 0 0 6px #eee, 0 0 1px #ccc;
+}
+
+// HEADER -> SEARCH -> ICON
+#Header-Container .container .search i{
+    @include PositionAbsolute-TOP-RIGHT(.85rem, 1rem);
+    color: #ccc;
+}
+
+// HEADER -> SEARCH -> RESPONSE
+#Header-Container .container .search #response{
+    height: 25rem;
+    width: 100%;
+    position: absolute;
+    z-index: 99;
+    overflow: hidden;
+    background-color: #fff;
+    border-bottom-left-radius: .3rem;
+    border-bottom-right-radius: .3rem;
+    background-color: #fff;
+    border: 2px solid gold;
+    box-shadow: 0 0 12px #eee;
+}
+
+// HEADER -> SEARCH -> RESPONSE -> HEAD
+#Header-Container .container .search #response .head{
+    @include DisplayFunction(auto, space-between, center);
+    padding: 1rem;
+    padding-bottom: 0;
+}
+
+// HEADER -> SEARCH -> RESPONSE -> BUTTON
+#Header-Container .container .search #response .head .search-truncate button{
+    @include ButtonRefresh;
+    @include FontFunction('Poppins', .8rem, 500);
+    color: gold
+}
+
+// HEADER -> SEARCH -> RESPONSE -> BODY
+#Header-Container .container .search #response .body ul{
+    padding: 0 1rem;
+}
+
+// HEADER -> SEARCH -> RESPONSE -> BODY UL LI A
+#Header-Container .container .search #response .body ul li a{ 
+    display: block;
+    padding: .3rem;
+    color: #000;
+    @include DisplayFunction(auto, space-between, center);
+    @include FontFunction('Poppins', .8rem, 700);
+}
+
+#Header-Container .container .search #response .body ul li a:hover{
+    background-color: #f8f8f8;
+}
+
+///////////////// HEADER -> GROUP BASKET
+#Header-Container .container .group .basket{
+    @include DisplayFunction(auto, space-between, center);
+}
+
+// HEADER -> GROUP -> DIV
+#Header-Container .container .group > div{
+    margin: 0 .65rem;
+    @include FontFunction('Poppins', .8rem, 600);
+    position: relative;
+    cursor: pointer;
+}
+
+// HEADER -> GROUP -> DIV -> ICON
+#Header-Container .container .group div i{
+    font-size: 1.4rem;
+}
+
+// HEADER -> GROUP BASKET -> AMOUNT
+#Header-Container .container .group .basket .amount{
+    color: #fff;
+    font-size: .7rem;
+    padding: 0 .45rem;
+    border-radius: .3rem;
+    background-color: gold;
+    margin-left: .3rem;
+}
+
+///////////////// HEADER -> GROUP ACCOUNT
+#Header-Container .container .group .account .account-menu{
+    width: 14rem;
+    @include PositionAbsolute-TOP-RIGHT(auto, 0);
+    margin-top: 1rem;
+    background-color: #fff;
+    z-index: 999;
+    box-shadow: 0 0 6px #eee, 0 0 1px #ccc;
+    display: none;
+}
+
+// ACCOUNT MENU -> UL LI:first-child A
+#Header-Container .container .group .account .account-menu ul li:first-child a{
+    color: gold;
+    background-color: #f9f9f9;
+    opacity: 1;
+}
+
+// ACCOUNT MENU -> UL LI A
+#Header-Container .container .group .account .account-menu ul li a{
+    padding: .5rem 0;
+    display: block;
+    transition: all .2s ease;
+    color: #000;
+    opacity: .7;
+    padding: 1rem 2rem;
+}
+
+// ACCOUNT MENU -> UL LI:first-child & LI:last-child A:hover
+#Header-Container .container .group .account .account-menu ul li:not(:first-child):not(:last-child) a:hover{
+    color: gold;
+}
+
+#Header-Container .container .group .account .account-menu ul li:not(:first-child) a:hover{
+    padding-left: 2.1rem;
+    opacity: 1;
+}
+
+///////////////// HEADER -> MENUS
+#Header-Container .container .menus {
+    width: 100%;
+    text-align: center;
+}
+
+// HEADER -> MENUS -> UL
+#Header-Container .container .menus ul{
+    @include M-P-REFRESH;
+    @include DisplayFunction(auto, space-between, center);
+}
+
+// HEADER -> MENUS -> UL LI
+#Header-Container .container .menus ul li{
+    padding: .7rem 0;
+}
+
+// HEADER -> MENUS -> UL LI A
+#Header-Container .container .menus ul li a{
+    color: rgb(83, 83, 83);
+    padding: .2rem .5rem;
+    border-bottom: 2px solid #f9f9f9;
+    @include FontFunction('Poppins', .85rem, 500);
+}
+
+#Header-Container .container .menus ul li a:hover{
+    color: gold;
+    border-color: gold;
+}

@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anasayfa - Ödeme</title>
+    <!-- PAYMENT CSS -->
+    <link rel="stylesheet" href="../../assets/css/payment/payment.css">
+    <!-- BOOTSTRAP CSS -->
+    <link rel="stylesheet" href="../../assets/plugins/css/bootstrap.min.css">
+</head>
+<body>
+
+    <!-- CONTENT: HEADER CONTAINER 
+        |--------------------------------------------------------------|
+        | HEADER CONTAINER -> (TITLE, SEARCH, GROUP(BASKET - ACCOUNT)) |
+        |--------------------------------------------------------------|
+    -->
+    <!----------- HEADER START ----------->
+    <header>
+        <!-- HEADER CONTAINER -->
+        <div id="Header-Container" class="container-fluid pt-3">
+
+            <!-- TITLE & SEARCH & GROUP (BASKET - ACCOUNT) -->
+            <div class="container">
+
+                <!-- TITLE -->
+                <div class="title">
+                    <h1>Altınışık.com</h1>
+                </div>
+
+                <!-- SEARCH -->
+                <div class="search">
+                    <input type="text" placeholder="Ürün Adı, Kategori veya Marka Giriniz..">
+                    <i class="fa fa-search"></i>
+                </div>
+
+                <!-- BASKET & ACCOUNT -->
+                <div class="group">
+    
+                    <!-- ACCOUNT -->
+                    <div class="account">
+                        <i class="fa fa-user"></i>
+                        <span>Hesabım</span>
+                    </div>
+
+                    <!-- BASKET -->
+                    <div class="basket">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span>Sepetim</span>
+                        <div class="amount">3</div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- MENUS -->
+            <div class="container">
+                <div class="menus">
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-decoration-none">Kadın</a></li>
+                        <li><a href="#" class="text-decoration-none">Erkek</a></li>
+                        <li><a href="#" class="text-decoration-none">Çocuk</a></li>
+                        <li><a href="#" class="text-decoration-none">Ev & Yaşam</a></li>
+                        <li><a href="#" class="text-decoration-none">SüperMarket</a></li>
+                        <li><a href="#" class="text-decoration-none">Kozmetik</a></li>
+                        <li><a href="#" class="text-decoration-none">Ayakkabı & Çanta</a></li>
+                        <li><a href="#" class="text-decoration-none">Saat & Aksesuar</a></li>
+                        <li><a href="#" class="text-decoration-none">Elektronik</a></li>
+                        <li><a href="#" class="text-decoration-none">Spor & Outdor</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </header>
+    <!-----------# HEADER END #----------->
+
+
+
+    <!----------- SECTION START ----------->
+    <section>
+        <div id="Payment-Container" class="container">
+
+            <!-- LINK NAVIGATE -->
+            <nav id="Link-Navigate" class="container">
+                <ul class="list-unstyled">
+                    <li><a href="../index.html" class="text-decoration-none">Anasayfa</a></li>
+                    <span><i class="fas fa-chevron-right"></i></span>
+                    <li>Sepetim</li>
+                </ul>
+            </nav>
+
+            <!-- PAYMENT FORM -->
+            <div class="body">
+
+                <!-- CONTENT: CARD INFORMATION -->
+                <div class="group flex-column">
+                    <div class="title w-100">
+                        <h4>Kart Bilgileri</h4>
+                        <hr>
+                    </div>
+
+                    <form>
+
+                        <div class="InputGroup mt-0">
+                            <label>Kart Ad Soyad</label>
+                            <div class="position-relative">
+                                <i class="fas fa-user"></i>
+                                <input type="text" class="input" placeholder="Kart Ad Soyad">
+                            </div>
+                        </div>
+
+                        <div class="InputGroup">
+                            <label>Kart Numarası</label>
+                            <div class="position-relative">
+                                <i class="far fa-credit-card"></i>
+                                <input type="text" id="CardNumber" class="input" placeholder="____ ____ ____ ____">
+                            </div>
+                        </div>
+
+                        <div class="group align-items-start">
+
+                            <div class="InputGroup w-50 mt-0">
+                                <label>Son Kullanma Tarihi</label>
+                                <br>
+                                <select class="input selectBox px-2">
+                                    <option value="0">Ay</option>
+                                    <option value="1">01</option>
+                                    <option value="2">02</option>
+                                    <option value="3">03</option>
+                                </select>
+
+                                <select class="input selectBox px-2">
+                                    <option value="0">Yıl</option>
+                                    <option value="1">01</option>
+                                    <option value="2">02</option>
+                                    <option value="3">03</option>
+                                </select>
+                            </div>
+
+                            <div class="InputGroup mt-0">
+                                <label>Kart CVV</label>
+                                <div class="position-relative">
+                                    <i class="far fa-credit-card"></i>
+                                    <input type="text" class="input" placeholder="CVV">
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="form-check form-switch mb-3">
+                            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                            <label class="form-check-label" for="flexSwitchCheckDefault">Ön Bilgilendirme Koşulları'nı ve Mesafeli Satış Sözleşmesi'ni Okudum, Onaylıyorum.</label>
+                        </div>
+
+                        <button class="SpecialButton">Alışverişi Tamamla</button>
+
+                    </form>
+                </div>
+
+                <!-- ADDRESS INFORMATION -->
+                <div class="group flex-column">
+                    <div class="title w-100">
+                        <h4>Adres Bilgileri</h4>
+                        <hr>
+                    </div>
+
+                    <div class="w-100">
+
+                    <div class="address mt-0">
+
+                        <div class="address-title">
+                            <a href="javascript:void(0)" class=" pb-1 SelectedAddress text-decoration-none text-warning">Seç</a>                            
+                            <span>Ev <small class="text-secondary">/</small> Ankara</span>
+                            <i class="fas fa-check-square activeAddress"></i>
+                        </div>
+
+                        <div class="addressDetailShow">
+                            <i class="fas fa-bars"></i>
+                        </div>
+                        
+                        <div class="content my-2">
+                            <ul class="list-group">
+                                <li class="list-group-item">An item</li>
+                                <li class="list-group-item">A second item</li>
+                                <li class="list-group-item">A third item</li>
+                                <li class="list-group-item">A fourth item</li>
+                                <li class="list-group-item">And a fifth one</li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+
+                    <div class="active address">
+
+                        <div class="address-title">
+                            <a href="javascript:void(0)" class="pb-1 SelectedAddress text-decoration-none text-warning">Seç</a>                            
+                            <span>Ev 2 <small class="text-secondary">/</small> Ankara 2</span>
+                            <i class="fas fa-check-square activeAddress"></i>
+                        </div>
+
+                        <div class="addressDetailShow">
+                            <i class="fas fa-bars"></i>
+                        </div>
+                        
+                        <div class="content my-2">
+                            <ul class="list-group">
+                                <li class="list-group-item">An item 2</li>
+                                <li class="list-group-item">A second item</li>
+                                <li class="list-group-item">A third item</li>
+                                <li class="list-group-item">A fourth item</li>
+                                <li class="list-group-item">And a fifth one</li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+
+                    <div class="address mb-0">
+
+                        <div class="address-title">
+                            <a href="javascript:void(0)" class=" pb-1 SelectedAddress text-decoration-none text-warning">Seç</a>                            
+                            <span>Ev 3 <small class="text-secondary">/</small> Ankara 3</span>
+                            <i class="fas fa-check-square activeAddress"></i>
+                        </div>
+
+                        <div class="addressDetailShow">
+                            <i class="fas fa-bars"></i>
+                        </div>
+                        
+                        <div class="content my-2">
+                            <ul class="list-group">
+                                <li class="list-group-item">An item 3</li>
+                                <li class="list-group-item">A second item</li>
+                                <li class="list-group-item">A third item</li>
+                                <li class="list-group-item">A fourth item</li>
+                                <li class="list-group-item">And a fifth one</li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <!-----------# SECTION END #----------->
+
+
+
+    <!-- CONTENT: ARTICLE CONTAINER 
+        |-------------------------------------------|
+        | SITE INFORMATION -> (BOX(TITLE, CONTENT)) |
+        |-------------------------------------------|
+    -->
+    <!----------- ARTICLE START ----------->
+    <article>
+        <!-- SITE INFORMATION -->
+        <div id="Site-Information" class="container">
+
+            <div class="information">
+
+                <!-- CONTENT: TITLE - CONTENT -->
+                <div class="box">
+                    
+                    <!-- BOX TITLE -->
+                    <div class="box-title">
+                        Güvenli Alışveriş
+                    </div>
+
+                    <!-- BOX CONTENT -->
+                    <div class="box-content">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio vel et rerum est pariatur saepe culpa illo quibusdam, maxime cum ratione magnam dolorem in, maiores atque voluptatibus provident corporis dignissimos?
+                    </div>
+
+                </div>
+
+                <div class="box">
+
+                    <div class="box-title">
+                        Hızlı Kargo
+                    </div>
+
+                    <div class="box-content">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio vel et rerum est pariatur saepe culpa illo quibusdam, maxime cum ratione magnam dolorem in, maiores atque voluptatibus provident corporis dignissimos?
+                    </div>
+
+                </div>
+
+                <div class="box">
+
+                    <div class="box-title">
+                        Kolay İade
+                    </div>
+
+                    <div class="box-content">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio vel et rerum est pariatur saepe culpa illo quibusdam, maxime cum ratione magnam dolorem in, maiores atque voluptatibus provident corporis dignissimos?
+                    </div>
+
+                </div>
+
+                <div class="box">
+
+                    <div class="box-title">
+                        AltınExpress
+                    </div>
+
+                    <div class="box-content">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio vel et rerum est pariatur saepe culpa illo quibusdam, maxime cum ratione magnam dolorem in, maiores atque voluptatibus provident corporis dignissimos?
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </article>
+    <!-----------# ARTICLE END #----------->
+
+
+
+    
+    <!-- CONTENT: FOOTER CONTAINER 
+        |-------------------------------------------|
+        | FOOTER HEAD -> (TITLE, LET ME KNOW)       |
+        |-------------------------------------------|
+        | FOOTER CONTENT -> (TITLE, MENU LIST)      |
+        |-------------------------------------------|
+        | FOOTER BOTTOM -> (COPYRIGHT)              |
+        |-------------------------------------------|
+    -->
+    <!----------- FOOTER START ----------->
+    <footer>
+        <!-- FOOTER CONTAINER -->
+        <div id="Footer-Container" class="container-fluid">
+            <div class="container">
+
+                <!-- FOOTER HEAD -->
+                <div class="footer-head">
+
+                    <div class="title">
+                        <h3>Altınışık.com</h3>
+                    </div>
+
+                    <div class="LetMeKnow">
+                        <form>
+                            <input type="text" name="" id="LetMeKnow" placeholder="Kampanyalardan Haberdar olmak için">
+                        </form>
+                    </div>
+
+                </div>
+
+                <hr>
+
+                <!-- FOOTER CONTENT -->
+                <div class="row content">
+
+                    <!-- TITLE, LIST -->
+                    <div class="col-lg-3 col-md-3 col-sm-12">
+
+                        <!-- FOOTER TITLE -->
+                        <div class="footer-title">
+                            <h4>Anasayfa</h4>
+                        </div>
+
+                        <!-- FOOTER LIST -->
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="text-decoration-none text-dark">Anasayfa</a></li>
+                            <li><a href="#" class="text-decoration-none text-dark">Kategoriler</a></li>
+                            <li><a href="#" class="text-decoration-none text-dark">Hesabım</a></li>
+                            <li><a href="#" class="text-decoration-none text-dark">Hakkımızda</a></li>
+                            <li><a href="#" class="text-decoration-none text-dark">İletişim</a></li>
+                        </ul>
+
+                    </div>
+
+                    <!-- TITLE, LIST -->
+                    <div class="col-lg-3 col-md-3 col-sm-12">
+                        <div class="footer-title">
+                            <h4>Hesabım</h4>
+                        </div>
+
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="text-decoration-none text-dark">Sepetim</a></li>
+                            <li><a href="#" class="text-decoration-none text-dark">Hesap Bilgilerim</a></li>
+                            <li><a href="#" class="text-decoration-none text-dark">Kullanıcı Sözleşmesi</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- TITLE, LIST -->
+                    <div class="col-lg-3 col-md-3 col-sm-12">
+
+                        <div class="footer-title">
+                            <h4>Kategoriler</h4>
+                        </div>
+
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="text-decoration-none text-dark">Kategori 1</a></li>
+                            <li><a href="#" class="text-decoration-none text-dark">Kategori 2</a></li>
+                            <li><a href="#" class="text-decoration-none text-dark">Kategori 3</a></li>
+                            <li><a href="#" class="text-decoration-none text-dark">Kategori 4</a></li>
+                        </ul>
+
+                    </div>
+
+                    <!-- TITLE, LIST -->
+                    <div class="col-lg-3 col-md-3 col-sm-12">
+
+                        <div class="footer-title">
+                            <h4>İletişim</h4>
+                        </div>
+
+                        <ul class="list-unstyled">
+                            <li><b>Adress: </b> Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
+                            <li><b>Telefon: </b> 0 000 00 00</li>
+                            <li><b>Email: </b> siteexampleinfo@gmail.com</li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+                <!-- FOOTER BOTTOM -->
+                <div class="footer-bottom">
+                    Altınışık.com <i class="far fa-copyright"></i> 2020-2017 Tüm Hakları Saklıdır.
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <!-----------# FOOTER END #----------->
+
+    
+    <!-- JQUERT JS -->
+    <script src="../../assets/script/jquery.js"></script>
+    <!-- BOOTSTRAP JS -->
+    <script src="../../assets/plugins/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <!-- JQUERY MASK JS -->
+    <script src="../../assets/plugins/js/jquery.mask.min.js"></script>
+    <!-- ADDRES DETAIL & INPUT MASK -->
+    <script src="../../assets/script/address-detail.js"></script>
+
+</body>
+</html>

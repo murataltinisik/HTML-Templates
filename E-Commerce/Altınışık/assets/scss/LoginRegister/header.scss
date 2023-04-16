@@ -1,0 +1,62 @@
+// -> GENERAL SCSS
+@import '../general/general.scss';
+
+//////// --- LOGIN HEADER --- \\\\\\\\   
+#LoginRegister-Container{
+    height: 100vh;
+    padding: 4rem 0;
+    @include DisplayFunction-2(auto, column, center, center);
+
+    div{
+        margin: .5rem 0;
+    }
+
+    // FORM DESING
+    .FormDesing{
+        width: 25rem;
+        padding: 1rem 2rem;
+        background-color: #fff;
+        border-radius: .3rem;
+        box-shadow: 0 0 12px #f1f1f1;
+        @include FontFunction('Poppins', .8rem, 700);
+
+        // INPUT GROUP
+        .InputGroup{
+            position: relative;
+
+            // I
+            i{
+                @include PositionAbsolute-TOP-LEFT(.95rem, 1rem);
+            }
+            
+        }
+
+        // BUTTON
+        button{
+            @include ButtonRefresh;
+            width: 100%;
+            background-color: gold;
+            border: 2px solid gold;
+            transition: all .2s ease;
+            box-shadow: 0 0 6px gold;
+            color: #fff;
+            padding: .8rem;
+            border-radius: .3rem;
+            @include FontFunction('Poppins', .8rem, 700);
+        }
+
+        button:hover{
+            border-color: #fff;
+        }
+
+
+    }
+
+    .foot{
+        color: #ccc;
+        @include FontFunction('Poppins', .8rem, 700);
+    }
+
+}
+
+//////// ### LOGIN HEADER ### \\\\\\\\   

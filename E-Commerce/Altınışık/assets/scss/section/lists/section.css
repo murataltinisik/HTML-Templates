@@ -1,0 +1,141 @@
+.title {
+  color: gold; }
+  .title a {
+    color: gold; }
+  .title a:hover {
+    color: gold; }
+
+.SpecialButton,
+.SpecialButtonGreen,
+.SpecialButtonRed {
+  width: 100%;
+  padding: .8rem .6rem;
+  border-radius: .3rem;
+  color: #fff;
+  transition: all .2s ease;
+  font-family: "Poppins";
+  font-size: 0.85rem;
+  font-weight: 700; }
+
+.SpecialButton {
+  border: 2px solid gold;
+  background-color: gold; }
+
+.SpecialButton:hover {
+  border-color: #fff;
+  box-shadow: 0 0 6px gold; }
+
+.SpecialButtonGreen {
+  border: 2px solid green;
+  background-color: green; }
+
+.SpecialButtonGreen:hover {
+  border-color: #fff;
+  box-shadow: 0 0 6px green; }
+
+.SpecialButtonRed {
+  border: 2px solid red;
+  background-color: red; }
+
+.SpecialButtonRed:hover {
+  border-color: #fff;
+  box-shadow: 0 0 6px red; }
+
+#Link-Navigate ul {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: flex-start;
+  font-family: "Poppins";
+  font-size: 0.9rem;
+  font-weight: 600; }
+
+#Link-Navigate ul li {
+  opacity: .5; }
+
+#Link-Navigate ul span {
+  font-size: .6rem;
+  margin: 0 .5rem;
+  opacity: .5; }
+
+#Link-Navigate ul li a {
+  color: gold;
+  transition: all .2s ease; }
+
+#Link-Navigate ul li a:hover {
+  color: goldenrod; }
+
+.input:not([type="checkbox"]) {
+  width: 100%;
+  padding: .6rem 2rem;
+  border: 2px solid #eee;
+  background-color: #eee;
+  border-radius: .2rem;
+  font-family: "Poppins";
+  font-size: 0.8rem;
+  font-weight: 700;
+  transition: all .2s ease; }
+
+.input:not([type="checkbox"]):focus {
+  outline: none;
+  background-color: #fff;
+  box-shadow: 0 0 6px #ccc;
+  border-color: #fff; }
+
+.group {
+  display: flex;
+  flex-wrap: auto;
+  align-items: center;
+  justify-content: space-between; }
+
+.middle-title {
+  font-family: "Poppins";
+  font-size: 1.1rem;
+  font-weight: 700; }
+
+#Account-Container.List-Container .lists {
+  width: 100%; }
+  #Account-Container.List-Container .lists .list {
+    box-shadow: 0 0 6px #eee, 0 0 2px #ccc;
+    padding: 1rem;
+    position: relative;
+    border-radius: .3rem;
+    margin-bottom: .7rem; }
+    #Account-Container.List-Container .lists .list .name {
+      color: gold;
+      font-family: "Poppins";
+      font-size: 0.85rem;
+      font-weight: 700; }
+    #Account-Container.List-Container .lists .list i {
+      cursor: pointer;
+      font-size: 1.3rem;
+      position: absolute;
+      top: 1.1rem;
+      right: 1rem; }
+    #Account-Container.List-Container .lists .list .added .add {
+      display: flex;
+      flex-wrap: auto;
+      align-items: auto;
+      justify-content: auto;
+      margin: 1rem 0; }
+    #Account-Container.List-Container .lists .list .added .add:last-child {
+      margin-bottom: 0; }
+    #Account-Container.List-Container .lists .list .added .image {
+      width: 6rem;
+      height: 6rem;
+      overflow: hidden; }
+      #Account-Container.List-Container .lists .list .added .image img {
+        height: 100%;
+        width: 100%; }
+    #Account-Container.List-Container .lists .list .added .detail .name {
+      color: #000; }
+    #Account-Container.List-Container .lists .list .added .detail a {
+      text-decoration: none;
+      font-family: "Poppins";
+      font-size: 0.8rem;
+      font-weight: 400; }
+    #Account-Container.List-Container .lists .list .added .detail a:hover {
+      text-decoration: underline 1px solid blue; }
+  #Account-Container.List-Container .lists .list:last-child {
+    margin-bottom: 0; }

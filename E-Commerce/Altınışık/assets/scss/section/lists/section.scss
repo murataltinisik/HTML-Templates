@@ -1,0 +1,83 @@
+// -> GENERAL SCSS
+@import '../../general/general.scss';
+
+
+///////////////// SECTION -> LISTS
+#Account-Container.List-Container{
+    // LISTS
+    .lists{
+        width: 100%;
+    
+        // LIST
+        .list{
+            box-shadow: 0 0 6px #eee, 0 0 2px #ccc;
+            padding: 1rem;
+            position: relative;
+            border-radius: .3rem;
+            margin-bottom: .7rem;
+
+            // NAME
+            .name{
+                color: gold;
+                @include FontFunction('Poppins', .85rem, 700);
+            }
+        
+            // I TAG
+            i{
+                cursor: pointer;
+                font-size: 1.3rem;
+                @include PositionAbsolute-TOP-RIGHT(1.1rem, 1rem);
+            }
+
+            // ADDED
+            .added{
+
+                .add{
+                    @include DisplayFunction();
+                    margin: 1rem 0;
+                }
+
+                .add:last-child{
+                    margin-bottom: 0;
+                }
+
+                // IMAGE
+                .image{
+                    width: 6rem;
+                    height: 6rem;
+                    overflow: hidden;
+
+                    // JPEG, PNG
+                    img{
+                        height: 100%;
+                        width: 100%;
+                    }
+                }
+
+                // DETAIL
+                .detail{
+                    // NAME
+                    .name{
+                        color: #000;
+                    }
+
+                    // A TAG
+                    a{
+                        text-decoration: none;
+                        @include FontFunction('Poppins', .8rem, 400);
+                    }
+
+                    a:hover{
+                        text-decoration: underline 1px solid blue;
+                    }
+                }
+
+            }
+        }
+
+        .list:last-child{
+            margin-bottom: 0;
+        }
+
+    }
+}

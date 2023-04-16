@@ -1,0 +1,60 @@
+// GENERAL SCSS -> IMPORT
+@import '../general/general.scss';
+
+///////////////// SECTION -> FOOTER
+#Footer-Container{
+    margin-top: 2rem;
+    padding: 4rem 2rem;
+    border-top: 1px solid #eee;
+    box-shadow: 0 -3px 9px #eee;
+    position: relative;
+}
+
+// FOOTER -> HEAD
+#Footer-Container .footer-head{
+    @include DisplayFunction(wrap, space-between, center);
+}
+
+// FOOTER -> HEAD -> TITLE
+#Footer-Container .footer-head h3{
+    @include FontFunction('Poppins', 2rem, 700);
+}
+
+// FOOTER -> HEAD -> INPUT
+#Footer-Container .footer-head .LetMeKnow input{
+    width: 19rem;
+    color: gray;
+    padding: .4rem;
+    border: 2px solid #eee;
+    background-color: #fff;
+    box-shadow: 0 0 6px #eee;
+    @include FontFunction('Poppins', .8rem, 700);
+}
+
+#Footer-Container .footer-head .LetMeKnow input:focus{
+    outline: none;
+    border-color: gold;
+}
+
+// FOOTER -> HEAD -> CONTENT
+#Footer-Container .content ul:not(:last-child) li,
+#Footer-Container .content ul li a{
+    opacity: .7;
+    transition: all .2s ease;
+    @include FontFunction('Poppins', .8rem, 700);
+}
+
+#Footer-Container .content ul:not(:last-child) li:hover,
+#Footer-Container .content ul li a:hover{
+    opacity: 1;
+    padding-left: .3rem;
+}
+
+// FOOTER -> BOTTOM -> COPRIGHT
+#Footer-Container .footer-bottom{
+    width: 100%;
+    color: #ccc;
+    text-align: center;
+    @include FontFunction('Poppins', .7rem, 700);
+    @include PositionAbsolute-BOTTOM-LEFT(.5rem,0);
+}

@@ -1,0 +1,14 @@
+/* FONTS */
+@import '../fonts.css';
+
+/* BASKET SCSS */
+@import url(../../scss/general/general.css);
+@import url(../../scss/header/header.css);
+@import url(../../scss/section/basket/section.css);
+@import url(../../scss/section/section-2.css);
+@import url(../../scss/article/article.css);
+@import url(../../scss/footer/footer.css);
+
+/* RESPONSIVE SHEMAS */
+@import url(../../scss/responsive/basket/responsive.css);
+@import url(../../scss/responsive/basket/responsive.css);

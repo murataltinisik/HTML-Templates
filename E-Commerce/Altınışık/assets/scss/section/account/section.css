@@ -1,0 +1,219 @@
+.title {
+  color: gold; }
+  .title a {
+    color: gold; }
+  .title a:hover {
+    color: gold; }
+
+.SpecialButton,
+.SpecialButtonGreen,
+.SpecialButtonRed {
+  width: 100%;
+  padding: .8rem .6rem;
+  border-radius: .3rem;
+  color: #fff;
+  transition: all .2s ease;
+  font-family: "Poppins";
+  font-size: 0.85rem;
+  font-weight: 700; }
+
+.SpecialButton {
+  border: 2px solid gold;
+  background-color: gold; }
+
+.SpecialButton:hover {
+  border-color: #fff;
+  box-shadow: 0 0 6px gold; }
+
+.SpecialButtonGreen {
+  border: 2px solid green;
+  background-color: green; }
+
+.SpecialButtonGreen:hover {
+  border-color: #fff;
+  box-shadow: 0 0 6px green; }
+
+.SpecialButtonRed {
+  border: 2px solid red;
+  background-color: red; }
+
+.SpecialButtonRed:hover {
+  border-color: #fff;
+  box-shadow: 0 0 6px red; }
+
+#Link-Navigate ul {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: flex-start;
+  font-family: "Poppins";
+  font-size: 0.9rem;
+  font-weight: 600; }
+
+#Link-Navigate ul li {
+  opacity: .5; }
+
+#Link-Navigate ul span {
+  font-size: .6rem;
+  margin: 0 .5rem;
+  opacity: .5; }
+
+#Link-Navigate ul li a {
+  color: gold;
+  transition: all .2s ease; }
+
+#Link-Navigate ul li a:hover {
+  color: goldenrod; }
+
+.input:not([type="checkbox"]) {
+  width: 100%;
+  padding: .6rem 2rem;
+  border: 2px solid #eee;
+  background-color: #eee;
+  border-radius: .2rem;
+  font-family: "Poppins";
+  font-size: 0.8rem;
+  font-weight: 700;
+  transition: all .2s ease; }
+
+.input:not([type="checkbox"]):focus {
+  outline: none;
+  background-color: #fff;
+  box-shadow: 0 0 6px #ccc;
+  border-color: #fff; }
+
+.group {
+  display: flex;
+  flex-wrap: auto;
+  align-items: center;
+  justify-content: space-between; }
+
+.middle-title {
+  font-family: "Poppins";
+  font-size: 1.1rem;
+  font-weight: 700; }
+
+#Account-Container {
+  position: relative; }
+  #Account-Container .group {
+    width: fit-content; }
+    #Account-Container .group .user-image {
+      width: 5rem;
+      height: 5rem;
+      overflow: hidden;
+      border-radius: 50%; }
+      #Account-Container .group .user-image img {
+        width: 100%;
+        height: 100%; }
+  #Account-Container .menu {
+    position: relative;
+    margin: 1rem 0;
+    width: 25%; }
+    #Account-Container .menu ul li a {
+      color: #151515;
+      padding: .7rem;
+      display: block;
+      border-radius: .3rem;
+      transition: all .2s ease;
+      font-family: "Poppins";
+      font-size: 0.9rem;
+      font-weight: 700; }
+    #Account-Container .menu ul li a:hover {
+      color: gold;
+      padding-left: .9rem;
+      box-shadow: 0 0 6px #f9f9f9;
+      background-color: #f9f9f9; }
+    #Account-Container .menu ul li a.active {
+      color: gold;
+      padding-left: .9rem;
+      box-shadow: 0 0 6px #f9f9f9;
+      background-color: #f9f9f9; }
+  #Account-Container .content {
+    width: 75%;
+    margin-left: 2rem; }
+    #Account-Container .content .head {
+      font-family: "Poppins";
+      font-size: auto;
+      font-weight: 700;
+      background-color: #f9f9f9;
+      padding: .7rem 1rem;
+      box-shadow: 0 0 12px #eee; }
+    #Account-Container .content .body {
+      width: 100%;
+      padding: 1rem;
+      box-shadow: 0 0 3px #eee;
+      display: flex;
+      flex-wrap: auto;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden; }
+      #Account-Container .content .body form {
+        width: 50%; }
+      #Account-Container .content .body .genderTitle {
+        font-family: "Poppins";
+        font-size: 0.8rem;
+        font-weight: 600; }
+      #Account-Container .content .body .InputGroup {
+        width: 100%;
+        margin: .5rem 0;
+        position: relative; }
+        #Account-Container .content .body .InputGroup label {
+          font-family: "Poppins";
+          font-size: 0.8rem;
+          font-weight: 600; }
+        #Account-Container .content .body .InputGroup div {
+          display: flex;
+          flex-wrap: auto;
+          align-items: center;
+          justify-content: center; }
+          #Account-Container .content .body .InputGroup div i.user-icon {
+            position: absolute;
+            top: 0.8rem;
+            left: 1rem; }
+          #Account-Container .content .body .InputGroup div i.user-info-edit {
+            position: absolute;
+            top: 0.25rem;
+            right: 1rem;
+            cursor: pointer;
+            z-index: 99;
+            border-radius: 50%;
+            padding: .5rem; }
+          #Account-Container .content .body .InputGroup div i.user-info-edit:active {
+            background-color: #fff; }
+      #Account-Container .content .body .gender {
+        display: flex;
+        flex-wrap: auto;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        border-radius: .3rem;
+        overflow: hidden;
+        background-color: #eee; }
+        #Account-Container .content .body .gender .male, #Account-Container .content .body .gender .female {
+          width: 50%;
+          transition: all .2s ease;
+          padding: .8rem 0;
+          cursor: pointer;
+          font-family: "Poppins";
+          font-size: 0.8rem;
+          font-weight: 700; }
+        #Account-Container .content .body .gender .male.active, #Account-Container .content .body .gender .female.active {
+          background-color: gold;
+          color: #fff; }
+      #Account-Container .content .body button {
+        width: 100%;
+        border: none;
+        background-color: transparent;
+        background-color: gold;
+        border-radius: .3rem;
+        border: 2px solid gold;
+        padding: .6rem 1rem;
+        transition: all .2s ease;
+        color: #fff;
+        font-family: "Poppins";
+        font-size: 0.8rem;
+        font-weight: 600; }
+      #Account-Container .content .body button:hover {
+        border-color: #fff;
+        box-shadow: 0 0 6px gold; }

@@ -1,0 +1,249 @@
+.title {
+  color: gold; }
+  .title a {
+    color: gold; }
+  .title a:hover {
+    color: gold; }
+
+.SpecialButton,
+.SpecialButtonGreen,
+.SpecialButtonRed {
+  width: 100%;
+  padding: .8rem .6rem;
+  border-radius: .3rem;
+  color: #fff;
+  transition: all .2s ease;
+  font-family: "Poppins";
+  font-size: 0.85rem;
+  font-weight: 700; }
+
+.SpecialButton {
+  border: 2px solid gold;
+  background-color: gold; }
+
+.SpecialButton:hover {
+  border-color: #fff;
+  box-shadow: 0 0 6px gold; }
+
+.SpecialButtonGreen {
+  border: 2px solid green;
+  background-color: green; }
+
+.SpecialButtonGreen:hover {
+  border-color: #fff;
+  box-shadow: 0 0 6px green; }
+
+.SpecialButtonRed {
+  border: 2px solid red;
+  background-color: red; }
+
+.SpecialButtonRed:hover {
+  border-color: #fff;
+  box-shadow: 0 0 6px red; }
+
+#Link-Navigate ul {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: flex-start;
+  font-family: "Poppins";
+  font-size: 0.9rem;
+  font-weight: 600; }
+
+#Link-Navigate ul li {
+  opacity: .5; }
+
+#Link-Navigate ul span {
+  font-size: .6rem;
+  margin: 0 .5rem;
+  opacity: .5; }
+
+#Link-Navigate ul li a {
+  color: gold;
+  transition: all .2s ease; }
+
+#Link-Navigate ul li a:hover {
+  color: goldenrod; }
+
+.input:not([type="checkbox"]) {
+  width: 100%;
+  padding: .6rem 2rem;
+  border: 2px solid #eee;
+  background-color: #eee;
+  border-radius: .2rem;
+  font-family: "Poppins";
+  font-size: 0.8rem;
+  font-weight: 700;
+  transition: all .2s ease; }
+
+.input:not([type="checkbox"]):focus {
+  outline: none;
+  background-color: #fff;
+  box-shadow: 0 0 6px #ccc;
+  border-color: #fff; }
+
+.group {
+  display: flex;
+  flex-wrap: auto;
+  align-items: center;
+  justify-content: space-between; }
+
+.middle-title {
+  font-family: "Poppins";
+  font-size: 1.1rem;
+  font-weight: 700; }
+
+#Basket-Container {
+  margin-top: 1rem;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  text-align: center; }
+  #Basket-Container .products, #Basket-Container .basket-detail {
+    border-radius: .3rem;
+    font-family: "Poppins";
+    font-size: 0.9rem;
+    font-weight: 400; }
+  #Basket-Container .products {
+    width: 74%;
+    text-align: initial; }
+    #Basket-Container .products .item {
+      overflow: hidden;
+      background-color: #fff;
+      box-shadow: 0 0 6px #f1f1f1, 0 0 1px #ccc;
+      margin-bottom: 1rem;
+      padding: 1rem;
+      display: flex;
+      flex-wrap: nowrap;
+      align-items: center;
+      justify-content: flex-start;
+      font-family: "Poppins";
+      font-size: auto;
+      font-weight: 600;
+      position: relative; }
+      #Basket-Container .products .item p {
+        margin: 0 !important;
+        padding: 0 !important; }
+      #Basket-Container .products .item .item-image {
+        width: 5rem;
+        height: 5rem;
+        overflow: hidden; }
+        #Basket-Container .products .item .item-image img {
+          width: 100%;
+          height: 100%; }
+      #Basket-Container .products .item .item-detail {
+        width: 60%;
+        margin-left: 1rem; }
+        #Basket-Container .products .item .item-detail .total del {
+          opacity: .7; }
+        #Basket-Container .products .item .item-detail .total b {
+          color: gold; }
+        #Basket-Container .products .item .item-detail .amount b {
+          color: gold; }
+        #Basket-Container .products .item .item-detail a {
+          font-size: .8rem; }
+      #Basket-Container .products .item .item-property {
+        width: 50%;
+        height: 5rem;
+        overflow: hidden;
+        padding: 0 2rem;
+        display: flex;
+        flex-wrap: auto;
+        align-items: center;
+        justify-content: space-between; }
+        #Basket-Container .products .item .item-property .amount-actions {
+          width: min-content;
+          display: flex;
+          flex-direction: column;
+          flex-wrap: auto;
+          align-items: center;
+          justify-content: center; }
+          #Basket-Container .products .item .item-property .amount-actions input {
+            width: 2rem;
+            text-align: center; }
+          #Basket-Container .products .item .item-property .amount-actions button {
+            border: none;
+            background-color: transparent;
+            font-size: .8rem;
+            background-color: #f6f6f6;
+            box-shadow: 0 0 3px #eee;
+            width: 100%;
+            text-align: center;
+            padding: .17rem 0;
+            cursor: pointer; }
+          #Basket-Container .products .item .item-property .amount-actions button:active {
+            background-color: #ccc; }
+        #Basket-Container .products .item .item-property .delete-action a {
+          padding: .5rem 1rem;
+          color: red;
+          font-size: .8rem;
+          border-radius: .3rem;
+          border: 2px solid red;
+          transition: all .2s ease; }
+        #Basket-Container .products .item .item-property .delete-action a:hover {
+          color: #fff;
+          background-color: red;
+          box-shadow: 0 0 6px red; }
+      #Basket-Container .products .item #Responsive-Desing > i, #Basket-Container .products .item #Responsive-Desing #Reponsive-Head, #Basket-Container .products .item #Responsive-Desing #Open-Responsive-Menu {
+        font-size: 2rem; }
+      #Basket-Container .products .item #Responsive-Desing #Open-Responsive-Menu {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        color: #797979;
+        position: absolute;
+        top: 0;
+        right: 2rem;
+        display: none; }
+      #Basket-Container .products .item #Responsive-Desing #Responsive-Item-Details {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        background-color: #fff;
+        z-index: 99999;
+        padding: 0 2rem;
+        display: none; }
+        #Basket-Container .products .item #Responsive-Desing #Responsive-Item-Details #Reponsive-Head {
+          text-align: right;
+          padding: 0 1rem;
+          cursor: pointer; }
+        #Basket-Container .products .item #Responsive-Desing #Responsive-Item-Details #Reponsive-Head:hover {
+          color: black; }
+        #Basket-Container .products .item #Responsive-Desing #Responsive-Item-Details #Responsive-Item-Data {
+          height: 100%;
+          text-align: center; }
+        #Basket-Container .products .item #Responsive-Desing #Responsive-Item-Details #Responsive-Item-Data > div:not(:nth-child(1)) {
+          width: 100%;
+          margin-bottom: 1rem; }
+  #Basket-Container .basket-detail {
+    width: 24%;
+    background-color: #fff;
+    box-shadow: 0 0 6px #f1f1f1, 0 0 1px #ccc;
+    margin-bottom: 1rem;
+    padding: 1rem; }
+    #Basket-Container .basket-detail ul li span {
+      font-size: .8rem;
+      opacity: .7;
+      font-weight: 600; }
+    #Basket-Container .basket-detail ul li b {
+      color: green; }
+    #Basket-Container .basket-detail a {
+      color: #fff;
+      border-radius: .3rem;
+      background-color: gold;
+      box-shadow: 0 0 6px gold;
+      border: 2px solid gold;
+      padding: .5rem 1rem;
+      font-weight: 700;
+      width: 100%;
+      display: block;
+      transition: all .2s ease; }
+    #Basket-Container .basket-detail a:hover {
+      border-color: #fff;
+      background-color: #ffde26; }

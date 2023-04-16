@@ -1,0 +1,146 @@
+.title {
+  color: gold; }
+  .title a {
+    color: gold; }
+  .title a:hover {
+    color: gold; }
+
+.SpecialButton,
+.SpecialButtonGreen,
+.SpecialButtonRed {
+  width: 100%;
+  padding: .8rem .6rem;
+  border-radius: .3rem;
+  color: #fff;
+  transition: all .2s ease;
+  font-family: "Poppins";
+  font-size: 0.85rem;
+  font-weight: 700; }
+
+.SpecialButton {
+  border: 2px solid gold;
+  background-color: gold; }
+
+.SpecialButton:hover {
+  border-color: #fff;
+  box-shadow: 0 0 6px gold; }
+
+.SpecialButtonGreen {
+  border: 2px solid green;
+  background-color: green; }
+
+.SpecialButtonGreen:hover {
+  border-color: #fff;
+  box-shadow: 0 0 6px green; }
+
+.SpecialButtonRed {
+  border: 2px solid red;
+  background-color: red; }
+
+.SpecialButtonRed:hover {
+  border-color: #fff;
+  box-shadow: 0 0 6px red; }
+
+#Link-Navigate ul {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: flex-start;
+  font-family: "Poppins";
+  font-size: 0.9rem;
+  font-weight: 600; }
+
+#Link-Navigate ul li {
+  opacity: .5; }
+
+#Link-Navigate ul span {
+  font-size: .6rem;
+  margin: 0 .5rem;
+  opacity: .5; }
+
+#Link-Navigate ul li a {
+  color: gold;
+  transition: all .2s ease; }
+
+#Link-Navigate ul li a:hover {
+  color: goldenrod; }
+
+.input:not([type="checkbox"]) {
+  width: 100%;
+  padding: .6rem 2rem;
+  border: 2px solid #eee;
+  background-color: #eee;
+  border-radius: .2rem;
+  font-family: "Poppins";
+  font-size: 0.8rem;
+  font-weight: 700;
+  transition: all .2s ease; }
+
+.input:not([type="checkbox"]):focus {
+  outline: none;
+  background-color: #fff;
+  box-shadow: 0 0 6px #ccc;
+  border-color: #fff; }
+
+.group {
+  display: flex;
+  flex-wrap: auto;
+  align-items: center;
+  justify-content: space-between; }
+
+.middle-title {
+  font-family: "Poppins";
+  font-size: 1.1rem;
+  font-weight: 700; }
+
+#Account-Container.OrderContainer .body {
+  overflow: initial !important; }
+#Account-Container.OrderContainer .orders {
+  width: 100%;
+  border-radius: .3rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start; }
+  #Account-Container.OrderContainer .orders .order {
+    width: 18rem;
+    background-color: #fff;
+    box-shadow: 0 0 6px #eee;
+    display: flex;
+    flex-wrap: auto;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    margin: .3rem 1rem;
+    position: relative; }
+    #Account-Container.OrderContainer .orders .order .OrderDetailShow {
+      font-size: 2rem;
+      color: #333333;
+      cursor: pointer;
+      width: 3rem;
+      height: 3rem;
+      text-align: center;
+      border-radius: 50%; }
+    #Account-Container.OrderContainer .orders .order .OrderDetailShow:active {
+      background-color: #f9f9f9;
+      box-shadow: 0 0 3px #ccc; }
+    #Account-Container.OrderContainer .orders .order .order-date {
+      color: gray;
+      font-family: "Poppins";
+      font-size: 0.8rem;
+      font-weight: 700; }
+    #Account-Container.OrderContainer .orders .order .order-detail {
+      width: 75%;
+      display: none;
+      position: absolute;
+      top: 6rem;
+      left: 0;
+      z-index: 999; }
+    #Account-Container.OrderContainer .orders .order .order-image {
+      width: 4rem;
+      height: 4rem;
+      overflow: hidden; }
+      #Account-Container.OrderContainer .orders .order .order-image img {
+        width: 100%;
+        height: 100%; }

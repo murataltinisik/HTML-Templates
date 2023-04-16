@@ -1,0 +1,78 @@
+// -> GENERAL SCSS
+@import '../../general/general.scss';
+@import '../header.scss';
+@import '../footer.scss';
+
+// THIS DESING APPLIES TO LAPTOP
+@media only screen and(min-width: 769px) and(max-width: 1040px){
+    // DELETE ACTIONS
+    .delete-action a span{
+        display: none;
+    }
+}
+
+// THIS DESING APPLIES TO TABLET
+@media only screen and(min-width: 480px) and(max-width: 768px){
+    /////// --- BASKET CONTAINER --- \\\\\\\
+
+    #Basket-Container{
+        padding: 0 2rem;
+        @include DisplayFunction-2(wrap, column, space-between, flex-start);
+    }
+
+    // BASKET -> PRODUCTS
+    #Basket-Container .products{
+        width: 100%;
+    }
+
+    // BASKET -> PRODUCTS -> ITEM (DETAIL - PROPERTY)
+    #Basket-Container .products .item > .item-detail,
+    #Basket-Container .products .item > .item-property{
+        display: none;
+    }
+
+    // BASKET -> DETAIL
+    #Basket-Container .basket-detail{
+        width: 100%;
+    }
+
+    // RESPONSIVE BUTTON
+    #Basket-Container .products .item #Open-Responsive-Menu.openBTN{
+        display: flex !important;
+    }
+
+    /////// ### BASKET CONTAINER ### \\\\\\\
+}
+
+// THIS DESING APPLIES TO PHONE
+@media only screen and(max-width: 479px){
+    /////// --- BASKET CONTAINER --- \\\\\\\
+
+    #Basket-Container{
+        padding: 0 2rem;
+        @include DisplayFunction-2(wrap, column, space-between, flex-start);
+    }
+
+    // BASKET -> PRODUCTS
+    #Basket-Container .products{
+        width: 100%;
+    }
+
+    // BASKET -> PRODUCTS -> ITEM (DETAIL - PROPERTY)
+    #Basket-Container .products .item > .item-detail,
+    #Basket-Container .products .item > .item-property{
+        display: none;
+    }
+
+    // BASKET -> DETAIL
+    #Basket-Container .basket-detail{
+        width: 100%;
+    }
+
+    // RESPONSIVE BUTTON
+    #Basket-Container .products .item #Open-Responsive-Menu.openBTN{
+        display: flex !important;
+    }
+
+    /////// ### BASKET CONTAINER ### \\\\\\\
+}

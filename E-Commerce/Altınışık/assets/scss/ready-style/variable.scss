@@ -1,0 +1,60 @@
+/////// M-P (MARGIN & PADDING) REFRESH \\\\\\\
+@mixin M-P-REFRESH {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/////// BUTTON REFRESH \\\\\\\
+@mixin ButtonRefresh {
+    border: none;
+    background-color: transparent;
+}
+
+/////// POSITION FUNCTINON  \\\\\\\
+@mixin PositionAbsolute-TOP-RIGHT($top : auto, $right : auto) {
+    position: absolute;
+    top: $top;
+    right: $right;
+}
+
+@mixin PositionAbsolute-TOP-LEFT($top : auto, $left : auto) {
+    position: absolute;
+    top: $top;
+    left: $left;
+}
+
+@mixin PositionAbsolute-BOTTOM-LEFT($bottom : auto, $left : auto) {
+    position: absolute;
+    bottom: $bottom;
+    left: $left;
+}
+
+@mixin PositionAbsolute-BOTTOM-RIGHT($bottom : auto, $right : auto) {
+    position: absolute;
+    bottom: $bottom;
+    right: $right;
+}
+
+/////// FONT FUNCTION \\\\\\\
+@mixin FontFunction($font-family : auto, $font-size : auto, $font-weight : auto) {
+    font-family: $font-family;
+    font-size: $font-size;
+    font-weight: $font-weight;
+}
+
+/////// DISPLAY FUNCTION \\\\\\\
+@mixin DisplayFunction($flex-wrap : auto, $justify-content : auto, $align-items : auto) {
+    display: flex;
+    flex-wrap: $flex-wrap;
+    align-items: $align-items;
+    justify-content: $justify-content;
+}
+
+/////// DISPLAY FUNCTION 2 \\\\\\\
+@mixin DisplayFunction-2($flex-wrap : auto, $flex-direction : auto ,$justify-content : auto, $align-items : auto) {
+    display: flex;
+    flex-direction: $flex-direction;
+    flex-wrap: $flex-wrap;
+    align-items: $align-items;
+    justify-content: $justify-content;
+}

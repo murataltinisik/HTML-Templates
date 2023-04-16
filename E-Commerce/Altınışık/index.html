@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anasayfa</title>
+    <!-- GENERAL CSS -->
+    <link rel="stylesheet" href="assets/css/index/general.css">
+    <!-- BOOTSTRAP CSS -->
+    <link rel="stylesheet" href="assets/plugins/css/bootstrap.min.css">
+</head>
+<body>
+
+
+
+    <!-- CONTENT: HEADER CONTAINER 
+        |--------------------------------------------------------------|
+        | HEADER CONTAINER -> (TITLE, SEARCH, GROUP(BASKET - ACCOUNT)) |
+        |--------------------------------------------------------------|
+    -->
+    <!----------- HEADER START ----------->
+    <header>
+        <!-- HEADER CONTAINER -->
+        <div id="Header-Container" class="container-fluid pt-3">
+
+            <!-- TITLE & SEARCH & GROUP (BASKET - ACCOUNT) -->
+            <div class="container">
+
+                <!-- TITLE -->
+                <div class="title">
+                    <h1><a href="index.html" class="text-decoration-none">Altınışık.com</a></h1>
+                </div>
+
+                <!-- SEARCH -->
+                <div class="search">
+                    <input type="text" id="SiteSearchINPUT" placeholder="Ürün Adı, Kategori veya Marka Giriniz..">
+                    <i class="fa fa-search"></i>
+
+                    <div id="response">
+                        
+                        <div class="head">
+                            <div class="searchGIF">
+                                <div class="loading"></div>
+                                <span class="mx-2">Aranıyor..</span>
+                            </div>
+
+                            <div class="search-truncate">
+                                <button>Temizle</button>
+                            </div>
+
+                        </div>
+
+                        <hr class="bg-warning">
+
+                        <div class="body">
+                            <ul class="list-unstyled">
+                                <li><a href="#" class="text-decoration-none"><span class="key">Bilgisayar</span> <span class="text-secondary">Kategori</span> </a></li>
+                                <li><a href="#" class="text-decoration-none"><span class="key">iPHONE 12</span> <span class="text-secondary">Marka</span></a></li>
+                                <li><a href="#" class="text-decoration-none"><span class="key">Bilgisayar 2</span> <span class="text-secondary">Marka</span></a></li>
+                                <li><a href="#" class="text-decoration-none"><span class="key">Bilgisayar 3</span> <span class="text-secondary">Marka</span></a></li>
+                                <li><a href="#" class="text-decoration-none"><span class="key">Telefon</span> <span class="text-secondary">Kategori</span></a></li>
+                                <li><a href="#" class="text-decoration-none"><span class="key">Telefon 1</span> <span class="text-secondary">Kategori</span></a></li>
+                                <li><a href="#" class="text-decoration-none"><span class="key">Telefon 2</span> <span class="text-secondary">Kategori</span></a></li>
+                                <li><a href="#" class="text-decoration-none"><span class="key">Monster</span> <span class="text-secondary">Marka</span></a></li>
+                                <li><a href="#" class="text-decoration-none"><span class="key">Monster V12.2</span> <span class="text-secondary">Marka</span></a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- BASKET & ACCOUNT -->
+                <div class="group">
+    
+                    <!-- ACCOUNT -->
+                    <div class="account" id="account">
+                        <i class="fa fa-user"></i>
+                        <span>Hesabım</span>
+
+                        <div class="account-menu">
+                            <ul class="list-unstyled m-0">
+                                <li class="text-secondary"><a href="javascript:void(0)" class="text-decoration-none">murat@gmail.com</a></li>
+                                <li><a href="#" class="text-decoration-none">Bildirimler</a></li>
+                                <li><a href="#" class="text-decoration-none">Siparişlerim</a></li>
+                                <li><a href="#" class="text-decoration-none">Kullanıcı Bilgilerim</a></li>
+                                <li><a href="#" class="text-decoration-none text-danger">Çıkış</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- BASKET -->
+                    <div class="basket">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span>Sepetim</span>
+                        <div class="amount">3</div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- MENUS -->
+            <div class="container">
+                <div class="menus">
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-decoration-none">Kadın</a></li>
+                        <li><a href="#" class="text-decoration-none">Erkek</a></li>
+                        <li><a href="#" class="text-decoration-none">Çocuk</a></li>
+                        <li><a href="#" class="text-decoration-none">Ev & Yaşam</a></li>
+                        <li><a href="#" class="text-decoration-none">SüperMarket</a></li>
+                        <li><a href="#" class="text-decoration-none">Kozmetik</a></li>
+                        <li><a href="#" class="text-decoration-none">Ayakkabı & Çanta</a></li>
+                        <li><a href="#" class="text-decoration-none">Saat & Aksesuar</a></li>
+                        <li><a href="#" class="text-decoration-none">Elektronik</a></li>
+                        <li><a href="#" class="text-decoration-none">Spor & Outdor</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </header>
+    <!-----------# HEADER END #----------->
+
+
+
+    <!-- CONTENT: SECTION CONTAINER 
+        |--------------------------------------------------------|
+        | SLIDER CONTAINER -> (CONTENT, IMAGE, NAVIGATE, BUTTON) |
+        |------------------------------------------------------- |
+        | CAMPAIGN CONTAINER -> (ITEM -> TITLE, BUTTON, TIME)    |
+        |------------------------------------------------------- |
+        | PRODUCT CONTINER -> (MIDDLE TITLE, PRODUCTS)           |
+        |------------------------------------------------------- |
+    -->
+    <!----------- SECTION START ----------->
+    <section>
+
+        <!-- SLIDER CONTAINER -->
+        <div id="Slider-Container" class="container-fluid">
+            <div class="container">
+
+                <!-- SLIDER -->
+                <div class="h-100">
+                    <div class="slider">
+                        <div class="content">
+                            <p class="display-6">Lorem ipsum dolor</p>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae, tempore.</p> 
+                            <button>Fırsatı Kaçırma</button>
+                        </div>
+                        
+                        <div class="image">
+                            <img src="assets/image/swappie-product-iphone-12-pro-max-pacific-blue.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="slider">
+                        <div class="content">
+                            <p class="display-6">Lorem ipsum dolor 2</p>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae, tempore.</p> 
+                            <button>Fırsatı Kaçırma</button>
+                        </div>
+                        
+                        <div class="image">
+                            <img src="assets/image/swappie-product-iphone-12-pro-max-pacific-blue.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="slider">
+                        <div class="content">
+                            <p class="display-6">Lorem ipsum dolor 3</p>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae, tempore.</p> 
+                            <button>Fırsatı Kaçırma</button>
+                        </div>
+                        
+                        <div class="image">
+                            <img src="assets/image/swappie-product-iphone-12-pro-max-pacific-blue.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- NAVIGATE -->
+                <div class="navigate">
+                    <ul class="list-unstyled">
+                        <li class="active"></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+
+                <!-- NEXT : PREVIEW -->
+                <div class="slider-btn">
+                    <button id="preview"><i class="fas fa-chevron-left"></i></button>
+                    <button id="next"><i class="fas fa-chevron-right"></i></button>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- CAMPAIGN CONTAINER -->
+        <div id="Campaign-Container" class="container">
+
+            <div class="item">
+
+                <!-- TITLE -->
+                <div class="item-title">
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+
+                <div class="group">
+                    <!-- BUTTON -->
+                    <div class="item-button">
+                        <button>İncele</button>
+                    </div>
+    
+                    <!-- TIME -->
+                    <div class="item-time">
+                        <i class="fas fa-clock"></i>
+                        <span>13 Saat 4 Dakika 59 Saniye</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="item">
+
+                <div class="item-title">
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+
+                <div class="group">
+                    <div class="item-button">
+                        <button>İncele</button>
+                    </div>
+    
+                    <div class="item-time">
+                        <i class="fas fa-clock"></i>
+                        <span>13 Saat 4 Dakika 59 Saniye</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="item">
+
+                <div class="item-title">
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+
+                <div class="group">
+                    <div class="item-button">
+                        <button>İncele</button>
+                    </div>
+    
+                    <div class="item-time">
+                        <i class="fas fa-clock"></i>
+                        <span>13 Saat 4 Dakika 59 Saniye</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="item">
+
+                <div class="item-title">
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+
+                <div class="group">
+                    <div class="item-button">
+                        <button>İncele</button>
+                    </div>
+    
+                    <div class="item-time">
+                        <i class="fas fa-clock"></i>
+                        <span>13 Saat 4 Dakika 59 Saniye</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- PRODUCT CONTAINER -->
+        <div id="Product-Container" class="container">
+
+            <!-- CONTENT : MIDDLE TITLE - PRODUCTS -->
+            <div>
+                <!-- MIDDLE TITLE -->
+                <div class="middle-title">
+                    <p>İndirimler</p>
+                </div>
+    
+                <!-- PRODUCTS -->
+                <div class="products">
+    
+                    <!-- ITEM -->
+                    <div class="item">
+    
+                        <div class="item-title">
+                            Lorem ipsum dolor sit amet.
+                        </div>
+    
+                        <div class="item-image">
+                            <img style="width: 80%;" src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/MME73?wid=1144&hei=1144&fmt=jpeg&qlt=80&.v=1632861342000" alt="">
+                        </div>
+    
+                        <div class="item-detail">
+                            <small><del>1499.89 TL</del></small>
+                            <b>1149.59 TL</b>
+                        </div>
+
+                        <div class="actions">
+                            <button>Sepete Ekle</button>
+                        </div>
+    
+                    </div>
+    
+                    <div class="item">
+    
+                        <div class="item-title">
+                            Lorem ipsum dolor sit amet.
+                        </div>
+    
+                        <div class="item-image">
+                            <img src="https://s.turkcell.com.tr/SiteAssets/Cihaz/aksesuar/philips/58pus8506-4k-ultra-hd-58-inc-147-ekran-uydu-alicili-android-smart-led-tv/cg/1.png?1637573866000" alt="">
+                        </div>
+    
+                        <div class="item-detail">
+                            <small><del>1499.89 TL</del></small>
+                            <b>1149.59 TL</b>
+                        </div>
+
+                        <div class="actions">
+                            <button>Sepete Ekle</button>
+                        </div>
+    
+                    </div>
+    
+                    <div class="item">
+    
+                        <div class="item-title">
+                            Lorem ipsum dolor sit amet.
+                        </div>
+    
+                        <div class="item-image">
+                            <img style="width: 80%;" src="https://productimages.hepsiburada.net/s/86/375/110000028286524.jpg" alt="">
+                        </div>
+    
+                        <div class="item-detail">
+                            <small><del>1499.89 TL</del></small>
+                            <b>1149.59 TL</b>
+                        </div>
+
+                        <div class="actions">
+                            <button>Sepete Ekle</button>
+                        </div>
+    
+                    </div>
+    
+                    <div class="item">
+    
+                        <div class="item-title">
+                            Lorem ipsum dolor sit amet.
+                        </div>
+    
+                        <div class="item-image">
+                            <img style="width: 80%;" src="https://productimages.hepsiburada.net/s/44/500/10801863819314.jpg" alt="">
+                        </div>
+    
+                        <div class="item-detail">
+                            <small><del>1499.89 TL</del></small>
+                            <b>1149.59 TL</b>
+                        </div>
+
+                        <div class="actions">
+                            <button>Sepete Ekle</button>
+                        </div>
+    
+                    </div>
+    
+                </div>
+            </div>
+
+            <br>
+
+            <!-- CONTENT : MIDDLE TITLE - PRODUCTS -->
+            <div>
+                <!-- MIDDLE TITLE -->
+                <div class="middle-title">
+                    <p>Kampanyalar</p>
+                </div>
+    
+                <!-- PRODUCTS -->
+                <div class="products">
+    
+                    <div class="item">
+    
+                        <div class="item-title">
+                            Lorem ipsum dolor sit amet.
+                        </div>
+    
+                        <div class="item-image">
+                            <img style="width: 80%;" src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/MME73?wid=1144&hei=1144&fmt=jpeg&qlt=80&.v=1632861342000" alt="">
+                        </div>
+    
+                        <div class="item-detail">
+                            <small><del>1499.89 TL</del></small>
+                            <b>1149.59 TL</b>
+                        </div>
+
+                        <div class="actions">
+                            <button>Sepete Ekle</button>
+                        </div>
+    
+                    </div>
+    
+                    <div class="item">
+    
+                        <div class="item-title">
+                            Lorem ipsum dolor sit amet.
+                        </div>
+    
+                        <div class="item-image">
+                            <img src="https://s.turkcell.com.tr/SiteAssets/Cihaz/aksesuar/philips/58pus8506-4k-ultra-hd-58-inc-147-ekran-uydu-alicili-android-smart-led-tv/cg/1.png?1637573866000" alt="">
+                        </div>
+    
+                        <div class="item-detail">
+                            <small><del>1499.89 TL</del></small>
+                            <b>1149.59 TL</b>
+                        </div>
+
+                        <div class="actions">
+                            <button>Sepete Ekle</button>
+                        </div>
+    
+                    </div>
+    
+                    <div class="item">
+    
+                        <div class="item-title">
+                            Lorem ipsum dolor sit amet.
+                        </div>
+    
+                        <div class="item-image">
+                            <img style="width: 80%;" src="https://productimages.hepsiburada.net/s/86/375/110000028286524.jpg" alt="">
+                        </div>
+    
+                        <div class="item-detail">
+                            <small><del>1499.89 TL</del></small>
+                            <b>1149.59 TL</b>
+                        </div>
+
+                        <div class="actions">
+                            <button>Sepete Ekle</button>
+                        </div>
+    
+                    </div>
+    
+                    <div class="item">
+    
+                        <div class="item-title">
+                            Lorem ipsum dolor sit amet.
+                        </div>
+    
+                        <div class="item-image">
+                            <img style="width: 80%;" src="https://productimages.hepsiburada.net/s/44/500/10801863819314.jpg" alt="">
+                        </div>
+    
+                        <div class="item-detail">
+                            <small><del>1499.89 TL</del></small>
+                            <b>1149.59 TL</b>
+                        </div>
+
+                        <div class="actions">
+                            <button>Sepete Ekle</button>
+                        </div>
+    
+                    </div>
+    
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <!-----------# SECTION END #----------->
+
+
+
+    <!-- CONTENT: ARTICLE CONTAINER 
+        |-------------------------------------------|
+        | SITE INFORMATION -> (BOX(TITLE, CONTENT)) |
+        |-------------------------------------------|
+    -->
+    <!----------- ARTICLE START ----------->
+    <article>
+        <!-- SITE INFORMATION -->
+        <div id="Site-Information" class="container">
+
+            <div class="information">
+
+                <!-- CONTENT: TITLE - CONTENT -->
+                <div class="box">
+                    
+                    <!-- BOX TITLE -->
+                    <div class="box-title">
+                        Güvenli Alışveriş
+                    </div>
+
+                    <!-- BOX CONTENT -->
+                    <div class="box-content">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio vel et rerum est pariatur saepe culpa illo quibusdam, maxime cum ratione magnam dolorem in, maiores atque voluptatibus provident corporis dignissimos?
+                    </div>
+
+                </div>
+
+                <div class="box">
+
+                    <div class="box-title">
+                        Hızlı Kargo
+                    </div>
+
+                    <div class="box-content">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio vel et rerum est pariatur saepe culpa illo quibusdam, maxime cum ratione magnam dolorem in, maiores atque voluptatibus provident corporis dignissimos?
+                    </div>
+
+                </div>
+
+                <div class="box">
+
+                    <div class="box-title">
+                        Kolay İade
+                    </div>
+
+                    <div class="box-content">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio vel et rerum est pariatur saepe culpa illo quibusdam, maxime cum ratione magnam dolorem in, maiores atque voluptatibus provident corporis dignissimos?
+                    </div>
+
+                </div>
+
+                <div class="box">
+
+                    <div class="box-title">
+                        AltınExpress
+                    </div>
+
+                    <div class="box-content">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio vel et rerum est pariatur saepe culpa illo quibusdam, maxime cum ratione magnam dolorem in, maiores atque voluptatibus provident corporis dignissimos?
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </article>
+    <!-----------# ARTICLE END #----------->
+
+
+
+    
+    <!-- CONTENT: FOOTER CONTAINER 
+        |-------------------------------------------|
+        | FOOTER HEAD -> (TITLE, LET ME KNOW)       |
+        |-------------------------------------------|
+        | FOOTER CONTENT -> (TITLE, MENU LIST)      |
+        |-------------------------------------------|
+        | FOOTER BOTTOM -> (COPYRIGHT)              |
+        |-------------------------------------------|
+    -->
+    <!----------- FOOTER START ----------->
+    <footer>
+        <!-- FOOTER CONTAINER -->
+        <div id="Footer-Container" class="container-fluid">
+            <div class="container">
+
+                <!-- FOOTER HEAD -->
+                <div class="footer-head">
+
+                    <div class="title">
+                        <h3>Altınışık.com</h3>
+                    </div>
+
+                    <div class="LetMeKnow">
+                        <form>
+                            <input type="text" name="" id="LetMeKnow" placeholder="Kampanyalardan Haberdar olmak için">
+                        </form>
+                    </div>
+
+                </div>
+
+                <hr>
+
+                <!-- FOOTER CONTENT -->
+                <div class="row content">
+
+                    <!-- TITLE, LIST -->
+                    <div class="col-lg-3 col-md-3 col-sm-12">
+
+                        <!-- FOOTER TITLE -->
+                        <div class="footer-title">
+                            <h4>Anasayfa</h4>
+                        </div>
+
+                        <!-- FOOTER LIST -->
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="text-decoration-none text-dark">Anasayfa</a></li>
+                            <li><a href="#" class="text-decoration-none text-dark">Kategoriler</a></li>
+                            <li><a href="#" class="text-decoration-none text-dark">Hesabım</a></li>
+                            <li><a href="#" class="text-decoration-none text-dark">Hakkımızda</a></li>
+                            <li><a href="#" class="text-decoration-none text-dark">İletişim</a></li>
+                        </ul>
+
+                    </div>
+
+                    <!-- TITLE, LIST -->
+                    <div class="col-lg-3 col-md-3 col-sm-12">
+                        <div class="footer-title">
+                            <h4>Hesabım</h4>
+                        </div>
+
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="text-decoration-none text-dark">Sepetim</a></li>
+                            <li><a href="#" class="text-decoration-none text-dark">Hesap Bilgilerim</a></li>
+                            <li><a href="#" class="text-decoration-none text-dark">Kullanıcı Sözleşmesi</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- TITLE, LIST -->
+                    <div class="col-lg-3 col-md-3 col-sm-12">
+
+                        <div class="footer-title">
+                            <h4>Kategoriler</h4>
+                        </div>
+
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="text-decoration-none text-dark">Kategori 1</a></li>
+                            <li><a href="#" class="text-decoration-none text-dark">Kategori 2</a></li>
+                            <li><a href="#" class="text-decoration-none text-dark">Kategori 3</a></li>
+                            <li><a href="#" class="text-decoration-none text-dark">Kategori 4</a></li>
+                        </ul>
+
+                    </div>
+
+                    <!-- TITLE, LIST -->
+                    <div class="col-lg-3 col-md-3 col-sm-12">
+
+                        <div class="footer-title">
+                            <h4>İletişim</h4>
+                        </div>
+
+                        <ul class="list-unstyled">
+                            <li><b>Adress: </b> Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
+                            <li><b>Telefon: </b> 0 000 00 00</li>
+                            <li><b>Email: </b> siteexampleinfo@gmail.com</li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+                <!-- FOOTER BOTTOM -->
+                <div class="footer-bottom">
+                    Altınışık.com <i class="far fa-copyright"></i> 2020-2017 Tüm Hakları Saklıdır.
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <!-----------# FOOTER END #----------->
+
+    
+
+    <!-- JQUERT JS -->
+    <script src="assets/script/jquery.js"></script>
+    <!-- BOOTSTRAP JS -->
+    <script src="assets/plugins/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <!-- SLIDER JS -->
+    <script src="assets/script/slider.js"></script>
+    <!-- ACCOUNT MENU JS -->
+    <script src="assets/script/account-menu.js"></script>
+    <!-- SEARCH INPUT JS -->
+    <script src="assets/script/search-input.js"></script>
+</body>
+</html>

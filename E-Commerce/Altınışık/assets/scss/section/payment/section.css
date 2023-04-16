@@ -1,0 +1,169 @@
+.title {
+  color: gold; }
+  .title a {
+    color: gold; }
+  .title a:hover {
+    color: gold; }
+
+.SpecialButton,
+.SpecialButtonGreen,
+.SpecialButtonRed {
+  width: 100%;
+  padding: .8rem .6rem;
+  border-radius: .3rem;
+  color: #fff;
+  transition: all .2s ease;
+  font-family: "Poppins";
+  font-size: 0.85rem;
+  font-weight: 700; }
+
+.SpecialButton {
+  border: 2px solid gold;
+  background-color: gold; }
+
+.SpecialButton:hover {
+  border-color: #fff;
+  box-shadow: 0 0 6px gold; }
+
+.SpecialButtonGreen {
+  border: 2px solid green;
+  background-color: green; }
+
+.SpecialButtonGreen:hover {
+  border-color: #fff;
+  box-shadow: 0 0 6px green; }
+
+.SpecialButtonRed {
+  border: 2px solid red;
+  background-color: red; }
+
+.SpecialButtonRed:hover {
+  border-color: #fff;
+  box-shadow: 0 0 6px red; }
+
+#Link-Navigate ul {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: flex-start;
+  font-family: "Poppins";
+  font-size: 0.9rem;
+  font-weight: 600; }
+
+#Link-Navigate ul li {
+  opacity: .5; }
+
+#Link-Navigate ul span {
+  font-size: .6rem;
+  margin: 0 .5rem;
+  opacity: .5; }
+
+#Link-Navigate ul li a {
+  color: gold;
+  transition: all .2s ease; }
+
+#Link-Navigate ul li a:hover {
+  color: goldenrod; }
+
+.input:not([type="checkbox"]) {
+  width: 100%;
+  padding: .6rem 2rem;
+  border: 2px solid #eee;
+  background-color: #eee;
+  border-radius: .2rem;
+  font-family: "Poppins";
+  font-size: 0.8rem;
+  font-weight: 700;
+  transition: all .2s ease; }
+
+.input:not([type="checkbox"]):focus {
+  outline: none;
+  background-color: #fff;
+  box-shadow: 0 0 6px #ccc;
+  border-color: #fff; }
+
+.group {
+  display: flex;
+  flex-wrap: auto;
+  align-items: center;
+  justify-content: space-between; }
+
+.middle-title {
+  font-family: "Poppins";
+  font-size: 1.1rem;
+  font-weight: 700; }
+
+#Payment-Container {
+  margin: 1rem auto; }
+  #Payment-Container .body {
+    width: 100%;
+    padding: 0 1rem;
+    display: flex;
+    flex-wrap: auto;
+    align-items: flex-start;
+    justify-content: space-between; }
+    #Payment-Container .body > .group {
+      width: 45%; }
+    #Payment-Container .body .InputGroup {
+      margin: 1rem 0; }
+      #Payment-Container .body .InputGroup label {
+        font-family: "Poppins";
+        font-size: 0.85rem;
+        font-weight: 700; }
+      #Payment-Container .body .InputGroup i {
+        position: absolute;
+        top: 0.75rem;
+        left: 0.5rem; }
+      #Payment-Container .body .InputGroup .selectBox {
+        width: 48%; }
+    #Payment-Container .body .form-check .form-check-label {
+      font-family: "Poppins";
+      font-size: 0.75rem;
+      font-weight: 600; }
+    #Payment-Container .body .address {
+      width: 100%;
+      box-shadow: 0 0 6px #eee;
+      padding: 1rem;
+      border-radius: .3rem;
+      position: relative;
+      margin: 1rem 0;
+      cursor: pointer;
+      border: 2px solid #fff; }
+      #Payment-Container .body .address .address-title {
+        font-family: "Poppins";
+        font-size: 0.9rem;
+        font-weight: 700;
+        position: relative;
+        width: fit-content;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: auto;
+        align-items: flex-start;
+        justify-content: flex-start; }
+      #Payment-Container .body .address .addressDetailShow {
+        position: absolute;
+        top: 1.6rem;
+        right: 0;
+        padding: 0 1rem;
+        display: flex;
+        flex-wrap: auto;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.6rem;
+        color: gray;
+        cursor: pointer;
+        border-radius: 50%; }
+      #Payment-Container .body .address .addressDetailShow:hover {
+        color: gold;
+        text-shadow: 0 0 2px gold; }
+    #Payment-Container .body .address:not(.active):hover {
+      box-shadow: 0 0 3px #ccc; }
+    #Payment-Container .body .address.active {
+      border: 2px solid gold;
+      box-shadow: 0 0 3px gold; }
+      #Payment-Container .body .address.active .activeAddress {
+        position: absolute;
+        top: 1.65rem;
+        right: -1.5rem;
+        color: gold; }

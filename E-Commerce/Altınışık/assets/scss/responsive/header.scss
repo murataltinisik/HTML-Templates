@@ -1,0 +1,119 @@
+// -> GENERAL SCSS
+@import '../general/general.scss';
+
+// THIS DESING APPLIES TO LAPTOP
+@media only screen and(min-width: 769px) and (max-width: 1048px) {
+    ////////// ******* HEADER CONTAINER ******* \\\\\\\\\\
+
+    // -> HEADER -> CONTAINER -> SEARCH
+    #Header-Container .container .search {
+        width: 50%;
+    }
+
+    // HEADER -> CONTAINER -> GROUP -> SPAN
+    #Header-Container .container .group span{
+        display: none;
+    }
+
+    // HEADER -> CONTAINER -> GROUP -> ALL ITEM
+    #Header-Container .container .group *{
+        font-size: .8rem !important;
+    }
+
+    // HEADER -> CONTAINER -> GROUP -> MENUS
+    #Header-Container .container .menus ul li a{
+        font-size: .6rem;
+    }
+
+    ////////// ####### HEADER CONTAINER ####### \\\\\\\\\\
+
+}
+
+// THIS DESING APPLIES TO TABLET
+@media only screen and(min-width: 480px) and (max-width: 768px) {
+    ////////// ******* HEADER CONTAINER ******* \\\\\\\\\\
+
+    // -> HEADER -> CONTAINER
+    #Header-Container .container{
+        @include DisplayFunction-2(auto, column, center, center);
+        margin-bottom: .5rem;
+        position: relative;
+    }
+
+    // -> HEADER -> CONTAINER -> TITLE
+    #Header-Container .container .title{
+        width: 100%;
+    }
+
+    // -> HEADER -> CONTAINER -> SEARCH
+    #Header-Container .container .search {
+        width: 100%;
+        position: relative;
+    }
+
+    // HEADER -> CONTAINER -> GROUP
+    #Header-Container .container .group{
+        @include PositionAbsolute-TOP-RIGHT(1rem, 1.5rem);
+    }
+
+    // HEADER -> CONTAINER -> GROUP -> SPAN
+    #Header-Container .container .group span{
+        display: none;
+    }
+
+    // HEADER -> CONTAINER -> GROUP -> ALL ITEM
+    #Header-Container .container .group *{
+        font-size: .8rem !important;
+    }
+
+    // HEADER -> CONTAINER -> GROUP -> MENUS
+    #Header-Container .container .menus{
+        display: none;
+    }
+
+    ////////// ####### HEADER CONTAINER ####### \\\\\\\\\\
+}
+
+// THIS DESING APPLIES TO PHONE
+@media only screen and (max-width: 479px){
+    ////////// ******* HEADER CONTAINER ******* \\\\\\\\\\
+
+    // -> HEADER -> CONTAINER
+    #Header-Container .container{
+        @include DisplayFunction-2(auto, column, center, center);
+        margin-bottom: .5rem;
+    }
+
+    // -> HEADER -> CONTAINER -> TITLE
+    #Header-Container .container .title{
+        width: 100%;
+    }
+
+    // -> HEADER -> CONTAINER -> SEARCH
+    #Header-Container .container .search {
+        width: 100%;
+        position: relative;
+    }
+
+    // HEADER -> CONTAINER -> GROUP
+    #Header-Container .container .group{
+        @include PositionAbsolute-TOP-RIGHT(1.6rem, 1.5rem);
+    }
+
+    // HEADER -> CONTAINER -> GROUP -> SPAN
+    #Header-Container .container .group span{
+        display: none;
+    }
+
+    // HEADER -> CONTAINER -> GROUP -> ALL ITEM
+    #Header-Container .container .group *{
+        font-size: .8rem !important;
+    }
+
+    // HEADER -> CONTAINER -> GROUP -> MENUS
+    #Header-Container .container .menus{
+        display: none;
+    }
+
+    ////////// ####### HEADER CONTAINER ####### \\\\\\\\\\
+}

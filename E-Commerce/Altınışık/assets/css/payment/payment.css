@@ -1,0 +1,15 @@
+/* FONTS */
+@import '../fonts.css';
+
+/* PAYMENT SCSS */
+@import url(../../scss/general/general.css);
+@import url(../../scss/header/header.css);
+@import url(../../scss/section/payment/section.css);
+@import url(../../scss/article/article.css);
+@import url(../../scss/footer/footer.css);
+
+/* RESPONSIVE SHEMAS */
+@import url(../../scss/responsive/header.css);
+@import url(../../scss/responsive/payment/section.css);
+@import url(../../scss/responsive/article.css);
+@import url(../../scss/responsive/footer.css);

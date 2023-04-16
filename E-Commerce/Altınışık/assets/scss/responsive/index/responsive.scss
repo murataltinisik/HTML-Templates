@@ -1,0 +1,239 @@
+// -> GENERAL SCSS
+@import '../../general/general.scss';
+@import '../header.scss';
+@import '../footer.scss';
+
+// THIS DESING APPLIES TO LAPTOP
+@media only screen and(min-width:769px) and (max-width: 1048px){
+
+    ////////// ******* SECTION CONTAINER ******* \\\\\\\\\\
+    
+    /////// --- SLIDER --- \\\\\\\
+    // SECTION -> SLIDER
+    #Slider-Container{
+        height: auto;
+    }
+
+    // SECTION -> SLIDER
+    #Slider-Container .slider{
+        padding: 1rem 0;
+    }
+
+    #Slider-Container .slider div{
+        width: 40%;
+        padding: 0;
+        box-shadow: none !important;
+    }
+
+    // SECTION -> SLIDER -> TITLE
+    #Slider-Container .slider div p.display-6{
+        font-size: 1.5rem;
+    }
+
+    // SECTION -> SLIDER -> CONTENT
+    #Slider-Container .slider div p:nth-child(2){
+        font-size: .7rem !important;
+    }
+
+    // SECTION -> SLIDER -> BUTTON
+    #Slider-Container .slider div.content button{
+        padding: .5rem .7rem;
+        font-size: .6rem;
+    }
+
+    // SECTION -> SLIDER -> DIV.image
+    #Slider-Container .slider div.image img{
+        height: 70%;
+    }
+
+    // SECTION -> SLIDER -> NAVIGATE
+    #Slider-Container .navigate{
+        display: none;
+    }
+
+    // SECTION -> SLIDER -> NEXT : PREVIEW BTN
+    #Slider-Container .slider-btn button{
+        font-size: 1rem;
+    }
+    /////// ### SLIDER ### \\\\\\\
+
+    /////// --- CAMPAING --- \\\\\\\
+    #Campaign-Container{
+        margin: 2rem auto;
+        justify-content: center;
+    }    
+
+    // CAMPAING -> ITEM
+    #Campaign-Container .item{
+        margin: .5rem;
+        width: 45%;
+    }
+
+    // CAMPAING -> ITEM -> ITEM TITLE
+    #Campaign-Container .item .item-title{
+        font-size: 1rem;
+    }
+    /////// ### CAMPAING ### \\\\\\\
+
+    ////////// ####### SECTION CONTAINER ####### \\\\\\\\\\
+
+
+}
+
+// THIS DESING APPLIES TO TABLET
+@media only screen and(min-width: 480px) and (max-width: 768px) {
+
+    ////////// ******* SECTION CONTAINER ******* \\\\\\\\\\
+    
+    /////// --- SLIDER --- \\\\\\\
+    // SECTION -> SLIDER
+    #Slider-Container{
+        height: auto;
+    }
+
+    // SECTION -> SLIDER
+    #Slider-Container .slider{
+        padding: 1rem 0;
+    }
+
+    #Slider-Container .slider div{
+        width: 50%;
+        padding: 0;
+        box-shadow: none !important;
+    }
+
+    // SECTION -> SLIDER -> TITLE
+    #Slider-Container .slider div p.display-6{
+        font-size: 1.1rem;
+    }
+
+    // SECTION -> SLIDER -> CONTENT
+    #Slider-Container .slider div p:nth-child(2){
+        font-size: .7rem !important;
+    }
+
+    // SECTION -> SLIDER -> BUTTON
+    #Slider-Container .slider div.content button{
+        padding: .5rem .7rem;
+        font-size: .6rem;
+    }
+
+    // SECTION -> SLIDER -> DIV.image
+    #Slider-Container .slider div.image img{
+        height: 70%;
+    }
+
+    // SECTION -> SLIDER -> NAVIGATE
+    #Slider-Container .navigate{
+        display: none;
+    }
+
+    // SECTION -> SLIDER -> NEXT : PREVIEW BTN
+    #Slider-Container .slider-btn button{
+        font-size: 1rem;
+    }
+    /////// ### SLIDER ### \\\\\\\
+
+    /////// --- CAMPAING --- \\\\\\\
+    #Campaign-Container{
+        margin: 2rem auto;
+        justify-content: center;
+    }    
+
+    // CAMPAING -> ITEM
+    #Campaign-Container .item{
+        margin: .5rem;
+        width: 80%;
+    }
+
+    // CAMPAING -> ITEM -> ITEM TITLE
+    #Campaign-Container .item .item-title{
+        font-size: 1rem;
+    }
+    /////// ### CAMPAING ### \\\\\\\
+
+    ////////// ####### SECTION CONTAINER ####### \\\\\\\\\\
+
+
+
+}
+
+// THIS DESING APPLIES TO PHONE
+@media only screen and (max-width: 479px){
+    
+    ////////// ******* SECTION CONTAINER ******* \\\\\\\\\\
+    
+    /////// --- SLIDER --- \\\\\\\
+    // SECTION -> SLIDER
+    #Slider-Container{
+        height: auto;
+    }
+
+    // SECTION -> SLIDER
+    #Slider-Container .slider{
+        padding: 1rem 0;
+    }
+
+    #Slider-Container .slider div{
+        width: 50%;
+        padding: 0;
+        box-shadow: none !important;
+    }
+
+    // SECTION -> SLIDER -> TITLE
+    #Slider-Container .slider div p.display-6{
+        font-size: 1.1rem;
+    }
+
+    // SECTION -> SLIDER -> CONTENT
+    #Slider-Container .slider div p:nth-child(2){
+        font-size: .7rem !important;
+    }
+
+    // SECTION -> SLIDER -> BUTTON
+    #Slider-Container .slider div.content button{
+        padding: .5rem .7rem;
+        font-size: .6rem;
+    }
+
+    // SECTION -> SLIDER -> DIV.image
+    #Slider-Container .slider div.image img{
+        height: 70%;
+    }
+
+    // SECTION -> SLIDER -> NAVIGATE
+    #Slider-Container .navigate{
+        display: none;
+    }
+
+    // SECTION -> SLIDER -> NEXT : PREVIEW BTN
+    #Slider-Container .slider-btn button{
+        font-size: 1rem;
+    }
+    /////// ### SLIDER ### \\\\\\\
+
+    /////// --- CAMPAING --- \\\\\\\
+    #Campaign-Container{
+        margin: 2rem auto;
+        padding: 0 1rem;
+    }    
+
+    // CAMPAING -> ITEM
+    #Campaign-Container .item{
+        width: 100%;
+        margin: .5rem;
+    }
+
+    // CAMPAING -> ITEM -> ITEM TITLE
+    #Campaign-Container .item .item-title{
+        font-size: 1rem;
+    }
+    /////// ### CAMPAING ### \\\\\\\
+
+
+    ////////// ####### SECTION CONTAINER ####### \\\\\\\\\\
+
+
+
+
+}

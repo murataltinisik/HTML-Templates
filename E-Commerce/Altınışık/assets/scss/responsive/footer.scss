@@ -1,0 +1,35 @@
+// THIS DESING APPLIES TO LAPTOP
+@media only screen and(min-width: 769px) and (max-width: 1048px) {
+    ////////// ******* FOOTER CONTAINER ******* \\\\\\\\\\
+
+    // FOOTER -> HEAD -> INPUT
+    #Footer-Container .footer-head .LetMeKnow input{
+        width: 16rem;
+    }
+    
+    ////////// ####### FOOTER CONTAINER ####### \\\\\\\\\\
+}
+
+// THIS DESING APPLIES TO TABLET
+@media only screen and(min-width: 480px) and (max-width: 768px) {
+    ////////// ******* FOOTER CONTAINER ******* \\\\\\\\\\
+
+    // FOOTER -> HEAD -> INPUT
+    #Footer-Container .footer-head .LetMeKnow input{
+        width: 100%;
+    }
+    
+    ////////// ####### FOOTER CONTAINER ####### \\\\\\\\\\
+}
+
+// THIS DESING APPLIES TO PHONE
+@media only screen and (max-width: 479px){
+    ////////// ******* FOOTER CONTAINER ******* \\\\\\\\\\
+
+    // FOOTER -> HEAD -> INPUT
+    #Footer-Container .footer-head .LetMeKnow input{
+        width: 100%;
+    }
+    
+    ////////// ####### FOOTER CONTAINER ####### \\\\\\\\\\
+}

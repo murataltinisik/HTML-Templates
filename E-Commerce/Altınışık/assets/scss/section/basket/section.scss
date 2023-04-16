@@ -1,0 +1,236 @@
+// -> GENERAL SCSS
+@import '../../general/general.scss';
+
+
+///////////////// SECTION -> BASKET
+#Basket-Container{
+    margin-top: 1rem;
+    padding: 0;
+    @include DisplayFunction(wrap, space-between, flex-start);
+    text-align: center;
+
+    // PRODUCTS & BASKET DETAILS
+    .products, .basket-detail{
+        border-radius: .3rem;
+        @include FontFunction('Poppins', .9rem, 400);
+    }
+
+    // PRODUCTS
+    .products{
+        width: 74%;
+        text-align: initial;
+
+        // ITEM
+        .item{
+            overflow: hidden;
+            background-color: #fff;
+            box-shadow: 0 0 6px #f1f1f1, 0 0 1px #ccc;
+            margin-bottom: 1rem;
+            padding: 1rem;
+            @include DisplayFunction(nowrap, flex-start, center);
+            @include FontFunction('Poppins', auto, 600);
+            position: relative;
+
+            // P TAG
+            p{
+                @include M-P-REFRESH();
+            }
+
+            ////// ITEM IMAGE \\\\\\
+            .item-image{
+                width: 5rem;
+                height: 5rem;
+                overflow: hidden;
+
+                // ITEM IMAGE -> JPEG, PNG
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+    
+            }
+
+            ////// ITEM DETAIL \\\\\\
+            .item-detail{
+                width: 60%;
+                margin-left: 1rem;
+
+                .total del{
+                    opacity: .7;
+                }
+
+                // TOTAL -> B
+                .total b{
+                    color: gold;
+                }
+
+                // AMOUNT -> B
+                .amount b{
+                    color: gold;
+                }
+    
+                // ITEM DETAIL -> A
+                a{
+                    font-size: .8rem;
+                }
+
+            }
+
+            ////// ITEM PROPERTY \\\\\\
+            .item-property{
+                width: 50%;
+                height: 5rem;
+                overflow: hidden;
+                padding: 0 2rem;
+                @include DisplayFunction(auto, space-between, center);
+
+                // AMOUNT ACTIONS
+                .amount-actions{
+                    width: min-content;
+                    @include DisplayFunction-2(auto, column, center, center);
+
+                    // INPUT
+                    input{
+                        width: 2rem;
+                        text-align: center;
+                    }
+
+                    // SPAN
+                    button{
+                        @include ButtonRefresh();
+                        font-size: .8rem;
+                        background-color: #f6f6f6;
+                        box-shadow: 0 0 3px #eee;
+                        width: 100%;
+                        text-align: center;
+                        padding: .17rem 0;
+                        cursor: pointer;
+                    }
+
+                    button:active{
+                        background-color: #ccc;
+                    }
+
+                }
+
+                // DELETE ACTIONS
+                .delete-action a{
+                    padding: .5rem 1rem;
+                    color: red;
+                    font-size: .8rem;
+                    border-radius: .3rem;
+                    border: 2px solid red;
+                    transition: all .2s ease;
+                }
+
+                .delete-action a:hover{
+                    color: #fff;
+                    background-color: red;
+                    box-shadow: 0 0 6px red;
+                }
+
+            }
+
+            ////// RESPONSIVE DESING \\\\\\
+            #Responsive-Desing{
+                //display: none;
+
+                > i, #Reponsive-Head, #Open-Responsive-Menu{
+                    font-size: 2rem;
+                }
+
+                #Open-Responsive-Menu{
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    color: rgb(121, 121, 121);
+                    @include PositionAbsolute-TOP-RIGHT(0, 2rem);
+                    display: none;
+                }
+
+                // RESPONSIVE -> ITEM DETAILS
+                #Responsive-Item-Details{
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    overflow: hidden;
+                    background-color: #fff;
+                    z-index: 99999;
+                    padding: 0 2rem;
+                    display: none;
+
+                    // RESPONSIVE HEAD
+                    #Reponsive-Head{
+                        text-align: right;
+                        padding: 0 1rem;
+                        cursor: pointer;
+                    }
+
+                    #Reponsive-Head:hover{
+                        color: black;
+                    }
+
+                    // RESPONSIVE ITEM DATA
+                    #Responsive-Item-Data{
+                        height: 100%;
+                        text-align: center;
+                    }
+
+                    #Responsive-Item-Data > div:not(:nth-child(1)){
+                        width: 100%;
+                        margin-bottom: 1rem;
+                    }
+
+
+                }
+
+            }
+
+        }
+
+    }
+
+    // BASKET DETAILS
+    .basket-detail{
+        width: 24%;
+        background-color: #fff;
+        box-shadow: 0 0 6px #f1f1f1, 0 0 1px #ccc;
+        margin-bottom: 1rem;
+        padding: 1rem;
+        
+        // UL LI SPAN
+        ul li span{
+            font-size: .8rem;
+            opacity: .7;
+            font-weight: 600;
+        }
+
+        // UL LI B
+        ul li b{
+            color: green;
+        }
+
+        // BUTTON
+        a{
+            color: #fff;
+            border-radius: .3rem;
+            background-color: gold;
+            box-shadow: 0 0 6px gold;
+            border: 2px solid gold;
+            padding: .5rem 1rem;
+            font-weight: 700;
+            width: 100%;
+            display: block;
+            transition: all .2s ease;
+        }
+
+        a:hover{
+            border-color: #fff;
+            background-color: rgb(255, 222, 38);
+        }
+
+    }
+
+}

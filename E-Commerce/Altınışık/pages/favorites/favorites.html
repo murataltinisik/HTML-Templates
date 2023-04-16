@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anasayfa - Favoriler</title>
+    <!-- GENERAL CSS -->
+    <link rel="stylesheet" href="../../assets/css/favorites/favorites.css">
+    <!-- BOOTSTRAP CSS -->
+    <link rel="stylesheet" href="../../assets/plugins/css/bootstrap.min.css">
+</head>
+<body>
+
+
+    <!-- CONTENT: HEADER CONTAINER 
+        |--------------------------------------------------------------|
+        | HEADER CONTAINER -> (TITLE, SEARCH, GROUP(BASKET - ACCOUNT)) |
+        |--------------------------------------------------------------|
+    -->
+    <!----------- HEADER START ----------->
+    <header>
+        <!-- HEADER CONTAINER -->
+        <div id="Header-Container" class="container-fluid pt-3">
+
+            <!-- TITLE & SEARCH & GROUP (BASKET - ACCOUNT) -->
+            <div class="container">
+
+                <!-- TITLE -->
+                <div class="title">
+                    <h1><a href="index.html" class="text-decoration-none">Altınışık.com</a></h1>
+                </div>
+
+                <!-- SEARCH -->
+                <div class="search">
+                    <input type="text" id="SiteSearchINPUT" placeholder="Ürün Adı, Kategori veya Marka Giriniz..">
+                    <i class="fa fa-search"></i>
+
+                    <div id="response">
+                        
+                        <div class="head">
+                            <div class="searchGIF">
+                                <div class="loading"></div>
+                                <span class="mx-2">Aranıyor..</span>
+                            </div>
+
+                            <div class="search-truncate">
+                                <button>Temizle</button>
+                            </div>
+
+                        </div>
+
+                        <hr class="bg-warning">
+
+                        <div class="body">
+                            <ul class="list-unstyled">
+                                <li><a href="#" class="text-decoration-none"><span class="key">Bilgisayar</span> <span class="text-secondary">Kategori</span> </a></li>
+                                <li><a href="#" class="text-decoration-none"><span class="key">iPHONE 12</span> <span class="text-secondary">Marka</span></a></li>
+                                <li><a href="#" class="text-decoration-none"><span class="key">Bilgisayar 2</span> <span class="text-secondary">Marka</span></a></li>
+                                <li><a href="#" class="text-decoration-none"><span class="key">Bilgisayar 3</span> <span class="text-secondary">Marka</span></a></li>
+                                <li><a href="#" class="text-decoration-none"><span class="key">Telefon</span> <span class="text-secondary">Kategori</span></a></li>
+                                <li><a href="#" class="text-decoration-none"><span class="key">Telefon 1</span> <span class="text-secondary">Kategori</span></a></li>
+                                <li><a href="#" class="text-decoration-none"><span class="key">Telefon 2</span> <span class="text-secondary">Kategori</span></a></li>
+                                <li><a href="#" class="text-decoration-none"><span class="key">Monster</span> <span class="text-secondary">Marka</span></a></li>
+                                <li><a href="#" class="text-decoration-none"><span class="key">Monster V12.2</span> <span class="text-secondary">Marka</span></a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- BASKET & ACCOUNT -->
+                <div class="group">
+    
+                    <!-- ACCOUNT -->
+                    <div class="account" id="account">
+                        <i class="fa fa-user"></i>
+                        <span>Hesabım</span>
+
+                        <div class="account-menu">
+                            <ul class="list-unstyled m-0">
+                                <li class="text-secondary"><a href="javascript:void(0)" class="text-decoration-none">murat@gmail.com</a></li>
+                                <li><a href="#" class="text-decoration-none">Bildirimler</a></li>
+                                <li><a href="#" class="text-decoration-none">Siparişlerim</a></li>
+                                <li><a href="#" class="text-decoration-none">Kullanıcı Bilgilerim</a></li>
+                                <li><a href="#" class="text-decoration-none text-danger">Çıkış</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- BASKET -->
+                    <div class="basket">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span>Sepetim</span>
+                        <div class="amount">3</div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- MENUS -->
+            <div class="container">
+                <div class="menus">
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-decoration-none">Kadın</a></li>
+                        <li><a href="#" class="text-decoration-none">Erkek</a></li>
+                        <li><a href="#" class="text-decoration-none">Çocuk</a></li>
+                        <li><a href="#" class="text-decoration-none">Ev & Yaşam</a></li>
+                        <li><a href="#" class="text-decoration-none">SüperMarket</a></li>
+                        <li><a href="#" class="text-decoration-none">Kozmetik</a></li>
+                        <li><a href="#" class="text-decoration-none">Ayakkabı & Çanta</a></li>
+                        <li><a href="#" class="text-decoration-none">Saat & Aksesuar</a></li>
+                        <li><a href="#" class="text-decoration-none">Elektronik</a></li>
+                        <li><a href="#" class="text-decoration-none">Spor & Outdor</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </header>
+    <!-----------# HEADER END #----------->
+
+
+
+    <!-- CONTENT: SECTION CONTAINER 
+        |----------------------------------------------------------------------------------|
+        |   |
+        |----------------------------------------------------------------------------------|
+    -->
+    <!----------- SECTION START ----------->
+    <section>
+
+        <!-- LINK NAVIGATE -->
+        <nav id="Link-Navigate" class="container">
+            <ul class="list-unstyled">
+                <li><a href="../index.html" class="text-decoration-none">Anasayfa</a></li>
+                <span><i class="fas fa-chevron-right"></i></span>
+                <li>Favorilerim</li>
+            </ul>
+        </nav>
+
+        <!-- FAVORITE CONTAINER -->
+        <div id="Favorite-Container" class="container">
+            
+            <!-- FAVORITE -->
+            <div class="favorite">
+
+                <!-- IMAGE -->
+                <div class="image">
+                    <img src="../../assets/image/swappie-product-iphone-12-pro-max-pacific-blue.png" alt="">
+                </div>
+
+                <!-- DETAIL -->
+                <div class="detail">
+                    <p>iPHONE 12 PRO MAX 128GB 16GB RAM</p>
+                    <span><span>Mevcut Fiyat:</span> <b> 4.899,59 <small>TL</small></b></span>
+                </div>
+
+                <!-- ACTIONS -->
+                <div class="actions">
+                    <button>İncele</button>
+                </div>
+
+            </div>
+
+            <!-- FAVORITE -->
+            <div class="favorite">
+
+                <!-- IMAGE -->
+                <div class="image">
+                    <img src="../../assets/image/swappie-product-iphone-12-pro-max-pacific-blue.png" alt="">
+                </div>
+
+                <!-- DETAIL -->
+                <div class="detail">
+                    <p>iPHONE 12 PRO MAX 128GB 16GB RAM</p>
+                    <span><span>Mevcut Fiyat:</span> <b> 4.899,59 <small>TL</small></b></span>
+                </div>
+
+                <!-- ACTIONS -->
+                <div class="actions">
+                    <button>İncele</button>
+                </div>
+
+            </div>
+
+            <!-- FAVORITE -->
+            <div class="favorite">
+
+                <!-- IMAGE -->
+                <div class="image">
+                    <img src="../../assets/image/swappie-product-iphone-12-pro-max-pacific-blue.png" alt="">
+                </div>
+
+                <!-- DETAIL -->
+                <div class="detail">
+                    <p>iPHONE 12 PRO MAX 128GB 16GB RAM</p>
+                    <span><span>Mevcut Fiyat:</span> <b> 4.899,59 <small>TL</small></b></span>
+                </div>
+
+                <!-- ACTIONS -->
+                <div class="actions">
+                    <button>İncele</button>
+                </div>
+
+            </div>
+
+            <!-- FAVORITE -->
+            <div class="favorite">
+
+                <!-- IMAGE -->
+                <div class="image">
+                    <img src="../../assets/image/swappie-product-iphone-12-pro-max-pacific-blue.png" alt="">
+                </div>
+
+                <!-- DETAIL -->
+                <div class="detail">
+                    <p>iPHONE 12 PRO MAX 128GB 16GB RAM</p>
+                    <span><span>Mevcut Fiyat:</span> <b> 4.899,59 <small>TL</small></b></span>
+                </div>
+
+                <!-- ACTIONS -->
+                <div class="actions">
+                    <button>İncele</button>
+                </div>
+
+            </div>
+
+            <!-- FAVORITE -->
+            <div class="favorite">
+
+                <!-- IMAGE -->
+                <div class="image">
+                    <img src="../../assets/image/swappie-product-iphone-12-pro-max-pacific-blue.png" alt="">
+                </div>
+
+                <!-- DETAIL -->
+                <div class="detail">
+                    <p>iPHONE 12 PRO MAX 128GB 16GB RAM</p>
+                    <span><span>Mevcut Fiyat:</span> <b> 4.899,59 <small>TL</small></b></span>
+                </div>
+
+                <!-- ACTIONS -->
+                <div class="actions">
+                    <button>İncele</button>
+                </div>
+
+            </div>
+
+            <!-- FAVORITE -->
+            <div class="favorite">
+
+                <!-- IMAGE -->
+                <div class="image">
+                    <img src="../../assets/image/swappie-product-iphone-12-pro-max-pacific-blue.png" alt="">
+                </div>
+
+                <!-- DETAIL -->
+                <div class="detail">
+                    <p>iPHONE 12 PRO MAX 128GB 16GB RAM</p>
+                    <span><span>Mevcut Fiyat:</span> <b> 4.899,59 <small>TL</small></b></span>
+                </div>
+
+                <!-- ACTIONS -->
+                <div class="actions">
+                    <button>İncele</button>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-----------# SECTION END #----------->
+
+
+
+
+    <!-- CONTENT: ARTICLE CONTAINER 
+        |-------------------------------------------|
+        | SITE INFORMATION -> (BOX(TITLE, CONTENT)) |
+        |-------------------------------------------|
+    -->
+    <!----------- ARTICLE START ----------->
+    <article>
+        <!-- SITE INFORMATION -->
+        <div id="Site-Information" class="container">
+
+            <div class="information">
+
+                <!-- CONTENT: TITLE - CONTENT -->
+                <div class="box">
+                    
+                    <!-- BOX TITLE -->
+                    <div class="box-title">
+                        Güvenli Alışveriş
+                    </div>
+
+                    <!-- BOX CONTENT -->
+                    <div class="box-content">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio vel et rerum est pariatur saepe culpa illo quibusdam, maxime cum ratione magnam dolorem in, maiores atque voluptatibus provident corporis dignissimos?
+                    </div>
+
+                </div>
+
+                <div class="box">
+
+                    <div class="box-title">
+                        Hızlı Kargo
+                    </div>
+
+                    <div class="box-content">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio vel et rerum est pariatur saepe culpa illo quibusdam, maxime cum ratione magnam dolorem in, maiores atque voluptatibus provident corporis dignissimos?
+                    </div>
+
+                </div>
+
+                <div class="box">
+
+                    <div class="box-title">
+                        Kolay İade
+                    </div>
+
+                    <div class="box-content">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio vel et rerum est pariatur saepe culpa illo quibusdam, maxime cum ratione magnam dolorem in, maiores atque voluptatibus provident corporis dignissimos?
+                    </div>
+
+                </div>
+
+                <div class="box">
+
+                    <div class="box-title">
+                        AltınExpress
+                    </div>
+
+                    <div class="box-content">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio vel et rerum est pariatur saepe culpa illo quibusdam, maxime cum ratione magnam dolorem in, maiores atque voluptatibus provident corporis dignissimos?
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </article>
+    <!-----------# ARTICLE END #----------->
+
+
+
+    
+    <!-- CONTENT: FOOTER CONTAINER 
+        |-------------------------------------------|
+        | FOOTER HEAD -> (TITLE, LET ME KNOW)       |
+        |-------------------------------------------|
+        | FOOTER CONTENT -> (TITLE, MENU LIST)      |
+        |-------------------------------------------|
+        | FOOTER BOTTOM -> (COPYRIGHT)              |
+        |-------------------------------------------|
+    -->
+    <!----------- FOOTER START ----------->
+    <footer>
+        <!-- FOOTER CONTAINER -->
+        <div id="Footer-Container" class="container-fluid">
+            <div class="container">
+
+                <!-- FOOTER HEAD -->
+                <div class="footer-head">
+
+                    <div class="title">
+                        <h3>Altınışık.com</h3>
+                    </div>
+
+                    <div class="LetMeKnow">
+                        <form>
+                            <input type="text" name="" id="LetMeKnow" placeholder="Kampanyalardan Haberdar olmak için">
+                        </form>
+                    </div>
+
+                </div>
+
+                <hr>
+
+                <!-- FOOTER CONTENT -->
+                <div class="row content">
+
+                    <!-- TITLE, LIST -->
+                    <div class="col-lg-3 col-md-3 col-sm-12">
+
+                        <!-- FOOTER TITLE -->
+                        <div class="footer-title">
+                            <h4>Anasayfa</h4>
+                        </div>
+
+                        <!-- FOOTER LIST -->
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="text-decoration-none text-dark">Anasayfa</a></li>
+                            <li><a href="#" class="text-decoration-none text-dark">Kategoriler</a></li>
+                            <li><a href="#" class="text-decoration-none text-dark">Hesabım</a></li>
+                            <li><a href="#" class="text-decoration-none text-dark">Hakkımızda</a></li>
+                            <li><a href="#" class="text-decoration-none text-dark">İletişim</a></li>
+                        </ul>
+
+                    </div>
+
+                    <!-- TITLE, LIST -->
+                    <div class="col-lg-3 col-md-3 col-sm-12">
+                        <div class="footer-title">
+                            <h4>Hesabım</h4>
+                        </div>
+
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="text-decoration-none text-dark">Sepetim</a></li>
+                            <li><a href="#" class="text-decoration-none text-dark">Hesap Bilgilerim</a></li>
+                            <li><a href="#" class="text-decoration-none text-dark">Kullanıcı Sözleşmesi</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- TITLE, LIST -->
+                    <div class="col-lg-3 col-md-3 col-sm-12">
+
+                        <div class="footer-title">
+                            <h4>Kategoriler</h4>
+                        </div>
+
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="text-decoration-none text-dark">Kategori 1</a></li>
+                            <li><a href="#" class="text-decoration-none text-dark">Kategori 2</a></li>
+                            <li><a href="#" class="text-decoration-none text-dark">Kategori 3</a></li>
+                            <li><a href="#" class="text-decoration-none text-dark">Kategori 4</a></li>
+                        </ul>
+
+                    </div>
+
+                    <!-- TITLE, LIST -->
+                    <div class="col-lg-3 col-md-3 col-sm-12">
+
+                        <div class="footer-title">
+                            <h4>İletişim</h4>
+                        </div>
+
+                        <ul class="list-unstyled">
+                            <li><b>Adress: </b> Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
+                            <li><b>Telefon: </b> 0 000 00 00</li>
+                            <li><b>Email: </b> siteexampleinfo@gmail.com</li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+                <!-- FOOTER BOTTOM -->
+                <div class="footer-bottom">
+                    Altınışık.com <i class="far fa-copyright"></i> 2020-2017 Tüm Hakları Saklıdır.
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <!-----------# FOOTER END #----------->
+
+
+
+    <!-- JQUERT JS -->
+    <script src="../../assets/script/jquery.js"></script>
+    <!-- BOOTSTRAP JS -->
+    <script src="../../assets/plugins/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <!-- ACCOUNT MENU JS -->
+    <script src="../../assets/script/account-menu.js"></script>
+    <!-- SEARCH INPUT JS -->
+    <script src="../../assets/script/search-input.js"></script>
+</body>
+</html>

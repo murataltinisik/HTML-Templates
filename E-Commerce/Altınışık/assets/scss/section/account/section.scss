@@ -1,0 +1,182 @@
+// -> GENERAL SCSS
+@import '../../general/general.scss';
+
+
+///////////////// SECTION -> ACCOUNT
+#Account-Container{
+    position: relative;
+
+    // GROUP
+    .group{
+        width: fit-content;
+
+
+        // USER IMAGE
+        .user-image{
+            width: 5rem;
+            height: 5rem;
+            overflow: hidden;
+            border-radius: 50%;
+        
+            // JPEG, PNG
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+
+    // MENU
+    .menu{
+        position: relative;
+        margin: 1rem 0;
+        width: 25%;
+
+        // UL
+        ul{
+            // LI
+            li{
+                // A
+                a{
+                    color: #151515;
+                    padding: .7rem;
+                    display: block;
+                    border-radius: .3rem;
+                    transition: all .2s ease;
+                    @include FontFunction('Poppins', .9rem, 700);
+                }
+
+                a:hover{
+                    color: gold;
+                    padding-left: .9rem;
+                    box-shadow: 0 0 6px #f9f9f9;
+                    background-color: #f9f9f9;
+                }
+
+                a.active{
+                    color: gold;
+                    padding-left: .9rem;
+                    box-shadow: 0 0 6px #f9f9f9;
+                    background-color: #f9f9f9;
+                }
+            }
+        }
+    }
+
+    // CONTENT
+    .content{
+        width: 75%;
+        margin-left: 2rem;
+
+        // HEAD
+        .head{
+            @include FontFunction('Poppins', auto, 700);
+            background-color: #f9f9f9;
+            padding: .7rem 1rem;
+            box-shadow: 0 0 12px #eee;
+        }
+
+        // BODY
+        .body{
+            width: 100%;
+            padding: 1rem;
+            box-shadow: 0 0 3px #eee;
+            @include DisplayFunction(auto, center, center);
+            overflow: hidden;
+
+            form{
+                width: 50%;
+            }
+
+            // LABEL
+            .genderTitle{
+                @include FontFunction('Poppins', .8rem, 600);
+            }
+        
+            // INPUT GROUP
+            .InputGroup{
+                width: 100%;
+                margin: .5rem 0;
+                position: relative;
+                
+                // LABEL
+                label{
+                    @include FontFunction('Poppins', .8rem, 600);
+                }
+
+                // DIV
+                div{
+                    @include DisplayFunction(auto, center, center);
+    
+                    i.user-icon{
+                        @include PositionAbsolute-TOP-LEFT(.8rem, 1rem);
+                    }
+
+                    
+                    // USER INFO EDIT
+                    i.user-info-edit{
+                        @include PositionAbsolute-TOP-RIGHT(.25rem, 1rem);
+                        cursor: pointer;
+                        z-index: 99;
+                        border-radius: 50%;
+                        padding: .5rem;
+                    }
+
+                    i.user-info-edit:active{
+                        background-color: #fff
+                    }
+
+
+                }
+
+            }
+
+            // GENDER
+            .gender{
+                @include DisplayFunction(auto, center, center);
+                text-align: center;
+                border-radius: .3rem;
+                overflow: hidden;
+                background-color: #eee;
+
+                // MALE & FEMALE
+                .male, .female{
+                    width: 50%;
+                    transition: all .2s ease;
+                    padding: .8rem 0;
+                    cursor: pointer;
+                    @include FontFunction('Poppins', .8rem, 700);
+                }
+
+                // MALE:active & FEMALE:active
+                .male.active, .female.active{
+                    background-color: gold;
+                    color: #fff;
+                }
+
+
+            }
+
+            // BUTTON
+            button{
+                width: 100%;
+                @include ButtonRefresh;
+                background-color: gold;
+                border-radius: .3rem;
+                border: 2px solid gold;
+                padding: .6rem 1rem;
+                transition: all .2s ease;
+                color: #fff;
+                @include FontFunction('Poppins', .8rem, 600);
+            }
+
+            button:hover{
+                border-color: #fff;
+                box-shadow: 0 0 6px gold;
+            }
+
+        }
+
+    }
+
+}

@@ -1,0 +1,90 @@
+// -> GENERAL SCSS
+@import '../general/general.scss';
+
+// THIS DESING APPLIES TO LAPTOP
+@media only screen and(min-width: 769px) and (max-width: 1048px) {
+    /////// --- PRODUCT --- \\\\\\\
+    #Product-Container{
+        padding: 0 2rem;
+    }
+
+    #Product-Container .products{
+        justify-content: center;
+    }
+
+    // PRODUCTS -> ITEM
+    #Product-Container .products .item{
+        width: 45%;
+        margin: 0 1rem;
+        margin-bottom: 1rem;
+    }
+
+    // PRODUCTS -> ITEM -> ACTIONS -> BUTTON
+    #Product-Container .products .item .actions button{
+        width: 80%;
+    }
+
+    // PRODUCTS -> ITEM -> DETAIL -> B
+    #Product-Container .products .item .item-detail b{
+        font-size: 1rem;
+    }
+    /////// ### PRODUCT ### \\\\\\\
+}
+
+// THIS DESING APPLIES TO TABLET
+@media only screen and(min-width: 480px) and (max-width: 768px) {
+    /////// --- PRODUCT --- \\\\\\\
+    #Product-Container{
+        padding: 0 2rem;
+    }
+
+    #Product-Container .products{
+        justify-content: center;
+    }
+
+    // PRODUCTS -> ITEM
+    #Product-Container .products .item{
+        width: 75%;
+        margin-bottom: 1rem;
+    }
+
+    // PRODUCTS -> ITEM -> ACTIONS -> BUTTON
+    #Product-Container .products .item .actions button{
+        width: 80%;
+    }
+
+    // PRODUCTS -> ITEM -> DETAIL -> B
+    #Product-Container .products .item .item-detail b{
+        font-size: 1rem;
+    }
+    /////// ### PRODUCT ### \\\\\\\
+}
+
+// THIS DESING APPLIES TO PHONE
+@media only screen and (max-width: 479px){
+    /////// --- PRODUCT --- \\\\\\\
+    #Product-Container{
+        padding: 0 2rem;
+    }
+
+    #Product-Container .products{
+        justify-content: center;
+    }
+
+    // PRODUCTS -> ITEM
+    #Product-Container .products .item{
+        width: 95%;
+        margin-bottom: 1rem;
+    }
+
+    // PRODUCTS -> ITEM -> ACTIONS -> BUTTON
+    #Product-Container .products .item .actions button{
+        width: 80%;
+    }
+
+    // PRODUCTS -> ITEM -> DETAIL -> B
+    #Product-Container .products .item .item-detail b{
+        font-size: 1rem;
+    }
+    /////// ### PRODUCT ### \\\\\\\
+}

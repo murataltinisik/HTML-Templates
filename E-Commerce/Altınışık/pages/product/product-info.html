@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anasayfa</title>
+    <!-- GENERAL CSS -->
+    <link rel="stylesheet" href="../../assets/css/product/product.css">
+    <!-- BOOTSTRAP CSS -->
+    <link rel="stylesheet" href="../../assets/plugins/css/bootstrap.min.css">
+</head>
+<body>
+
+
+    <!-- CONTENT: HEADER CONTAINER 
+        |--------------------------------------------------------------|
+        | HEADER CONTAINER -> (TITLE, SEARCH, GROUP(BASKET - ACCOUNT)) |
+        |--------------------------------------------------------------|
+    -->
+    <!----------- HEADER START ----------->
+    <header>
+        <!-- HEADER CONTAINER -->
+        <div id="Header-Container" class="container-fluid pt-3">
+
+            <!-- TITLE & SEARCH & GROUP (BASKET - ACCOUNT) -->
+            <div class="container">
+
+                <!-- TITLE -->
+                <div class="title">
+                    <h1><a href="index.html" class="text-decoration-none">Altınışık.com</a></h1>
+                </div>
+
+                <!-- SEARCH -->
+                <div class="search">
+                    <input type="text" id="SiteSearchINPUT" placeholder="Ürün Adı, Kategori veya Marka Giriniz..">
+                    <i class="fa fa-search"></i>
+
+                    <div id="response">
+                        
+                        <div class="head">
+                            <div class="searchGIF">
+                                <div class="loading"></div>
+                                <span class="mx-2">Aranıyor..</span>
+                            </div>
+
+                            <div class="search-truncate">
+                                <button>Temizle</button>
+                            </div>
+
+                        </div>
+
+                        <hr class="bg-warning">
+
+                        <div class="body">
+                            <ul class="list-unstyled">
+                                <li><a href="#" class="text-decoration-none"><span class="key">Bilgisayar</span> <span class="text-secondary">Kategori</span> </a></li>
+                                <li><a href="#" class="text-decoration-none"><span class="key">iPHONE 12</span> <span class="text-secondary">Marka</span></a></li>
+                                <li><a href="#" class="text-decoration-none"><span class="key">Bilgisayar 2</span> <span class="text-secondary">Marka</span></a></li>
+                                <li><a href="#" class="text-decoration-none"><span class="key">Bilgisayar 3</span> <span class="text-secondary">Marka</span></a></li>
+                                <li><a href="#" class="text-decoration-none"><span class="key">Telefon</span> <span class="text-secondary">Kategori</span></a></li>
+                                <li><a href="#" class="text-decoration-none"><span class="key">Telefon 1</span> <span class="text-secondary">Kategori</span></a></li>
+                                <li><a href="#" class="text-decoration-none"><span class="key">Telefon 2</span> <span class="text-secondary">Kategori</span></a></li>
+                                <li><a href="#" class="text-decoration-none"><span class="key">Monster</span> <span class="text-secondary">Marka</span></a></li>
+                                <li><a href="#" class="text-decoration-none"><span class="key">Monster V12.2</span> <span class="text-secondary">Marka</span></a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- BASKET & ACCOUNT -->
+                <div class="group">
+    
+                    <!-- ACCOUNT -->
+                    <div class="account" id="account">
+                        <i class="fa fa-user"></i>
+                        <span>Hesabım</span>
+
+                        <div class="account-menu">
+                            <ul class="list-unstyled m-0">
+                                <li class="text-secondary"><a href="javascript:void(0)" class="text-decoration-none">murat@gmail.com</a></li>
+                                <li><a href="#" class="text-decoration-none">Bildirimler</a></li>
+                                <li><a href="#" class="text-decoration-none">Siparişlerim</a></li>
+                                <li><a href="#" class="text-decoration-none">Kullanıcı Bilgilerim</a></li>
+                                <li><a href="#" class="text-decoration-none text-danger">Çıkış</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- BASKET -->
+                    <div class="basket">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span>Sepetim</span>
+                        <div class="amount">3</div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- MENUS -->
+            <div class="container">
+                <div class="menus">
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-decoration-none">Kadın</a></li>
+                        <li><a href="#" class="text-decoration-none">Erkek</a></li>
+                        <li><a href="#" class="text-decoration-none">Çocuk</a></li>
+                        <li><a href="#" class="text-decoration-none">Ev & Yaşam</a></li>
+                        <li><a href="#" class="text-decoration-none">SüperMarket</a></li>
+                        <li><a href="#" class="text-decoration-none">Kozmetik</a></li>
+                        <li><a href="#" class="text-decoration-none">Ayakkabı & Çanta</a></li>
+                        <li><a href="#" class="text-decoration-none">Saat & Aksesuar</a></li>
+                        <li><a href="#" class="text-decoration-none">Elektronik</a></li>
+                        <li><a href="#" class="text-decoration-none">Spor & Outdor</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </header>
+    <!-----------# HEADER END #----------->
+
+
+
+    <!-- CONTENT: SECTION CONTAINER 
+        |----------------------------------------------------------------------------------|
+        | PRODUCT CONTAINER -> (URUN IMAGE, URUN DETAIL, COMMENTS, QUESTION ASNWER, ..VB)  |
+        |----------------------------------------------------------------------------------|
+    -->
+    <!----------- SECTION START ----------->
+    <section>
+
+        <!-- LINK NAVIGATE -->
+        <nav id="Link-Navigate" class="container">
+            <ul class="list-unstyled">
+                <li><a href="../index.html" class="text-decoration-none">Anasayfa</a></li>
+                <span><i class="fas fa-chevron-right"></i></span>
+                <li>Elektronik</li>
+                <span><i class="fas fa-chevron-right"></i></span>
+                <li>iPHONE 12 PRO MAX</li>
+            </ul>
+
+            <!-- RESPONSIVE DESING ON -->
+            <div id="ResponsiveDesingOn">
+                <i class="fas fa-bars"> <span>Ürün Detayları</span></i>
+            </div>
+        </nav>
+
+        <!-- PRODUCT CONTAINER -->
+        <div id="Product-Container" class="container">
+
+            <!-- PRODUCT INFO -->
+            <div class="product-info">
+
+                <!-- IMAGES -->
+                <div class="product-images">
+                    <div class="image"><img style="width: 62%;" src="../../assets/image/swappie-product-iphone-12-pro-max-pacific-blue.png" alt=""></div>
+                    <div class="image"><img style="width: 50%;" src="https://cdn.akakce.com/apple/iphone-12-pro-max-256-gb-pasifik-mavisi-z.jpg" alt=""></div>
+                    <div class="image"><img style="width: 70%;" src="https://st-troy.mncdn.com/mnresize/1500/1500/Content/media/ProductImg/original/mgda3tua-apple-iphone-12-pro-max-128gb-pasifik-mavisi-mgda3tua-637600568938437194.jpg" alt=""></div>
+                
+                    <!-- NAVIGATE -->
+                    <div class="navigate">
+                        <ul class="list-unstyled">
+                            <li class="active"></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>  
+                    
+                    <!-- BUTTONS -->
+                    <div class="buttons">
+                        <button id="Prev"><i class="fas fa-chevron-left"></i></button>
+                        <button id="Next"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                </div>
+
+                <!-- DETAIL -->
+                <div class="product-details">
+
+                    <!-- NAME -->
+                    <div class="name">iPHONE 12 PRO MAX 128GB 16GB RAM - GOLD</div>
+                    <hr class="m-0 my-1 bg-warning">
+
+                    <!-- QUANTITY -->
+                    <div class="quantity">
+                        <span class="sales-quantity"><span>Satış Adedi:</span> <b>16 Adet</b></span>
+                    </div>
+    
+                    <!-- CONTENT: ASK SELLER - DETAIL -->
+                    <div class="group w-50">
+                        <!-- DETAIL -->
+                        <div class="detail">
+                            <!-- DISCOUNT -->
+                            <div class="discount">
+                                %8
+                            </div>
+
+                            <!-- PRICE -->
+                            <div class="price">
+                                <del><span class="old-price">7.899,57 <small>TL</small></span></del>
+                                <span class="new-price">6.549,99 <small>TL</small></span>
+                            </div>
+                        </div>
+
+                        <!-- ASK SELLER -->
+                        <div class="ask-seller">
+                            <button>Soru Sor (15)</button>
+                        </div>
+                    </div>
+
+                    <!-- BUTTONS -->
+                    <div class="actions">
+                        <button class="Add-Basket SpecialButton"><i class="fas fa-shopping-cart"></i> Sepete Ekle</button>
+                        <button class="Favorite-Basket SpecialButtonRed"><i class="fas fa-heart"></i> Favorileri Ekle</button>
+                        <div class="amount">
+                            <span>-</span>
+                            <input type="text" disabled value="1">
+                            <span>+</span>
+                        </div>
+                    </div>
+
+                    <hr class="bg-warning">
+
+                    <!-- TOOLS -->
+                    <div class="tools">
+
+                        <!-- DISCOUNT ALERT -->
+                        <div class="discount-alert">
+                            <p><i class="far fa-bell"></i></p>
+                            <span>İndirim Alarmı</span>
+                        </div>
+
+                        <!-- ADD LIST -->
+                        <div class="add-list">
+                            <div id="MyListAdd">
+                                <p><i class="fas fa-list"></i></p>
+                                <span>Listelerime Ekle</span>
+                            </div>
+                            <div class="lists m-0">
+                                <ul class="list-unstyled">
+                                    <li><a href="#" class="text-decoration-none">Liste 1</a></li>
+                                    <li><a href="#" class="text-decoration-none">Liste 2</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- COMPARE -->
+                        <div class="compare" data-bs-toggle="modal" data-bs-target="#ProductCompareInfo">
+                            <p><i class="fas fa-random"></i></p>
+                            <span>Karşılaştır</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- EXPLANATION -->
+            <div class="explanation">
+
+                <!-- MENU -->
+                <nav class="menu">
+                    <ul class="list-unstyled">
+                        <li class="active">Açıklama</li>
+                        <li>Değelendirmeler</li>
+                        <li>Soru & Cevap</li>
+                    </ul>
+                </nav>
+
+                <!-- CONTENT -->
+                <div class="content-container">
+
+                    <div class="content">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus commodi, explicabo veniam iusto quasi voluptatem vel quod, eius architecto accusantium amet ea, fugiat tempora suscipit nemo quae beatae mollitia maxime?
+                    </div>
+
+                    <div class="content user-content-container">
+                        
+                        <div class="user-content">
+                            <!-- CONTENT : IMAGE, USER, COMMENT SETTING -->
+                            <div class="group">
+                                <!-- CONTENT IMAGE -->
+                                <div class="user-content-image">
+                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAABlVBMVEUxuv3///8rntgrO04ySl4/Ozv+2LInJSX048MbKzrp7/TvwJXQ0dMooNwwRVgoNUdRfJlIgKItp+T53rv9hGkwtfY0MTEctv39jHb8lYQxP08pMUFBs+1Gncz8b1i65f6q3/5wzP3y+v/3zKT9emHf8//F6v6X2f5Yxf03vf2B0v7/37hLwv3r+P/Y8f+N1f6f3P0Am9z85tHs0Lc+Lyc+NTIlHxwmFAAkGBAeHiAACBNYUk3KrZCRuMoAHS8YLUNBYXigpKkTJTVbtORAirBUdYRVa3Y/TldGV181j75QRTwxHQlBX20/pdgvKSEsEwAuHw85QEI9bYhoWk+Fc2Llw6JbUEa4noRZl7hALSGXgW2Zj37TxassKS5JREJ4cGW2qpQfCwBvXk1cSjmw09vHyMCfz+C2w8Pl4MjF2NTZ3cxaqtKCt9h8pL8AFSlsd4OIjZP1zrv/8e7+wLTwxcPooZfv09Dhsav5opSTnafYxcOzrbKnj49pXmhkSUwAM0qcaWmYWlPNgHfMcF9QPUSKYmWFUU0m9WjiAAAPfElEQVR4nNXd6WMTxxUA8JUlLBCSD4y1PqRIK1myRpZkNgFfUNtYxjYOSok5kjSBpGkb2sY1NCRpElpI2rR/d2dP7TGzOzP7Vl7eRz5Y+vFm3puZ3dVKqdij1mhWqsttpdXqdBCSEOp0Oi2lvVytNBu1+D9eivFv1xqVZaWFZD0kbxj/jFrKciVWaFzCRqWt23wwf+jOdqUR0zeJQ9ioKow4N1OpxqGEFtaaq4gT52Si1Sb0iAUVdiuKJMyzkJJS6UJ+KThhTeNF0tlKjITLJJSw146YPA9SbveAvhmIsFbtgPoMY6cKkkgAYWMVaHT6kNIqQHGNLGwo4OlzGGUlsjGisNeKj2ciWxEnZCRhT4nbpxuVSMYIwsZIfIYxwlgVFtbao/LpxrZwXRUVVmOqn1SiVB2psNcZrU83dsSmo5BwpAPUYWyPSNgc8QB1EKXmCISjrTA+o8JdcXiFTXSeQExEvGnkFC6fr083Lsco7J5DCfWH3OHaIfMIm+dts4NnpHIIryUhgUbI1+IQjmwVyhKyAi5MxhQcBvtkZBT20HmTfIEYF3FswuTUGGew1RsmYTVZI9QKmWm7wSJMKJCRyCBMUJfwBkvXCBeuJheIiavRhYkGshDDhAkeokaEDtQQYWKLzDDCyk2w8C0AhhIDhc23AYiJga0/SNg776/OHEELuABhN3lrUVqggGV4gLBz3t+bIzoiwkTtB8MiYL9IFSa+EbqD3hZpwrekjA6DWlApwu55f2GBoFQbijCeKoPsiOOvU6oNWRjDwS9C/fL+nYODw4XDo+m7gw68knJUTBSCT0IklU+Or1+/gaO4tra2sb7+/r39WWgjeSqShDXgj0alqePrNy4YUcwasbbx/skA+oNIl21IQthOiEp3blg8h1BD3r8HayReYCQIYccomrru8LmE2Lh+AjofSeOUIAT8RAkNnl6/cIEqzGY3PiiDppFFCHkFFO17fD5hNvvbaUAiYZz6hD1I4JQP6Bdm1+9BEn0bKZ8QsNejO34gQZjdOIL7TH/f9woBzy2IQJIQE+Gy6DvT8AhrYJ9EHKIUYXZjF3Cg1gKFcGUGlYlAsjC7vg9G9BYbt7ABN0ZLN4hAijB7vwz2yXIjQKiAfQw64BOufXgF7LMVuhCuU9DGKFWY3ZgCI7o7hksImMJjCpAqzN4fgBEVmhAwhf61TKhw46QARXQl0SlsAX0AFj6lAenCbHFsDIrYIgsBCyl1FgYJN6YLUERnOXUIAWfhHUohDRSuZQpgWVRIQsheSK0zQcLs/btjUERHEodCwIu9AYM0SKgNUyCi49KwLYRckU7TB2mQcG1XEwJlseYTQm4qjsSE2adjY1DE4RbDFkKeAQdMw0Dh/TE4YscrhNzaz34iKFwvwxHtrm8JIU9nBgGFJlC4sV8AI9qbKFNYgzxB/FpYOG0JIYg1l7ACKQxqFk7h5tYmVRidKFdcQrj1jMSaw82tB7e+3KQKoxMVpxD2ciGDcHMr+/DRysr48SZVGJ3YdQhBB6nUDxNubj3+aHxlXIvjLafwY6cwKtEcphL8IJVQYLfY3Cr+TkufGQ8dRLtbwBCVoRBwxaYHXVh88uThrXGbh2Plo2G9WR8bAyXWbCH0FdGbZF2xePPTz2acPJ346IFl/MQrjEY0rkRJwNsKLUjbw+KTp59/8dnFixdnxn2xcuuxblw7KoASjQ2GLoS+FOveWxSLT4oPPtV0F8lCPGpvPcbEtRO/MBIRWULAva8RZrsoanHh5qdfWDqaUEvjlrdZABD1fbAEu3EyQt/j33zwObY5cQHC8Udb5h4fkqhvoSTwXiFpG8QLF56+57UFCzf1wzZgomIKwe9s0UrNTTKQJhwvGidRsERkCMGnob725hUeb5KnYSSiNhEl6CWbHqWnxQd8wpUHmx+UqUJRorZwk2J5uh4dFD/nFn54hQoUJWrbYAnyMN8OtH+dWxgwSMWJLU0IfY+XHqVPuIW/LwcBBYmohoUxFBptmHILDwNTKEjEpUaKo9DgKH/JKfzDfphQhIhLjRTXjwhw5rB+HOYTIsrLWAi+ojHi4xku4SPSqhuAqGBhDKVUixJfDh/dZRHyE1tYGNOTMfIfuYR/UlmA/ESUkkDPgp3R4RJ+zZRCfqJck2JpFvrfJieRLGRNITdRbkjxPTqC2IUrA2YgJ1FuSvG0Q/2Pf0Uqp0ThM/YUchLlihTjY6Loz6xCnhTyEeWqFOOvBsltRuFvuFLIRZSXpXZsQPzn/8Ik/IwXyENsSzEtaYwgFBuCcMDaKUSIihTTksYIue0rNn4h9xjlIrbiFeKm6CX6hBytUITYkuJ+2vevIcL3xHzMxE7sQm/L8ApFJiEPsSPF/kh6ZyZIyLweFSWi+IVykLAuOAnZiSP4UQF5ZpwqrF+OJmTMYvzCcYrw8uWownDiSEYptsyQhJcBhKFEFHstNYRD4sxwhIIIw4jxdwtTaBtnnD4IYQhxhEK8z52xhJYPRBhMjH3VJiuVd90d8LIz3vvqazXegdqKdW8hG2/icBHrLmAOB0ZGafshRCW2/SGSrpxat+m+SxHqQC3+dncsGpJObMezx0foyv7uwlGKQKwTgLnDxcwURkZQ0oh4jw9/ToNQaX93YmIis5MnEOsE4LOzdHpyITNVLogjKUS5Cn3WZvIyWuw8T/mJdT8wd7CX1mJy8XC6LDxcyUS5AnpeiiTMWzB4mcxEeifnJ9b9wPzZpcl02kQeTYvOSSJRbgKeeSMnD0c6vfNjykes+4C5F9uXLqXtmFzMTJeFRiuJKDfArlug0nRmwuHThOlMykes+4C5yUtOoYZcOBEyEohyDejaExq40mcJHbXGItZ9wFdnXqE+Wtkut4UREcz1QzQ77fPhaYi/6POUl1j3AnPP97BwMu0znggccPiILZBrwKic8fn0FOLIeYl1LzCvAf1CbJwIv7QfSlQgruOj6QW/zxTu3E55iHUPMPfjtib0DlM9Fk+4hR6ifh0/ckM8IQIN4eRBzkOse4D5wz2qML24y985XET9XoyI7aK0Sxih5jTUa43nZyr+nuu6hK+MFJKGqfY/lAm42Y2BqN9PE+2eKBrQFv7oFH7zcm5p6btvHMb880AhnoyRiPo9UdGKKQ2Ysb7iRM4mfj+/tHR16Z133pn7dii8ZAVZiLPIC3QSW1HvTUQnNKAt3HlmzsRvMA+HJsTxkwm8fRYiTE/uihPNexPFSw3aJxeZ4SDVak0NJ7GGNXNXh8KlfD6vAfNHe5aQMkxxuZkSbhrm/aXCpQYNqMChML1tDchvHTn8Lm+GnUK6ML0o3BfNe4SF121olwp0GHGtMYmOHP5kAl9sh/pwCExFg2je5y26qkH71EnoMmZMYPflkiWct1K4wODDI11gnOpEJRXpeYtSCNAy7uRN4ve20Eqh0QxDfDgW+FuGRrSftxCbiAF11BFaBp6bw7Q7bwqvWik82Asoos4k7grtF+1nZsQmYoleZlxAHDlHEjXhPyxhcJ9wxGLILdIUYioV4dm10Fk4BO7ctmbinCHMe+oMQxJFZuLYqS0UOatBzBnUlt/DWrPkaBWHVjMMJ05w3jalhVqxhSLPkJbDB6ndE4e1Zm4eL0ytQfrsLLwX2sNUoCeqw2dIBfoFQ50ZNv2dF2at+XZ+Hg9UK4fP7fVMOFGk1vRTQyH/wi2427uBabvWvHQJh0AGIn/XV6sOIf/z+KGV1AXEy299Hn6nC81+f3vbIQydiovkhxMDotBwCLmHKSqHDVL3GDvQh2n3B104ZwiPnDkMJU4GPzRECGOQiv4uBprmEqYn80bL14VGw3/mBoYKmR5XcITq/l0M3nNhRN35konm8ntOFy65F92MDeMeZwpV92+bcG+D74UB3cTJw5xDqC9LF/a4gOlDTqE5SIV/Y+gwXOgi6i3xe1OoNcRXZ3zA9AJnCr2/McT7O1Esi1InUV9+O4UHe3zA9CKfcJDyCvm2ULNMQidxR2v4DuEZJ5Bz8a1e8wn5Vm5MGwsXUVt+vzRr6Q/uOsME5BQW/L/XxrfBYBUOiZOHNa3h68J5V51hA3IK7bskRH83kVk4JO7ktYavC+fyr7Z5gZzCHkHIta5hFw4PTl/U5m3hcNHNCuQT9lMkIU8SOYSO029LePWnBW4gl1DtEYU8x/s8Qou488oW/nObG8glHKTIQo6uzyW0iP+yha/3uIE8QrVJEXLMRD6hSXxjz0Pm8xkxYT9FE7InkVNoXhD+2RT+EnBRFECo0n/Pmz2JvEIzi6ZQIIM8QlcKRX9Xn1uoE9/8Wxf+Z1sAyC50p1D03Qj8Qp34Whe+ZjzpFhS6Uyj6fgsBoU7UhHMiGWQXqt1AIesWQ0SIiW9+xsJftkWArELV+5pAwffMCAkx8Vcs/HVPBMgqHHhBgu8KEhNmcK2Zw3VGBMgoVH3vtBJ835OgMJP+79z/9oSAjMK+zyP4zi5RYSY9JwhkE6r+d8sJvnettDAhGK93JsWCRWidkYYIWd6dNzstHFOiwXB9zT9Gxd9/OFsYeTAMUtKrSIXfYTnL8IEjDn8dpQqZ7jlNHFFdJVoivEs2aURfrw8UMl1QTBax0CBTIr3TOUlEUqMIFLK9lzs5RPWUBon4bvXEEEmdMEzItstICHFAehNwqLDLdDNYMoiUt46HCFM9FmESiAXf61UZhYx3g507kbyWYRIynmmcM1H1vluVR/g2EFXyS+NZhWxt8TyJlNUou5Dx0vC5EVXS69T5hMkmhmaQRZjkgRo2BxmFyS03vtNfUWFSiUxANmGqySIcNbFA2y+JCFO9BK5Rg5Zq/MJUt5OwzdQgYLEtJEzYflHt07dLwsIk7fpZuoSAkK3ejILIWGP4hWyTMXaiOqCcqgEIE3FUTD9zAhGmmojhsk2swsDtLoAwVWO4ghofUe2zNglxoVZwQo1xEanHvrBClgvhsRA5mmBUYaoXWlThieqAdwZGEeLtRthQhSYWmDYSgMLwigNKFBug0YSpVCNkpQpHVPuM+whgIZ6OwUYgotoXm4AQQmxsBRkhiKIFBkqoj1U6MjIx0vgEEmLjKr2uRiKqhdPIPhAhrqvVDi2R4kR1cE24fjoDRIij16YYxYgqwPA0A0qIE1lRiKOVn6gW+lWQ9OkBJ8TR1ZA+JR8RZ6/KtcMNC1AhjlpzFXmR7ERcWypw2TMCWqhFo6pgpcxHVNWxfhVq7jkjDqEWjUq7NWQGEzVcvxKHTou4hFrUGpVlRXfKJKKKaWphcHpabXBv3DkiTqEZtUazUl3u9wcD83W4hSuDUr9/Wq1WejXoWeeP/wNvFr2HoRwN8AAAAABJRU5ErkJggg==" alt="">
+                                </div>
+
+                                <!-- CONTENT DETAIL -->
+                                <div class="user-content-detail">
+                                    <button class="user-content-settings"><i class="fas fa-ellipsis-v"></i></button>
+
+                                    <div class="setting-menu">
+                                        <div class="menu">
+                                            <ul class="m-0 list-unstyled">
+                                                <li><a href="#" class="text-decoration-none text-dark">Mesajı Sil</a></li>
+                                                <li><a href="#" class="text-decoration-none text-dark">Mesajı Değiştir</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <p class="user-name">Murat Altınışık</p>
+                                    <p class="user-comment">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt ex beatae nam, dicta pariatur vero suscipit, tempore inventore alias quidem sint quis consequatur dignissimos aperiam! Asperiores illum ex nostrum porro!</p>
+                                </div>
+                            </div>
+
+                            <!-- CONTENT TOOLS -->
+                            <div class="user-content-tools">
+                                <button class="like-btn"><i class="fas fa-thumbs-up"></i> <span>15</span></button>
+                                <button class="Not-like-btn"><i class="fas fa-thumbs-down"></i> <span>7</span></button>
+                                <button class="comment-alert">Bildir <i class="fas fa-exclamation"></i></button>
+                            </div>
+                        </div>
+
+                        <div class="user-content">
+                            <!-- CONTENT : IMAGE, USER, COMMENT SETTING -->
+                            <div class="group">
+                                <!-- CONTENT IMAGE -->
+                                <div class="user-content-image">
+                                    <img src="data:image/png;base64,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" alt="">
+                                </div>
+
+                                <!-- CONTENT DETAIL -->
+                                <div class="user-content-detail">
+                                    <button class="user-content-settings"><i class="fas fa-ellipsis-v"></i></button>
+
+                                    <div class="setting-menu">
+                                        <div class="menu">
+                                            <ul class="m-0 list-unstyled">
+                                                <li><a href="#" class="text-decoration-none text-dark">Mesajı Sil</a></li>
+                                                <li><a href="#" class="text-decoration-none text-dark">Mesajı Değiştir</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <p class="user-name">Murat Altınışık</p>
+                                    <p class="user-comment">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt ex beatae nam, dicta pariatur vero suscipit, tempore inventore alias quidem sint quis consequatur dignissimos aperiam! Asperiores illum ex nostrum porro!</p>
+                                </div>
+                            </div>
+
+                            <!-- CONTENT TOOLS -->
+                            <div class="user-content-tools">
+                                <button class="like-btn"><i class="fas fa-thumbs-up"></i> <span>15</span></button>
+                                <button class="Not-like-btn"><i class="fas fa-thumbs-down"></i> <span>7</span></button>
+                                <button class="comment-alert">Bildir <i class="fas fa-exclamation"></i></button>
+                            </div>
+                        </div>
+
+                        <div class="user-content">
+                            <!-- CONTENT : IMAGE, USER, COMMENT SETTING -->
+                            <div class="group">
+                                <!-- CONTENT IMAGE -->
+                                <div class="user-content-image">
+                                    <img src="data:image/png;base64,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" alt="">
+                                </div>
+
+                                <!-- CONTENT DETAIL -->
+                                <div class="user-content-detail">
+                                    <button class="user-content-settings"><i class="fas fa-ellipsis-v"></i></button>
+
+                                    <div class="setting-menu">
+                                        <div class="menu">
+                                            <ul class="m-0 list-unstyled">
+                                                <li><a href="#" class="text-decoration-none text-dark">Mesajı Sil</a></li>
+                                                <li><a href="#" class="text-decoration-none text-dark">Mesajı Değiştir</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <p class="user-name">Murat Altınışık</p>
+                                    <p class="user-comment">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt ex beatae nam, dicta pariatur vero suscipit, tempore inventore alias quidem sint quis consequatur dignissimos aperiam! Asperiores illum ex nostrum porro!</p>
+                                </div>
+                            </div>
+
+                            <!-- CONTENT TOOLS -->
+                            <div class="user-content-tools">
+                                <button class="like-btn"><i class="fas fa-thumbs-up"></i> <span>15</span></button>
+                                <button class="Not-like-btn"><i class="fas fa-thumbs-down"></i> <span>7</span></button>
+                                <button class="comment-alert">Bildir <i class="fas fa-exclamation"></i></button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="content">
+                        
+                        <div class="question-answer">
+
+                            <div class="group">
+                                <!-- CONTENT IMAGE -->
+                                <div class="user-content-image">
+                                    <img src="data:image/png;base64,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" alt="">
+                                </div>
+
+                                <!-- CONTENT DETAIL -->
+                                <div class="user-content-detail">
+                                    <button class="user-content-settings"><i class="fas fa-ellipsis-v"></i></button>
+                                    <p class="user-name">Murat Altınışık</p>
+                                    <p class="user-comment">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt ex beatae nam, dicta pariatur vero suscipit, tempore inventore alias quidem sint quis consequatur dignissimos aperiam! Asperiores illum ex nostrum porro!</p>
+                                </div>
+                            </div>
+
+                            <form class="mt-2">
+                                <textarea placeholder="Arayınız..."></textarea>
+                                <button class="send"><i class="far fa-paper-plane"></i></button>
+                            </form>
+
+                        </div>
+
+                        <div class="question-answer">
+
+                            <div class="group">
+                                <!-- CONTENT IMAGE -->
+                                <div class="user-content-image">
+                                    <img src="data:image/png;base64,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" alt="">
+                                </div>
+
+                                <!-- CONTENT DETAIL -->
+                                <div class="user-content-detail">
+                                    <button class="user-content-settings"><i class="fas fa-ellipsis-v"></i></button>
+                                    <p class="user-name">Murat Altınışık</p>
+                                    <p class="user-comment">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt ex beatae nam, dicta pariatur vero suscipit, tempore inventore alias quidem sint quis consequatur dignissimos aperiam! Asperiores illum ex nostrum porro!</p>
+                                </div>
+                            </div>
+
+                            <div class="group px-5 mt-3">
+                                <!-- CONTENT IMAGE -->
+                                <div class="user-content-image" style="width: 4.9rem;">
+                                    <img src="data:image/png;base64,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" alt="">
+                                </div>
+
+                                <!-- CONTENT DETAIL -->
+                                <div class="user-content-detail">
+                                    <p class="user-name text-warning">Murat Altınışık</p>
+                                    <p class="user-comment text-secondary">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt ex beatae nam, dicta pariatur vero suscipit, tempore inventore alias quidem sint quis consequatur dignissimos aperiam! Asperiores illum ex nostrum porro!</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- RESPONSIVE CONTAINER -->
+            <div id="Responsive-Product-Container">
+                
+                <!-- PRODUCT INFO -->
+                <div class="product-info">
+
+                    <!-- DETAIL -->
+                    <div class="product-details">
+
+                        <!-- NAME -->
+                        <div class="name">iPHONE 12 PRO MAX 128GB 16GB RAM - GOLD</div>
+                        <hr class="m-0 my-1 bg-warning">
+
+                        <!-- QUANTITY -->
+                        <div class="quantity">
+                            <span class="sales-quantity"><span>Satış Adedi:</span> <b>16 Adet</b></span>
+                        </div>
+        
+                        <!-- CONTENT: ASK SELLER - DETAIL -->
+                        <div class="group w-50">
+                            <!-- DETAIL -->
+                            <div class="detail">
+                                <!-- DISCOUNT -->
+                                <div class="discount">
+                                    %8
+                                </div>
+
+                                <!-- PRICE -->
+                                <div class="price">
+                                    <del><span class="old-price">7.899,57 <small>TL</small></span></del>
+                                    <span class="new-price">6.549,99 <small>TL</small></span>
+                                </div>
+                            </div>
+
+                            <!-- ASK SELLER -->
+                            <div class="ask-seller">
+                                <button>Soru Sor (15)</button>
+                            </div>
+                        </div>
+
+                        <!-- BUTTONS -->
+                        <div class="actions">
+                            <button class="Add-Basket SpecialButton"><i class="fas fa-shopping-cart"></i> Sepete Ekle</button>
+                            <button class="Favorite-Basket SpecialButtonRed"><i class="fas fa-heart"></i> Favorileri Ekle</button>
+                            <div class="amount">
+                                <span>-</span>
+                                <input type="text" disabled value="1">
+                                <span>+</span>
+                            </div>
+                        </div>
+
+                        <hr class="bg-warning">
+
+                        <!-- TOOLS -->
+                        <div class="tools">
+                            <!-- DISCOUNT ALERT -->
+                            <div class="discount-alert">
+                                <p><i class="far fa-bell"></i></p>
+                                <span>İndirim Alarmı</span>
+                            </div>
+
+                            <!-- ADD LIST -->
+                            <div class="add-list">
+                                <p><i class="fas fa-list"></i></p>
+                                <span>Listelerime Ekle</span>
+                            </div>
+
+                            <!-- COMPARE -->
+                            <div class="compare">
+                                <p><i class="fas fa-random"></i></p>
+                                <span>Karşılaştır</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <!-- PRODUCT COMPARE INFO -->
+        <div class="modal fade" id="ProductCompareInfo" tabindex="-1" aria-labelledby="ProductCompareInfo" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    
+                    <!-- MODAL HEADER -->
+                    <div class="modal-header">
+                        <h5 class="modal-title">Karşılaştır - <small style="font-size: .8rem !important;">iPHONE 12 PRO MAX 128 GB 16 GB RAM GOLD</small></h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+
+                    <!-- MODEL BODY -->
+                    <div class="modal-body">
+                        
+                        <!-- SEARCH -->
+                        <div class="search">
+                            <input type="text" class="px-2 input" placeholder="Arayınız..">
+                            <i class="fas fa-search"></i>
+                        </div>
+
+                        <hr class="bg-warning">
+
+                        <!-- RESULT PRODUCTS -->
+                        <div class="result-products">
+
+                            <!-- RESULT -->
+                            <div class="result">
+                                <div class="group align-items-start">
+                                    <!-- IMAGE -->
+                                    <div class="image">
+                                        <img src="../../assets/image/swappie-product-iphone-12-pro-max-pacific-blue.png" alt="">
+                                    </div>
+
+                                    <!-- DETAIL -->
+                                    <div class="detail">
+                                        <div class="name">iPHONE 12 PRO MAX 128GB 16GB RAM - SILVER</div>
+                                        <div class="price">
+                                            <span>Fiyat: </span>
+                                            <span>4.999,15 <small>TL</small></span> 
+                                            <br>
+                                            <span>FARK: </span>
+                                            <span class="text-success">+199.48 <small>TL</small> Kazanç</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- ACTION -->
+                                <div class="actions">
+                                    <button class="SpecialButton">Karşılaştır</button>
+                                </div>
+                            </div>
+
+                            <div class="result">
+                                <div class="group align-items-start">
+                                    <!-- IMAGE -->
+                                    <div class="image">
+                                        <img src="../../assets/image/swappie-product-iphone-12-pro-max-pacific-blue.png" alt="">
+                                    </div>
+
+                                    <!-- DETAIL -->
+                                    <div class="detail">
+                                        <div class="name">iPHONE 12 PRO MAX 128GB 16GB RAM - SILVER</div>
+                                        <div class="price">
+                                            <span>Fiyat: </span>
+                                            <span>4.999,15 <small>TL</small></span> 
+                                            <br>
+                                            <span>FARK: </span>
+                                            <span class="text-success">+199.48 <small>TL</small> Kazanç</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- ACTION -->
+                                <div class="actions">
+                                    <button class="SpecialButton">Karşılaştır</button>
+                                </div>
+                            </div>
+
+                            <div class="result">
+                                <div class="group align-items-start">
+                                    <!-- IMAGE -->
+                                    <div class="image">
+                                        <img src="../../assets/image/swappie-product-iphone-12-pro-max-pacific-blue.png" alt="">
+                                    </div>
+
+                                    <!-- DETAIL -->
+                                    <div class="detail">
+                                        <div class="name">iPHONE 12 PRO MAX 128GB 16GB RAM - SILVER</div>
+                                        <div class="price">
+                                            <span>Fiyat: </span>
+                                            <span>4.999,15 <small>TL</small></span> 
+                                            <br>
+                                            <span>FARK: </span>
+                                            <span class="text-success">+199.48 <small>TL</small> Kazanç</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- ACTION -->
+                                <div class="actions">
+                                    <button class="SpecialButton">Karşılaştır</button>
+                                </div>
+                            </div>
+
+                            <div class="result">
+                                <div class="group align-items-start">
+                                    <!-- IMAGE -->
+                                    <div class="image">
+                                        <img src="../../assets/image/swappie-product-iphone-12-pro-max-pacific-blue.png" alt="">
+                                    </div>
+
+                                    <!-- DETAIL -->
+                                    <div class="detail">
+                                        <div class="name">iPHONE 12 PRO MAX 128GB 16GB RAM - SILVER</div>
+                                        <div class="price">
+                                            <span>Fiyat: </span>
+                                            <span>4.999,15 <small>TL</small></span> 
+                                            <br>
+                                            <span>FARK: </span>
+                                            <span class="text-success">+199.48 <small>TL</small> Kazanç</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- ACTION -->
+                                <div class="actions">
+                                    <button class="SpecialButton">Karşılaştır</button>
+                                </div>
+                            </div>
+
+                        </div>
+ 
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-----------# SECTION END #----------->
+
+
+
+    <!-- CONTENT: ARTICLE CONTAINER 
+        |-------------------------------------------|
+        | SITE INFORMATION -> (BOX(TITLE, CONTENT)) |
+        |-------------------------------------------|
+    -->
+    <!----------- ARTICLE START ----------->
+    <article>
+        <!-- SITE INFORMATION -->
+        <div id="Site-Information" class="container">
+
+            <div class="information">
+
+                <!-- CONTENT: TITLE - CONTENT -->
+                <div class="box">
+                    
+                    <!-- BOX TITLE -->
+                    <div class="box-title">
+                        Güvenli Alışveriş
+                    </div>
+
+                    <!-- BOX CONTENT -->
+                    <div class="box-content">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio vel et rerum est pariatur saepe culpa illo quibusdam, maxime cum ratione magnam dolorem in, maiores atque voluptatibus provident corporis dignissimos?
+                    </div>
+
+                </div>
+
+                <div class="box">
+
+                    <div class="box-title">
+                        Hızlı Kargo
+                    </div>
+
+                    <div class="box-content">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio vel et rerum est pariatur saepe culpa illo quibusdam, maxime cum ratione magnam dolorem in, maiores atque voluptatibus provident corporis dignissimos?
+                    </div>
+
+                </div>
+
+                <div class="box">
+
+                    <div class="box-title">
+                        Kolay İade
+                    </div>
+
+                    <div class="box-content">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio vel et rerum est pariatur saepe culpa illo quibusdam, maxime cum ratione magnam dolorem in, maiores atque voluptatibus provident corporis dignissimos?
+                    </div>
+
+                </div>
+
+                <div class="box">
+
+                    <div class="box-title">
+                        AltınExpress
+                    </div>
+
+                    <div class="box-content">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio vel et rerum est pariatur saepe culpa illo quibusdam, maxime cum ratione magnam dolorem in, maiores atque voluptatibus provident corporis dignissimos?
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </article>
+    <!-----------# ARTICLE END #----------->
+
+
+
+    
+    <!-- CONTENT: FOOTER CONTAINER 
+        |-------------------------------------------|
+        | FOOTER HEAD -> (TITLE, LET ME KNOW)       |
+        |-------------------------------------------|
+        | FOOTER CONTENT -> (TITLE, MENU LIST)      |
+        |-------------------------------------------|
+        | FOOTER BOTTOM -> (COPYRIGHT)              |
+        |-------------------------------------------|
+    -->
+    <!----------- FOOTER START ----------->
+    <footer>
+        <!-- FOOTER CONTAINER -->
+        <div id="Footer-Container" class="container-fluid">
+            <div class="container">
+
+                <!-- FOOTER HEAD -->
+                <div class="footer-head">
+
+                    <div class="title">
+                        <h3>Altınışık.com</h3>
+                    </div>
+
+                    <div class="LetMeKnow">
+                        <form>
+                            <input type="text" name="" id="LetMeKnow" placeholder="Kampanyalardan Haberdar olmak için">
+                        </form>
+                    </div>
+
+                </div>
+
+                <hr>
+
+                <!-- FOOTER CONTENT -->
+                <div class="row content">
+
+                    <!-- TITLE, LIST -->
+                    <div class="col-lg-3 col-md-3 col-sm-12">
+
+                        <!-- FOOTER TITLE -->
+                        <div class="footer-title">
+                            <h4>Anasayfa</h4>
+                        </div>
+
+                        <!-- FOOTER LIST -->
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="text-decoration-none text-dark">Anasayfa</a></li>
+                            <li><a href="#" class="text-decoration-none text-dark">Kategoriler</a></li>
+                            <li><a href="#" class="text-decoration-none text-dark">Hesabım</a></li>
+                            <li><a href="#" class="text-decoration-none text-dark">Hakkımızda</a></li>
+                            <li><a href="#" class="text-decoration-none text-dark">İletişim</a></li>
+                        </ul>
+
+                    </div>
+
+                    <!-- TITLE, LIST -->
+                    <div class="col-lg-3 col-md-3 col-sm-12">
+                        <div class="footer-title">
+                            <h4>Hesabım</h4>
+                        </div>
+
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="text-decoration-none text-dark">Sepetim</a></li>
+                            <li><a href="#" class="text-decoration-none text-dark">Hesap Bilgilerim</a></li>
+                            <li><a href="#" class="text-decoration-none text-dark">Kullanıcı Sözleşmesi</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- TITLE, LIST -->
+                    <div class="col-lg-3 col-md-3 col-sm-12">
+
+                        <div class="footer-title">
+                            <h4>Kategoriler</h4>
+                        </div>
+
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="text-decoration-none text-dark">Kategori 1</a></li>
+                            <li><a href="#" class="text-decoration-none text-dark">Kategori 2</a></li>
+                            <li><a href="#" class="text-decoration-none text-dark">Kategori 3</a></li>
+                            <li><a href="#" class="text-decoration-none text-dark">Kategori 4</a></li>
+                        </ul>
+
+                    </div>
+
+                    <!-- TITLE, LIST -->
+                    <div class="col-lg-3 col-md-3 col-sm-12">
+
+                        <div class="footer-title">
+                            <h4>İletişim</h4>
+                        </div>
+
+                        <ul class="list-unstyled">
+                            <li><b>Adress: </b> Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
+                            <li><b>Telefon: </b> 0 000 00 00</li>
+                            <li><b>Email: </b> siteexampleinfo@gmail.com</li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+                <!-- FOOTER BOTTOM -->
+                <div class="footer-bottom">
+                    Altınışık.com <i class="far fa-copyright"></i> 2020-2017 Tüm Hakları Saklıdır.
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <!-----------# FOOTER END #----------->
+
+
+
+    <!-- JQUERT JS -->
+    <script src="../../assets/script/jquery.js"></script>
+    <!-- BOOTSTRAP JS -->
+    <script src="../../assets/plugins/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <!-- ACCOUNT MENU JS -->
+    <script src="../../assets/script/account-menu.js"></script>
+    <!-- SEARCH INPUT JS -->
+    <script src="../../assets/script/search-input.js"></script>
+    <!-- PRODUCT INFO JS -->
+    <script src="../../assets/script/product-info.js"></script>
+</body>
+</html>

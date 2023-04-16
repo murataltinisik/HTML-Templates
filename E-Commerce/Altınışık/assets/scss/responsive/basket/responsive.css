@@ -1,0 +1,317 @@
+.title {
+  color: gold; }
+  .title a {
+    color: gold; }
+  .title a:hover {
+    color: gold; }
+
+.SpecialButton,
+.SpecialButtonGreen,
+.SpecialButtonRed {
+  width: 100%;
+  padding: .8rem .6rem;
+  border-radius: .3rem;
+  color: #fff;
+  transition: all .2s ease;
+  font-family: "Poppins";
+  font-size: 0.85rem;
+  font-weight: 700; }
+
+.SpecialButton {
+  border: 2px solid gold;
+  background-color: gold; }
+
+.SpecialButton:hover {
+  border-color: #fff;
+  box-shadow: 0 0 6px gold; }
+
+.SpecialButtonGreen {
+  border: 2px solid green;
+  background-color: green; }
+
+.SpecialButtonGreen:hover {
+  border-color: #fff;
+  box-shadow: 0 0 6px green; }
+
+.SpecialButtonRed {
+  border: 2px solid red;
+  background-color: red; }
+
+.SpecialButtonRed:hover {
+  border-color: #fff;
+  box-shadow: 0 0 6px red; }
+
+#Link-Navigate ul {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: flex-start;
+  font-family: "Poppins";
+  font-size: 0.9rem;
+  font-weight: 600; }
+
+#Link-Navigate ul li {
+  opacity: .5; }
+
+#Link-Navigate ul span {
+  font-size: .6rem;
+  margin: 0 .5rem;
+  opacity: .5; }
+
+#Link-Navigate ul li a {
+  color: gold;
+  transition: all .2s ease; }
+
+#Link-Navigate ul li a:hover {
+  color: goldenrod; }
+
+.input:not([type="checkbox"]) {
+  width: 100%;
+  padding: .6rem 2rem;
+  border: 2px solid #eee;
+  background-color: #eee;
+  border-radius: .2rem;
+  font-family: "Poppins";
+  font-size: 0.8rem;
+  font-weight: 700;
+  transition: all .2s ease; }
+
+.input:not([type="checkbox"]):focus {
+  outline: none;
+  background-color: #fff;
+  box-shadow: 0 0 6px #ccc;
+  border-color: #fff; }
+
+.group {
+  display: flex;
+  flex-wrap: auto;
+  align-items: center;
+  justify-content: space-between; }
+
+.middle-title {
+  font-family: "Poppins";
+  font-size: 1.1rem;
+  font-weight: 700; }
+
+.title {
+  color: gold; }
+  .title a {
+    color: gold; }
+  .title a:hover {
+    color: gold; }
+
+.SpecialButton,
+.SpecialButtonGreen,
+.SpecialButtonRed {
+  width: 100%;
+  padding: .8rem .6rem;
+  border-radius: .3rem;
+  color: #fff;
+  transition: all .2s ease;
+  font-family: "Poppins";
+  font-size: 0.85rem;
+  font-weight: 700; }
+
+.SpecialButton {
+  border: 2px solid gold;
+  background-color: gold; }
+
+.SpecialButton:hover {
+  border-color: #fff;
+  box-shadow: 0 0 6px gold; }
+
+.SpecialButtonGreen {
+  border: 2px solid green;
+  background-color: green; }
+
+.SpecialButtonGreen:hover {
+  border-color: #fff;
+  box-shadow: 0 0 6px green; }
+
+.SpecialButtonRed {
+  border: 2px solid red;
+  background-color: red; }
+
+.SpecialButtonRed:hover {
+  border-color: #fff;
+  box-shadow: 0 0 6px red; }
+
+#Link-Navigate ul {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: flex-start;
+  font-family: "Poppins";
+  font-size: 0.9rem;
+  font-weight: 600; }
+
+#Link-Navigate ul li {
+  opacity: .5; }
+
+#Link-Navigate ul span {
+  font-size: .6rem;
+  margin: 0 .5rem;
+  opacity: .5; }
+
+#Link-Navigate ul li a {
+  color: gold;
+  transition: all .2s ease; }
+
+#Link-Navigate ul li a:hover {
+  color: goldenrod; }
+
+.input:not([type="checkbox"]) {
+  width: 100%;
+  padding: .6rem 2rem;
+  border: 2px solid #eee;
+  background-color: #eee;
+  border-radius: .2rem;
+  font-family: "Poppins";
+  font-size: 0.8rem;
+  font-weight: 700;
+  transition: all .2s ease; }
+
+.input:not([type="checkbox"]):focus {
+  outline: none;
+  background-color: #fff;
+  box-shadow: 0 0 6px #ccc;
+  border-color: #fff; }
+
+.group {
+  display: flex;
+  flex-wrap: auto;
+  align-items: center;
+  justify-content: space-between; }
+
+.middle-title {
+  font-family: "Poppins";
+  font-size: 1.1rem;
+  font-weight: 700; }
+
+@media only screen and (min-width: 769px) and (max-width: 1048px) {
+  #Header-Container .container .search {
+    width: 50%; }
+
+  #Header-Container .container .group span {
+    display: none; }
+
+  #Header-Container .container .group * {
+    font-size: .8rem !important; }
+
+  #Header-Container .container .menus ul li a {
+    font-size: .6rem; } }
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+  #Header-Container .container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: auto;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: .5rem;
+    position: relative; }
+
+  #Header-Container .container .title {
+    width: 100%; }
+
+  #Header-Container .container .search {
+    width: 100%;
+    position: relative; }
+
+  #Header-Container .container .group {
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem; }
+
+  #Header-Container .container .group span {
+    display: none; }
+
+  #Header-Container .container .group * {
+    font-size: .8rem !important; }
+
+  #Header-Container .container .menus {
+    display: none; } }
+@media only screen and (max-width: 479px) {
+  #Header-Container .container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: auto;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: .5rem; }
+
+  #Header-Container .container .title {
+    width: 100%; }
+
+  #Header-Container .container .search {
+    width: 100%;
+    position: relative; }
+
+  #Header-Container .container .group {
+    position: absolute;
+    top: 1.6rem;
+    right: 1.5rem; }
+
+  #Header-Container .container .group span {
+    display: none; }
+
+  #Header-Container .container .group * {
+    font-size: .8rem !important; }
+
+  #Header-Container .container .menus {
+    display: none; } }
+@media only screen and (min-width: 769px) and (max-width: 1048px) {
+  #Footer-Container .footer-head .LetMeKnow input {
+    width: 16rem; } }
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+  #Footer-Container .footer-head .LetMeKnow input {
+    width: 100%; } }
+@media only screen and (max-width: 479px) {
+  #Footer-Container .footer-head .LetMeKnow input {
+    width: 100%; } }
+@media only screen and (min-width: 769px) and (max-width: 1040px) {
+  .delete-action a span {
+    display: none; } }
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+  #Basket-Container {
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between; }
+
+  #Basket-Container .products {
+    width: 100%; }
+
+  #Basket-Container .products .item > .item-detail,
+  #Basket-Container .products .item > .item-property {
+    display: none; }
+
+  #Basket-Container .basket-detail {
+    width: 100%; }
+
+  #Basket-Container .products .item #Open-Responsive-Menu.openBTN {
+    display: flex !important; } }
+@media only screen and (max-width: 479px) {
+  #Basket-Container {
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between; }
+
+  #Basket-Container .products {
+    width: 100%; }
+
+  #Basket-Container .products .item > .item-detail,
+  #Basket-Container .products .item > .item-property {
+    display: none; }
+
+  #Basket-Container .basket-detail {
+    width: 100%; }
+
+  #Basket-Container .products .item #Open-Responsive-Menu.openBTN {
+    display: flex !important; } }

@@ -1,0 +1,14 @@
+/* FONTS */
+@import '../fonts.css';
+
+/* ACCOUNT SCSS */
+@import url(../../scss/general/general.css);
+@import url(../../scss/header/header.css);
+@import url(../../scss/section/account/section.css);
+@import url(../../scss/article/article.css);
+@import url(../../scss/footer/footer.css);
+
+/* RESPONSIVE SHEMAS */
+@import url(../../scss/responsive/account/reponsive.css);
+@import url(../../scss/responsive/section.css);
+@import url(../../scss/responsive/article.css);

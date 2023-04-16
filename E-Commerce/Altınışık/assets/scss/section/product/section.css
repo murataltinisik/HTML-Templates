@@ -1,0 +1,493 @@
+.title {
+  color: gold; }
+  .title a {
+    color: gold; }
+  .title a:hover {
+    color: gold; }
+
+.SpecialButton,
+.SpecialButtonGreen,
+.SpecialButtonRed {
+  width: 100%;
+  padding: .8rem .6rem;
+  border-radius: .3rem;
+  color: #fff;
+  transition: all .2s ease;
+  font-family: "Poppins";
+  font-size: 0.85rem;
+  font-weight: 700; }
+
+.SpecialButton {
+  border: 2px solid gold;
+  background-color: gold; }
+
+.SpecialButton:hover {
+  border-color: #fff;
+  box-shadow: 0 0 6px gold; }
+
+.SpecialButtonGreen {
+  border: 2px solid green;
+  background-color: green; }
+
+.SpecialButtonGreen:hover {
+  border-color: #fff;
+  box-shadow: 0 0 6px green; }
+
+.SpecialButtonRed {
+  border: 2px solid red;
+  background-color: red; }
+
+.SpecialButtonRed:hover {
+  border-color: #fff;
+  box-shadow: 0 0 6px red; }
+
+#Link-Navigate ul {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: flex-start;
+  font-family: "Poppins";
+  font-size: 0.9rem;
+  font-weight: 600; }
+
+#Link-Navigate ul li {
+  opacity: .5; }
+
+#Link-Navigate ul span {
+  font-size: .6rem;
+  margin: 0 .5rem;
+  opacity: .5; }
+
+#Link-Navigate ul li a {
+  color: gold;
+  transition: all .2s ease; }
+
+#Link-Navigate ul li a:hover {
+  color: goldenrod; }
+
+.input:not([type="checkbox"]) {
+  width: 100%;
+  padding: .6rem 2rem;
+  border: 2px solid #eee;
+  background-color: #eee;
+  border-radius: .2rem;
+  font-family: "Poppins";
+  font-size: 0.8rem;
+  font-weight: 700;
+  transition: all .2s ease; }
+
+.input:not([type="checkbox"]):focus {
+  outline: none;
+  background-color: #fff;
+  box-shadow: 0 0 6px #ccc;
+  border-color: #fff; }
+
+.group {
+  display: flex;
+  flex-wrap: auto;
+  align-items: center;
+  justify-content: space-between; }
+
+.middle-title {
+  font-family: "Poppins";
+  font-size: 1.1rem;
+  font-weight: 700; }
+
+#Product-Container, #Responsive-Product-Container {
+  position: relative; }
+  #Product-Container .product-info, #Responsive-Product-Container .product-info {
+    position: relative;
+    display: flex;
+    flex-wrap: auto;
+    align-items: flex-start;
+    justify-content: space-between; }
+    #Product-Container .product-info .product-images, #Product-Container .product-info .product-details, #Responsive-Product-Container .product-info .product-images, #Responsive-Product-Container .product-info .product-details {
+      height: 28rem;
+      width: 50%;
+      padding: 1rem;
+      background-color: #fff;
+      position: relative;
+      overflow: hidden; }
+    #Product-Container .product-info .product-images, #Responsive-Product-Container .product-info .product-images {
+      text-align: center;
+      box-shadow: 0 0 6px #eee; }
+      #Product-Container .product-info .product-images .image, #Responsive-Product-Container .product-info .product-images .image {
+        width: 100%;
+        height: 100%;
+        overflow: hidden; }
+        #Product-Container .product-info .product-images .image img, #Responsive-Product-Container .product-info .product-images .image img {
+          width: 100%;
+          height: 95%; }
+      #Product-Container .product-info .product-images .navigate, #Responsive-Product-Container .product-info .product-images .navigate {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 2rem;
+        z-index: 999; }
+        #Product-Container .product-info .product-images .navigate ul, #Responsive-Product-Container .product-info .product-images .navigate ul {
+          height: 100%;
+          display: flex;
+          flex-wrap: auto;
+          align-items: center;
+          justify-content: center; }
+        #Product-Container .product-info .product-images .navigate ul li, #Responsive-Product-Container .product-info .product-images .navigate ul li {
+          width: 12px;
+          height: 12px;
+          margin: 0 .3rem;
+          border-radius: 50%;
+          cursor: pointer;
+          box-shadow: 0 0 4px #eee, 0 0 3px #ccc;
+          background-color: #fff;
+          position: relative; }
+        #Product-Container .product-info .product-images .navigate ul li::after, #Responsive-Product-Container .product-info .product-images .navigate ul li::after {
+          content: '';
+          position: absolute;
+          top: 2.5px;
+          left: 2px;
+          background-color: gold;
+          width: 7px;
+          height: 7px;
+          border-radius: 50%; }
+        #Product-Container .product-info .product-images .navigate ul li:hover, #Responsive-Product-Container .product-info .product-images .navigate ul li:hover {
+          box-shadow: 0 0 4px gold; }
+      #Product-Container .product-info .product-images .buttons, #Responsive-Product-Container .product-info .product-images .buttons {
+        width: 100%;
+        height: 100%;
+        padding: 0 2rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-wrap: auto;
+        align-items: center;
+        justify-content: space-between; }
+        #Product-Container .product-info .product-images .buttons button, #Responsive-Product-Container .product-info .product-images .buttons button {
+          width: 3rem;
+          height: 3rem;
+          text-align: center;
+          opacity: .7;
+          border-radius: 50%;
+          background-color: #fff;
+          border: none;
+          background-color: transparent; }
+        #Product-Container .product-info .product-images .buttons button:hover, #Responsive-Product-Container .product-info .product-images .buttons button:hover {
+          opacity: 1;
+          box-shadow: 0 0 6px #eee; }
+    #Product-Container .product-info .product-details, #Responsive-Product-Container .product-info .product-details {
+      box-shadow: 0 0 2px #eee, 0 0 1px #ccc; }
+      #Product-Container .product-info .product-details .name, #Responsive-Product-Container .product-info .product-details .name {
+        font-family: "Poppins";
+        font-size: auto;
+        font-weight: 700; }
+      #Product-Container .product-info .product-details .ask-seller button, #Responsive-Product-Container .product-info .product-details .ask-seller button {
+        border: none;
+        background-color: transparent;
+        border: 1px solid #eee;
+        box-shadow: 0 0 6px #eee;
+        border-radius: 5px;
+        padding: .5rem 1rem;
+        font-family: "Poppins";
+        font-size: 0.8rem;
+        font-weight: 700; }
+      #Product-Container .product-info .product-details .ask-seller button:active, #Responsive-Product-Container .product-info .product-details .ask-seller button:active {
+        box-shadow: 0 0 6px #ccc; }
+      #Product-Container .product-info .product-details .detail, #Responsive-Product-Container .product-info .product-details .detail {
+        margin-top: 1rem;
+        display: flex;
+        flex-wrap: auto;
+        align-items: center;
+        justify-content: space-between; }
+        #Product-Container .product-info .product-details .detail .discount, #Responsive-Product-Container .product-info .product-details .detail .discount {
+          border-radius: 12px;
+          padding: .8rem;
+          background-color: gold;
+          text-align: center;
+          color: #fff;
+          margin-right: .5rem;
+          font-family: "Poppins";
+          font-size: 0.8rem;
+          font-weight: 600; }
+        #Product-Container .product-info .product-details .detail .price, #Responsive-Product-Container .product-info .product-details .detail .price {
+          display: flex;
+          flex-direction: column;
+          flex-wrap: auto;
+          align-items: flex-start;
+          justify-content: flex-start; }
+          #Product-Container .product-info .product-details .detail .price .old-price, #Responsive-Product-Container .product-info .product-details .detail .price .old-price {
+            font-size: .8rem;
+            color: gray; }
+          #Product-Container .product-info .product-details .detail .price .new-price, #Responsive-Product-Container .product-info .product-details .detail .price .new-price {
+            color: gold;
+            text-shadow: 0 0 12px gold;
+            font-family: "Poppins";
+            font-size: auto;
+            font-weight: 700; }
+      #Product-Container .product-info .product-details .sales-quantity, #Responsive-Product-Container .product-info .product-details .sales-quantity {
+        font-family: "Poppins";
+        font-size: 0.9rem;
+        font-weight: 600; }
+        #Product-Container .product-info .product-details .sales-quantity b, #Responsive-Product-Container .product-info .product-details .sales-quantity b {
+          color: gold; }
+      #Product-Container .product-info .product-details .actions, #Responsive-Product-Container .product-info .product-details .actions {
+        margin: 1rem 0; }
+        #Product-Container .product-info .product-details .actions button, #Responsive-Product-Container .product-info .product-details .actions button {
+          width: 25%;
+          padding: .6rem !important; }
+        #Product-Container .product-info .product-details .actions .amount, #Responsive-Product-Container .product-info .product-details .actions .amount {
+          margin: 1rem 0; }
+          #Product-Container .product-info .product-details .actions .amount span, #Responsive-Product-Container .product-info .product-details .actions .amount span {
+            font-weight: 700;
+            font-size: 1.2rem;
+            border-radius: 50%;
+            background-color: #fff;
+            width: 2rem;
+            height: 2rem;
+            cursor: pointer;
+            display: inline-block;
+            text-align: center;
+            box-shadow: 0 0 4px #eee, 0 0 2px #ccc; }
+          #Product-Container .product-info .product-details .actions .amount span:active, #Responsive-Product-Container .product-info .product-details .actions .amount span:active {
+            background-color: #eee; }
+          #Product-Container .product-info .product-details .actions .amount input, #Responsive-Product-Container .product-info .product-details .actions .amount input {
+            margin: 0 .3rem;
+            text-align: center;
+            width: 2.5rem;
+            border: 1px solid #ccc; }
+      #Product-Container .product-info .product-details .tools, #Responsive-Product-Container .product-info .product-details .tools {
+        width: 65%;
+        display: flex;
+        flex-wrap: auto;
+        align-items: center;
+        justify-content: space-between;
+        text-align: center; }
+        #Product-Container .product-info .product-details .tools *, #Responsive-Product-Container .product-info .product-details .tools * {
+          cursor: pointer; }
+        #Product-Container .product-info .product-details .tools p, #Responsive-Product-Container .product-info .product-details .tools p {
+          margin: 0; }
+        #Product-Container .product-info .product-details .tools i, #Responsive-Product-Container .product-info .product-details .tools i {
+          font-size: 1.5rem; }
+        #Product-Container .product-info .product-details .tools > div, #Responsive-Product-Container .product-info .product-details .tools > div {
+          opacity: .85;
+          transition: all .2s ease;
+          position: relative; }
+          #Product-Container .product-info .product-details .tools > div span, #Responsive-Product-Container .product-info .product-details .tools > div span {
+            font-family: "Poppins";
+            font-size: 0.8rem;
+            font-weight: 700; }
+        #Product-Container .product-info .product-details .tools > div:hover, #Responsive-Product-Container .product-info .product-details .tools > div:hover {
+          opacity: 1; }
+        #Product-Container .product-info .product-details .tools > div:hover, #Responsive-Product-Container .product-info .product-details .tools > div:hover {
+          color: gold; }
+        #Product-Container .product-info .product-details .tools .lists, #Responsive-Product-Container .product-info .product-details .tools .lists {
+          background-color: #fff;
+          box-shadow: 0 0 6px #eee, 0 0 1px #ccc;
+          position: absolute;
+          left: -2.7rem;
+          display: none;
+          height: 5rem; }
+          #Product-Container .product-info .product-details .tools .lists ul, #Responsive-Product-Container .product-info .product-details .tools .lists ul {
+            width: 12rem;
+            height: 100%;
+            padding: .5rem;
+            overflow-y: scroll; }
+          #Product-Container .product-info .product-details .tools .lists ul::-webkit-scrollbar, #Responsive-Product-Container .product-info .product-details .tools .lists ul::-webkit-scrollbar {
+            width: 10px;
+            box-shadow: 0 0 2px gold; }
+          #Product-Container .product-info .product-details .tools .lists ul::-webkit-scrollbar-thumb, #Responsive-Product-Container .product-info .product-details .tools .lists ul::-webkit-scrollbar-thumb {
+            background-color: gold; }
+          #Product-Container .product-info .product-details .tools .lists ul li, #Responsive-Product-Container .product-info .product-details .tools .lists ul li {
+            padding: .2rem; }
+          #Product-Container .product-info .product-details .tools .lists ul li a, #Responsive-Product-Container .product-info .product-details .tools .lists ul li a {
+            display: block;
+            color: #000;
+            transition: all .2s ease;
+            font-family: "Poppins";
+            font-size: 0.8rem;
+            font-weight: 600; }
+          #Product-Container .product-info .product-details .tools .lists ul li a:hover, #Responsive-Product-Container .product-info .product-details .tools .lists ul li a:hover {
+            padding-left: .5rem;
+            background-color: #f9f9f9; }
+  #Product-Container .explanation, #Responsive-Product-Container .explanation {
+    margin-top: 1rem; }
+    #Product-Container .explanation > .menu ul, #Responsive-Product-Container .explanation > .menu ul {
+      margin: 0;
+      display: flex;
+      flex-wrap: auto;
+      align-items: center;
+      justify-content: flex-start; }
+      #Product-Container .explanation > .menu ul li, #Responsive-Product-Container .explanation > .menu ul li {
+        cursor: pointer;
+        margin-right: .5rem;
+        padding: .5rem 1rem;
+        font-family: "Poppins";
+        font-size: 0.9rem;
+        font-weight: 700; }
+      #Product-Container .explanation > .menu ul li.active, #Responsive-Product-Container .explanation > .menu ul li.active {
+        color: gold;
+        border-bottom: 2px solid gold; }
+      #Product-Container .explanation > .menu ul li:not(.active):hover, #Responsive-Product-Container .explanation > .menu ul li:not(.active):hover {
+        box-shadow: 0 0 6px #eee; }
+    #Product-Container .explanation .content, #Responsive-Product-Container .explanation .content {
+      font-family: "Poppins";
+      font-size: 0.8rem;
+      font-weight: 500;
+      padding: 1rem;
+      box-shadow: 0 6px 12px #eee; }
+      #Product-Container .explanation .content .user-content, #Product-Container .explanation .content .question-answer, #Responsive-Product-Container .explanation .content .user-content, #Responsive-Product-Container .explanation .content .question-answer {
+        margin: 1rem 0;
+        padding: 1rem 2rem;
+        position: relative;
+        box-shadow: 0 0px 12px #eee; }
+        #Product-Container .explanation .content .user-content .user-content-image, #Product-Container .explanation .content .question-answer .user-content-image, #Responsive-Product-Container .explanation .content .user-content .user-content-image, #Responsive-Product-Container .explanation .content .question-answer .user-content-image {
+          width: 4.3rem;
+          height: 4rem;
+          overflow: hidden;
+          border-radius: 50%; }
+          #Product-Container .explanation .content .user-content .user-content-image img, #Product-Container .explanation .content .question-answer .user-content-image img, #Responsive-Product-Container .explanation .content .user-content .user-content-image img, #Responsive-Product-Container .explanation .content .question-answer .user-content-image img {
+            width: 100%;
+            height: 100%; }
+        #Product-Container .explanation .content .user-content .user-content-detail button, #Product-Container .explanation .content .user-content .user-content-tools button, #Product-Container .explanation .content .question-answer .user-content-detail button, #Product-Container .explanation .content .question-answer .user-content-tools button, #Responsive-Product-Container .explanation .content .user-content .user-content-detail button, #Responsive-Product-Container .explanation .content .user-content .user-content-tools button, #Responsive-Product-Container .explanation .content .question-answer .user-content-detail button, #Responsive-Product-Container .explanation .content .question-answer .user-content-tools button {
+          border: none;
+          background-color: transparent; }
+        #Product-Container .explanation .content .user-content .user-content-detail, #Product-Container .explanation .content .question-answer .user-content-detail, #Responsive-Product-Container .explanation .content .user-content .user-content-detail, #Responsive-Product-Container .explanation .content .question-answer .user-content-detail {
+          margin-left: .5rem;
+          position: relative; }
+          #Product-Container .explanation .content .user-content .user-content-detail p, #Product-Container .explanation .content .question-answer .user-content-detail p, #Responsive-Product-Container .explanation .content .user-content .user-content-detail p, #Responsive-Product-Container .explanation .content .question-answer .user-content-detail p {
+            margin: 0; }
+          #Product-Container .explanation .content .user-content .user-content-detail .user-content-settings, #Product-Container .explanation .content .question-answer .user-content-detail .user-content-settings, #Responsive-Product-Container .explanation .content .user-content .user-content-detail .user-content-settings, #Responsive-Product-Container .explanation .content .question-answer .user-content-detail .user-content-settings {
+            position: absolute;
+            top: 0;
+            right: 0; }
+          #Product-Container .explanation .content .user-content .user-content-detail .setting-menu, #Product-Container .explanation .content .question-answer .user-content-detail .setting-menu, #Responsive-Product-Container .explanation .content .user-content .user-content-detail .setting-menu, #Responsive-Product-Container .explanation .content .question-answer .user-content-detail .setting-menu {
+            position: relative;
+            position: absolute;
+            top: 0;
+            right: 1.5rem;
+            background-color: #fff;
+            z-index: 2;
+            box-shadow: 0 0 6px #eee;
+            padding: .7rem 1rem; }
+            #Product-Container .explanation .content .user-content .user-content-detail .setting-menu ul li, #Product-Container .explanation .content .question-answer .user-content-detail .setting-menu ul li, #Responsive-Product-Container .explanation .content .user-content .user-content-detail .setting-menu ul li, #Responsive-Product-Container .explanation .content .question-answer .user-content-detail .setting-menu ul li {
+              margin: .3rem;
+              font-family: "Poppins";
+              font-size: 0.8rem;
+              font-weight: 700; }
+              #Product-Container .explanation .content .user-content .user-content-detail .setting-menu ul li a, #Product-Container .explanation .content .question-answer .user-content-detail .setting-menu ul li a, #Responsive-Product-Container .explanation .content .user-content .user-content-detail .setting-menu ul li a, #Responsive-Product-Container .explanation .content .question-answer .user-content-detail .setting-menu ul li a {
+                display: block; }
+          #Product-Container .explanation .content .user-content .user-content-detail .user-name, #Product-Container .explanation .content .question-answer .user-content-detail .user-name, #Responsive-Product-Container .explanation .content .user-content .user-content-detail .user-name, #Responsive-Product-Container .explanation .content .question-answer .user-content-detail .user-name {
+            font-family: "Poppins";
+            font-size: 0.8rem;
+            font-weight: 700; }
+          #Product-Container .explanation .content .user-content .user-content-detail .user-comment, #Product-Container .explanation .content .question-answer .user-content-detail .user-comment, #Responsive-Product-Container .explanation .content .user-content .user-content-detail .user-comment, #Responsive-Product-Container .explanation .content .question-answer .user-content-detail .user-comment {
+            font-family: "Poppins";
+            font-size: 0.75rem;
+            font-weight: 500; }
+        #Product-Container .explanation .content .user-content .user-content-tools, #Product-Container .explanation .content .question-answer .user-content-tools, #Responsive-Product-Container .explanation .content .user-content .user-content-tools, #Responsive-Product-Container .explanation .content .question-answer .user-content-tools {
+          font-size: .9rem;
+          margin-top: .5rem; }
+          #Product-Container .explanation .content .user-content .user-content-tools button, #Product-Container .explanation .content .question-answer .user-content-tools button, #Responsive-Product-Container .explanation .content .user-content .user-content-tools button, #Responsive-Product-Container .explanation .content .question-answer .user-content-tools button {
+            opacity: .7; }
+          #Product-Container .explanation .content .user-content .user-content-tools button:hover, #Product-Container .explanation .content .question-answer .user-content-tools button:hover, #Responsive-Product-Container .explanation .content .user-content .user-content-tools button:hover, #Responsive-Product-Container .explanation .content .question-answer .user-content-tools button:hover {
+            opacity: 1; }
+      #Product-Container .explanation .content .question-answer form, #Responsive-Product-Container .explanation .content .question-answer form {
+        display: flex;
+        flex-wrap: auto;
+        align-items: flex-start;
+        justify-content: flex-start; }
+      #Product-Container .explanation .content .question-answer textarea, #Responsive-Product-Container .explanation .content .question-answer textarea {
+        width: 22rem;
+        height: 6rem;
+        padding: .7rem 1rem;
+        border-radius: .5rem;
+        border: 1px solid #eee;
+        box-shadow: 0 0 12px #eee;
+        font-family: "Poppins";
+        font-size: 0.8rem;
+        font-weight: 600; }
+      #Product-Container .explanation .content .question-answer textarea:focus, #Responsive-Product-Container .explanation .content .question-answer textarea:focus {
+        outline: none; }
+      #Product-Container .explanation .content .question-answer .send, #Responsive-Product-Container .explanation .content .question-answer .send {
+        border: none;
+        background-color: transparent;
+        color: #fff;
+        border-radius: 50%;
+        background-color: #2c74f8;
+        width: 3rem;
+        height: 3rem;
+        font-size: 1rem;
+        margin-left: .3rem; }
+      #Product-Container .explanation .content .question-answer .send:hover, #Responsive-Product-Container .explanation .content .question-answer .send:hover {
+        background-color: royalblue; }
+
+#ProductCompareInfo .modal-body .search {
+  position: relative; }
+  #ProductCompareInfo .modal-body .search i {
+    position: absolute;
+    top: 0.8rem;
+    right: 1rem; }
+#ProductCompareInfo .modal-body .result-products {
+  height: 30rem;
+  overflow-y: scroll; }
+  #ProductCompareInfo .modal-body .result-products .result {
+    padding: 1rem 2rem;
+    display: flex;
+    flex-wrap: auto;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 0 6px #eee, 0 0 2px #ccc;
+    margin: 1rem; }
+    #ProductCompareInfo .modal-body .result-products .result .image {
+      width: 7rem;
+      height: 7rem;
+      overflow: hidden; }
+      #ProductCompareInfo .modal-body .result-products .result .image img {
+        width: 100%;
+        height: 100%; }
+    #ProductCompareInfo .modal-body .result-products .result .detail {
+      font-family: "Poppins";
+      font-size: 0.8rem;
+      font-weight: 700; }
+      #ProductCompareInfo .modal-body .result-products .result .detail span:nth-child(2) {
+        color: gold;
+        font-size: .9rem; }
+    #ProductCompareInfo .modal-body .result-products .result .actions {
+      width: 12rem; }
+      #ProductCompareInfo .modal-body .result-products .result .actions button {
+        color: gold;
+        background-color: transparent; }
+      #ProductCompareInfo .modal-body .result-products .result .actions button:hover {
+        color: #fff;
+        background-color: gold; }
+
+#Responsive-Product-Container {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999; }
+
+@keyframes blink {
+  0% {
+    opacity: .7;
+    color: goldenrod; }
+  50% {
+    opacity: 1;
+    color: gold; }
+  100% {
+    opacity: .7;
+    color: goldenrod; } }
+#ResponsiveDesingOn {
+  display: none;
+  font-size: 1.1rem;
+  cursor: pointer;
+  margin-bottom: .5rem; }
+  #ResponsiveDesingOn i {
+    color: gold;
+    animation: blink 1s linear infinite; }
+  #ResponsiveDesingOn span {
+    font-family: "Poppins";
+    font-size: auto;
+    font-weight: 700; }

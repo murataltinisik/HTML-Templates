@@ -1,0 +1,7 @@
+/* ACCOUNT SCSS */
+@import url(../../scss/section/notifications/section.css);
+
+/* RESPONSIVE SHEMAS */
+@import url(../../scss/responsive/account/reponsive.css);
+@import url(../../scss/responsive/section.css);
+@import url(../../scss/responsive/article.css);

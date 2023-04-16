@@ -1,0 +1,40 @@
+// -> GENERAL SCSS
+@import '../../general/general.scss';
+
+// THIS DESING APPLIES TO TABLET
+@media only screen and(min-width: 480px) and(max-width: 768px){
+    /////// --- PAYMENT CONTAINER --- \\\\\\\
+    #Payment-Container{
+        // BODY
+        .body{
+            @include DisplayFunction-2(auto, column, space-between, flex-start);
+    
+            // GROUP
+            > .group{
+                width: 100%;
+                margin-bottom: 2rem;
+            }
+    
+        }
+    }
+    /////// ### PAYMENT CONTAINER ### \\\\\\\
+}
+
+// THIS DESING APPLIES TO PHONE
+@media only screen and(max-width: 479px){
+    /////// --- PAYMENT CONTAINER --- \\\\\\\
+    #Payment-Container{
+        // BODY
+        .body{
+            @include DisplayFunction-2(auto, column, space-between, flex-start);
+    
+            // GROUP
+            > .group{
+                width: 100%;
+                margin-bottom: 2rem;
+            }
+    
+        }
+    }
+    /////// ### PAYMENT CONTAINER ### \\\\\\\
+}

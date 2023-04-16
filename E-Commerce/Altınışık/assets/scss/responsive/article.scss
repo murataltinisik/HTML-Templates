@@ -1,0 +1,38 @@
+// -> GENERAL SCSS
+@import '../general/general.scss';
+
+// THIS DESING APPLIES TO LAPTOP
+@media only screen and(min-width: 769px) and (max-width: 1048px) {
+    ////////// ******* ARTICLE CONTAINER ******* \\\\\\\\\\
+    
+    // INFORMATION -> BOX
+    #Site-Information .information .box{
+        width: 50%;
+    }
+    
+    ////////// ####### ARTICLE CONTAINER ####### \\\\\\\\\\
+}
+
+// THIS DESING APPLIES TO TABLET
+@media only screen and(min-width: 480px) and (max-width: 768px) {
+    ////////// ******* ARTICLE CONTAINER ******* \\\\\\\\\\
+    
+    // INFORMATION -> BOX
+    #Site-Information .information .box{
+        width: 100%;
+    }
+    
+    ////////// ####### ARTICLE CONTAINER ####### \\\\\\\\\\
+}
+
+// THIS DESING APPLIES TO PHONE
+@media only screen and (max-width: 479px){
+    ////////// ******* ARTICLE CONTAINER ******* \\\\\\\\\\
+    
+    // INFORMATION -> BOX
+    #Site-Information .information .box{
+        width: 100%;
+    }
+    
+    ////////// ####### ARTICLE CONTAINER ####### \\\\\\\\\\
+}

@@ -1,0 +1,601 @@
+// -> GENERAL SCSS
+@import '../../general/general.scss';
+
+///////////////// SECTION -> PRODUCT
+#Product-Container, #Responsive-Product-Container{
+    position: relative;
+
+    // PRODUCT INFO
+    .product-info{
+        position: relative;
+        @include DisplayFunction(auto, space-between, flex-start);
+
+        // IMAGES & DETAILS
+        .product-images, .product-details{
+            height: 28rem;
+            width: 50%;
+            padding: 1rem;
+            background-color: #fff;
+            position: relative;
+            overflow: hidden;
+        }
+
+        // IMAGES
+        .product-images{
+            text-align: center;
+            box-shadow: 0 0 6px #eee;
+
+            // IMAGE
+            .image{
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+            
+                // JPEG, PNG
+                img{
+                    width: 100%;
+                    height: 95%;
+                }
+            }
+
+            // NAVIGATE
+            .navigate{
+                @include PositionAbsolute-BOTTOM-LEFT(0,0);
+                width: 100%;
+                height: 2rem;
+                z-index: 999;
+
+                // UL
+                ul{
+                    height: 100%;
+                    @include DisplayFunction(auto, center, center);
+                }
+
+                // UL LI
+                ul li{
+                    width: 12px;
+                    height: 12px;
+                    margin: 0 .3rem;
+                    border-radius: 50%;
+                    cursor: pointer;
+                    box-shadow: 0 0 4px #eee, 0 0 3px #ccc;
+                    background-color: #fff;
+                    position: relative;
+                }
+
+                ul li::after{
+                    content: '';
+                    position: absolute;
+                    top: 2.5px;
+                    left: 2px;
+                    background-color: gold;
+                    width: 7px;
+                    height: 7px;
+                    border-radius: 50%;
+                }
+
+                ul li:hover{
+                    box-shadow: 0 0 4px gold;
+                }
+            }
+
+            // BUTTONS
+            .buttons{
+                width: 100%;
+                height: 100%;
+                padding: 0 2rem;
+                @include PositionAbsolute-TOP-LEFT(0,0);
+                @include DisplayFunction(auto, space-between, center);
+
+                // BTN
+                button{
+                    width: 3rem;
+                    height: 3rem;
+                    text-align: center;
+                    opacity: .7;
+                    border-radius: 50%;
+                    background-color: #fff;
+                    @include ButtonRefresh;
+                }
+
+                button:hover{
+                    opacity: 1;
+                    box-shadow: 0 0 6px #eee;
+                }
+            }
+
+        }
+
+        // DETAILS
+        .product-details{
+            box-shadow: 0 0 2px #eee, 0 0 1px #ccc;
+
+            // NAME
+            .name{
+                @include FontFunction('Poppins', auto, 700);
+            }
+
+            // ASK SELLER
+            .ask-seller{
+                // BUTTON
+                button{
+                    @include ButtonRefresh;
+                    border: 1px solid #eee;
+                    box-shadow: 0 0 6px #eee;
+                    border-radius: 5px;
+                    padding: .5rem 1rem;
+                    @include FontFunction('Poppins', .8rem, 700);
+                }
+
+                button:active{
+                    box-shadow: 0 0 6px #ccc;
+                }
+            }
+
+            // DETAIL
+            .detail{
+                margin-top: 1rem;
+                @include DisplayFunction(auto, space-between, center);
+            
+                // DISCOUNT
+                .discount{
+                    border-radius: 12px;
+                    padding: .8rem;
+                    background-color: gold;
+                    text-align: center;
+                    color: #fff;
+                    margin-right: .5rem;
+                    @include FontFunction('Poppins', .8rem, 600);    
+                }
+
+                // PRICE
+                .price{
+                    @include DisplayFunction-2(auto, column, flex-start, flex-start);
+
+                    // OLD PRICE
+                    .old-price{
+                        font-size: .8rem;
+                        color: gray;
+                    }
+
+                    // NEW PRICE
+                    .new-price{
+                        color: gold;
+                        text-shadow: 0 0 12px gold;
+                        @include FontFunction('Poppins', auto, 700);
+                    }
+                }
+
+            }
+
+            // SALES QUANTITY
+            .sales-quantity{
+                @include FontFunction('Poppins', .9rem, 600);
+           
+                b{
+                    color: gold;
+                }
+            }
+
+            // ACTIONS
+            .actions{
+                margin: 1rem 0;
+
+                // BUTTON
+                button{
+                    width: 25%;
+                    padding: .6rem !important;
+                }
+
+                // AMOUNT
+                .amount{
+                    margin: 1rem 0;
+                    // SPAN
+                    span{
+                        font-weight: 700;
+                        font-size: 1.2rem;
+                        border-radius: 50%;
+                        background-color: #fff;
+                        width: 2rem;
+                        height: 2rem;
+                        cursor: pointer;
+                        display: inline-block;
+                        text-align: center;
+                        box-shadow: 0 0 4px #eee, 0 0 2px #ccc;
+                    }
+
+                    span:active{
+                        background-color: #eee;
+                    }
+
+                    // INPUT
+                    input{
+                        margin: 0 .3rem;
+                        text-align: center;
+                        width: 2.5rem;
+                        border: 1px solid #ccc;
+                    }
+
+                }
+        
+            }
+
+            // TOOLS
+            .tools{
+                width: 65%;
+                @include DisplayFunction(auto, space-between, center);
+                text-align: center;
+
+                // ALL ITEM
+                *{
+                    cursor: pointer;
+                }
+
+                // P TAG
+                p{
+                    margin: 0;
+                }
+
+                // I ICON
+                i{
+                    font-size: 1.5rem;
+                }
+
+                // DIV
+                > div{
+                    opacity: .85;
+                    transition: all .2s ease;
+                    position: relative;
+
+                    // SPAN
+                    span{
+                        @include FontFunction('Poppins', .8rem, 700);
+                    }
+                }
+
+                > div:hover{
+                    opacity: 1;
+                }
+
+                > div:hover{
+                    color: gold;
+                }
+
+                // LISTS
+                .lists{
+                    background-color: #fff;
+                    box-shadow: 0 0 6px #eee, 0 0 1px #ccc;
+                    position: absolute;
+                    left: -2.7rem;
+                    display: none;
+                    height: 5rem;
+
+                    // UL
+                    ul{
+                        width: 12rem;
+                        height: 100%;
+                        padding: .5rem;
+                        overflow-y: scroll;
+                    }
+
+                    ul::-webkit-scrollbar{
+                        width: 10px;
+                        box-shadow: 0 0 2px gold;
+                    }
+
+                    ul::-webkit-scrollbar-thumb{
+                        background-color: gold;
+                    }
+
+                    // UL LI
+                    ul li{
+                        padding: .2rem;
+                    }
+
+                    // UL LI A
+                    ul li a{
+                        display: block;
+                        color: #000;
+                        transition: all .2s ease;
+                        @include FontFunction('Poppins', .8rem, 600);
+                    }
+
+                    ul li a:hover{
+                        padding-left: .5rem;
+                        background-color: #f9f9f9;
+                    }
+                }
+
+            }
+
+        }
+
+    }
+
+    // EXPLANATION
+    .explanation{
+        margin-top: 1rem;
+
+        // MENU
+        > .menu{
+            // UL
+            ul{
+                margin: 0;
+                @include DisplayFunction(auto, flex-start, center);
+
+                // LI
+                li{
+                    cursor: pointer;
+                    margin-right: .5rem;
+                    padding: .5rem 1rem;
+                    @include FontFunction('Poppins', .9rem, 700);
+                }
+
+                // LI.active
+                li.active{
+                    color: gold;
+                    border-bottom: 2px solid gold;
+                }
+
+                // LI:not(.active):hover
+                li:not(.active):hover{
+                    box-shadow: 0 0 6px #eee;
+                }
+
+            }
+        }
+
+        // CONTENT
+        .content{
+            @include FontFunction('Poppins', .8rem, 500);
+            padding: 1rem;
+            box-shadow: 0 6px 12px #eee;
+
+            // USER CONTENT, QUESTION ANSWER
+            .user-content, .question-answer{
+                margin: 1rem 0;
+                padding: 1rem 2rem;
+                position: relative;
+                box-shadow: 0 0px 12px #eee;
+
+                // IMAGE
+                .user-content-image{
+                    width: 4.3rem;
+                    height: 4rem;
+                    overflow: hidden;
+                    border-radius: 50%;
+
+                    // JPEG, PNG
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+
+                // DETAIL & TOOLS
+                .user-content-detail, .user-content-tools{
+                    // ALL BUTTONS
+                    button{
+                        @include ButtonRefresh;
+                    }
+                }
+
+                // DETAIL
+                .user-content-detail{
+                    margin-left: .5rem;
+                    position: relative;
+
+                    // P TAG
+                    p{
+                        margin: 0;
+                    }
+
+                    // USER-CONTENT SETTINGS
+                    .user-content-settings{
+                        @include PositionAbsolute-TOP-RIGHT(0, 0);
+                    }
+
+                    // SETTING MENU
+                    .setting-menu{
+                        position: relative;
+                        @include PositionAbsolute-TOP-RIGHT(0, 1.5rem);
+                        background-color: #fff;
+                        z-index: 2;
+                        box-shadow: 0 0 6px #eee;
+                        padding: .7rem 1rem;
+                    
+                        // UL LI
+                        ul li{
+                            margin: .3rem;
+                            @include FontFunction('Poppins', .8rem, 700);
+
+                            // A
+                            a{
+                                display: block;
+                            }
+                        }
+                    }
+
+                    // USER NAME
+                    .user-name{
+                        @include FontFunction('Poppins', .8rem, 700);
+                    }
+
+                    // USER
+                    .user-comment{
+                        @include FontFunction('Poppins', .75rem, 500);
+                    }
+
+                }
+
+                // TOOLS
+                .user-content-tools{
+                    font-size: .9rem;
+                    margin-top: .5rem;
+
+                    // BUTTON
+                    button{
+                        opacity: .7;
+                    }
+
+                    button:hover{
+                        opacity: 1;
+                    }
+                }
+
+            }
+
+            // QUESTION ANSWER
+            .question-answer{
+                // FORM
+                form{
+                    @include DisplayFunction(auto, flex-start, flex-start);
+                }
+
+                // TEXT AREA
+                textarea{
+                    width: 22rem;
+                    height: 6rem;
+                    padding: .7rem 1rem;
+                    border-radius: .5rem;
+                    border: 1px solid #eee;
+                    box-shadow: 0 0 12px #eee;
+                    @include FontFunction('Poppins', .8rem, 600);
+                }
+
+                textarea:focus{
+                    outline: none;
+                }
+
+                // SEND BTN
+                .send{
+                    @include ButtonRefresh;
+                    color: #fff;
+                    border-radius: 50%;
+                    background-color: rgb(44, 116, 248);
+                    width: 3rem;
+                    height: 3rem;
+                    font-size: 1rem;
+                    margin-left: .3rem;
+                }
+
+                .send:hover{
+                    background-color: royalblue;
+                }
+            }
+
+        }
+
+
+    }
+
+}
+
+// MODAL
+#ProductCompareInfo{
+    
+    // MODAL BODY
+    .modal-body{
+        
+        // SEARCH
+        .search{
+            position: relative;
+
+            // I TAG
+            i{
+                @include PositionAbsolute-TOP-RIGHT(.8rem, 1rem);
+            }
+        }
+
+        // RESULT
+        .result-products{
+            height: 30rem;
+            overflow-y: scroll;
+
+            // RESULT
+            .result{
+                padding: 1rem 2rem;
+                @include DisplayFunction(auto, space-between, center);
+                box-shadow: 0 0 6px #eee, 0 0 2px #ccc;
+                margin: 1rem;
+
+                // IMAGE
+                .image{
+                    width: 7rem;
+                    height: 7rem;
+                    overflow: hidden;
+                    
+                    // JPEG, PNG
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
+
+                }
+
+                // DETAIL
+                .detail{
+                    @include FontFunction('Poppins', .8rem, 700);
+
+                    span:nth-child(2){
+                        color: gold;
+                        font-size: .9rem;
+                    }
+
+                }
+                
+
+                // ACTIONS
+                .actions{
+                    width: 12rem;
+
+                    // BUTTON
+                    button{
+                        color: gold;
+                        background-color: transparent;
+                    }
+
+                    button:hover{
+                        color: #fff;
+                        background-color: gold;
+                    }
+                }
+
+            }
+
+        }
+
+    }
+    
+}
+
+// RESPONSIVE PRODUCT CONTAINER
+#Responsive-Product-Container{
+    display: none;
+    @include PositionAbsolute-TOP-LEFT(0, 0);
+    width: 100%;
+    z-index: 999;
+}
+
+// BLING ANIMATE
+@keyframes blink{
+    0% {opacity: .7;color: goldenrod;}
+    50% {opacity: 1;color: gold;}
+    100% {opacity: .7;color: goldenrod;}
+}
+
+// RESPONSIVE DESING ON
+#ResponsiveDesingOn{
+    display: none;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin-bottom: .5rem;
+    i{
+        color: gold;
+        animation: blink 1s linear infinite;
+    }
+
+    span{
+        @include FontFunction('Poppins', auto, 700);
+    }
+}

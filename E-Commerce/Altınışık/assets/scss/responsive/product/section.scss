@@ -1,0 +1,192 @@
+// -> GENERAL SCSS
+@import '../../general/general.scss';
+
+// THIS DESING APPLIES TO LAPTOP
+@media only screen and(min-width:769px) and (max-width: 1048px){
+
+    ////////// ******* SECTION CONTAINER ******* \\\\\\\\\\
+    ///////////////// SECTION -> PRODUCT
+    #Product-Container, #Responsive-Product-Container{
+        // PRODUCT INFO
+        .product-info{
+            @include DisplayFunction(auto, space-between, flex-start);
+
+            .product-images, .product-details{
+                height: 24rem;
+            }
+
+            // IMAGES & DETAILS
+            .product-images{
+                width: 50%;
+                img{
+                    width: 95% !important;
+                }
+            }
+
+            // DETAILS
+            .product-details{
+                width: 50%;
+                // GROUP
+                .group{
+                    width: 100% !important;
+                }
+                
+                // ACTION
+                .actions{
+                    button{
+                        width: 47% !important;
+                    }
+                }
+
+                // TOOLS
+                .tools{
+                    width: 100%;
+                }
+            }
+
+        }
+
+        // EXPLANATION
+        .explanation{
+            margin-top: 1rem;
+            // CONTENT
+            .content{
+                // USER CONTENT, QUESTION ANSWER
+                .user-content, .question-answer{
+                    padding: 1rem;
+
+                    // IMAGE
+                    .user-content-image{
+                        width: 8rem !important;
+                    }
+                }
+            }
+        }
+
+    }
+    ////////// ####### SECTION CONTAINER ####### \\\\\\\\\\
+
+}
+
+// THIS DESING APPLIES TO TABLET
+@media only screen and(min-width: 480px) and (max-width: 768px) {
+    ////////// ******* SECTION CONTAINER ******* \\\\\\\\\\
+
+    ///////////////// SECTION -> PRODUCT
+    #Product-Container, #Responsive-Product-Container{
+
+        // PRODUCT INFO
+        .product-info{
+            @include DisplayFunction(wrap, space-between, flex-start);
+
+            // IMAGES & DETAILS
+            .product-images{
+                width: 100%;
+            }
+
+            // DETAILS
+            .product-details{
+                width: 100%;
+                display: none;
+            }
+
+        }
+
+        // EXPLANATION
+        .explanation{
+            margin-top: 1rem;
+            // CONTENT
+            .content{
+                // USER CONTENT, QUESTION ANSWER
+                .user-content, .question-answer{
+                    padding: 1rem;
+
+                    // IMAGE
+                    .user-content-image{
+                        width: 15rem !important;
+                    }
+                }
+            }
+        }
+
+    }
+
+    #ProductCompareInfo{
+        display: none !important;
+    }
+
+    #Responsive-Product-Container{
+        .product-details{
+            width: 100%;
+            display: block !important;
+        }
+    }
+
+    #ResponsiveDesingOn{
+        display: block;
+    }
+
+    ////////// ####### SECTION CONTAINER ####### \\\\\\\\\\
+}
+
+// THIS DESING APPLIES TO PHONE
+@media only screen and (max-width: 479px){
+    ////////// ******* SECTION CONTAINER ******* \\\\\\\\\\
+
+    ///////////////// SECTION -> PRODUCT
+    #Product-Container, #Responsive-Product-Container{
+
+        // PRODUCT INFO
+        .product-info{
+            @include DisplayFunction(wrap, space-between, flex-start);
+
+            // IMAGES & DETAILS
+            .product-images{
+                width: 100%;
+            }
+
+            // DETAILS
+            .product-details{
+                width: 100%;
+                display: none;
+            }
+
+        }
+
+        // EXPLANATION
+        .explanation{
+            margin-top: 1rem;
+            // CONTENT
+            .content{
+                // USER CONTENT, QUESTION ANSWER
+                .user-content, .question-answer{
+                    padding: 1rem;
+
+                    // IMAGE
+                    .user-content-image{
+                        width: 15rem !important;
+                    }
+                }
+            }
+        }
+
+    }
+
+    #ProductCompareInfo{
+        display: none !important;
+    }
+
+    #Responsive-Product-Container{
+        .product-details{
+            width: 100%;
+            display: block !important;
+        }
+    }
+
+    #ResponsiveDesingOn{
+        display: block;
+    }
+
+    ////////// ####### SECTION CONTAINER ####### \\\\\\\\\\
+
+}

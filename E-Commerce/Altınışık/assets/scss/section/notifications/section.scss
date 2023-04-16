@@ -1,0 +1,29 @@
+// -> GENERAL SCSS
+@import '../../general/general.scss';
+
+///////////////// SECTION -> NOTIFICATION
+#Account-Container.NotificationContainer{
+
+    // NOTIFICATE
+    .notificate{
+        position: relative;
+        padding: 1rem 1rem;
+        border-radius: .2rem;
+        box-shadow: 0 0 12px #eee, 0 0 1px #ccc;
+        @include FontFunction('Poppins', .9rem, 700);
+
+        // NOTIFICATE CONTENT
+        .notificate-content{
+            font-weight: 500;
+            opacity: .7;
+            margin-top: .5rem;
+        }
+
+        // FORM SWITCH
+        form .form-check{
+            @include PositionAbsolute-TOP-RIGHT(1rem, 1rem);
+        }
+
+    }
+
+}
